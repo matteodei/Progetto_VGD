@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 451708045}
-  mouseSens: 100
+  mouseSens: 400
   cameraTransform: {fileID: 963194228}
 --- !u!143 &451708045
 CharacterController:
