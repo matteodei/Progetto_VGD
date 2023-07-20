@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638161310709068467
+      ticks: 638161314187190278
     m_Hash: 156888637
   m_LockFileStatus:
     m_FilePath: C:/Users/matti/Progetto_VGD/Progetto_VGD/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638161310709068467
+      ticks: 638161314187190278
     m_Hash: 915549958
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
