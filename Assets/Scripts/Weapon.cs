@@ -1,5 +1,6 @@
-//using System;
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Weapon : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class Weapon : MonoBehaviour
     public float rotationForce;
 
     public int weaponGfxLayer; //No wall clipping
-    public GameObject weaponGfx;
+    public GameObject[] weaponGfxs;
     public Collider[] gfxColliders;
 
     private bool _held;
@@ -30,6 +31,10 @@ public class Weapon : MonoBehaviour
         foreach(var col in gfxColliders) { 
             col.enabled = false;
         }
+        foreach (var gfx in weaponGfxs)
+        {
+            gfx.layer = weaponGfxLayer;
+        }
         _held = true;
     }
 
@@ -46,6 +51,10 @@ public class Weapon : MonoBehaviour
         foreach (var col in gfxColliders)
         {
             col.enabled = true;
+        }
+        foreach (var gfx in weaponGfxs)
+        {
+            gfx.layer = 0;
         }
         transform.parent = null;
         _held = false;
