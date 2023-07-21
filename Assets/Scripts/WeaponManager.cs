@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor.PackageManager;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ public class WeaponManager : MonoBehaviour
 
     public Transform weaponHolder;
     public Transform playerCamera;
+    public TMP_Text ammoText;
 
     private bool _isWeaponHeld;
     private Weapon _heldWeapon;
@@ -58,7 +60,7 @@ public class WeaponManager : MonoBehaviour
 
             _isWeaponHeld = true;   
             _heldWeapon = realList[0].transform.GetComponent<Weapon>();
-            _heldWeapon.Pickup(weaponHolder);
+            _heldWeapon.Pickup(weaponHolder, playerCamera, ammoText);
         
         }
     }
