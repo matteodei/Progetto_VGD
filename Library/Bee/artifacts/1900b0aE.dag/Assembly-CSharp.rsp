@@ -353,6 +353,8 @@
 "Assets/Mappa/BrokenVector/LowPolyDungeon/Demo Scenes/PlayerMovement.cs"
 "Assets/Mappa/BrokenVector/LowPolyDungeon/Demo Scenes/ScreenshotMaker.cs"
 "Assets/Mappa/Scripts/PlayerController.cs"
+"Assets/PlayerShooting/Scripts/Weapon.cs"
+"Assets/PlayerShooting/Scripts/WeaponManager.cs"
 -langversion:9.0
 
 /deterministic
