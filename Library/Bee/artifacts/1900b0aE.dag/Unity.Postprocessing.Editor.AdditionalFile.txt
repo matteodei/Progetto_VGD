@@ -1,5 +1,1 @@
-<<<<<<< HEAD:Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.AdditionalFile.txt
 C:\Users\matti\git\Progetto_VGD
-=======
-C:\Users\matti\Progetto_VGD\Progetto_VGD\Progetto1
->>>>>>> main-daniel:Progetto1/Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.AdditionalFile.txt
