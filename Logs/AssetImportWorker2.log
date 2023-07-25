@@ -1,0 +1,1661 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.21f1 (1b156197d683) revision 1774945'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'it' Physical Memory: 7103 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.21f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+D:/Users/carlo/OneDrive/Documenti/GitHub/Progetto_VGD
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+51397
+Successfully changed project path to: D:/Users/carlo/OneDrive/Documenti/GitHub/Progetto_VGD
+D:/Users/carlo/OneDrive/Documenti/GitHub/Progetto_VGD
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [25660] Host "[IP] 192.168.100.9 [Port] 0 [Flags] 2 [Guid] 249812090 [EditorId] 249812090 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-QV3GKTTE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [25660] Host "[IP] 192.168.100.9 [Port] 0 [Flags] 2 [Guid] 249812090 [EditorId] 249812090 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-QV3GKTTE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 161.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.21f1 (1b156197d683)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Users/carlo/OneDrive/Documenti/GitHub/Progetto_VGD/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Vega 8 Graphics (ID=0x15d8)
+    Vendor:   ATI
+    VRAM:     3551 MB
+    Driver:   26.20.11030.14002
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56124
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.014063 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 135.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.267 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1267ms)
+		BeginReloadAssembly (173ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (887ms)
+			LoadAssemblies (170ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (253ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (451ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (135ms)
+				BeforeProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004023 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.048 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2049ms)
+		BeginReloadAssembly (274ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1609ms)
+			LoadAssemblies (211ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (460ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (129ms)
+			SetupLoadedEditorAssemblies (757ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (128ms)
+				ProcessInitializeOnLoadAttributes (548ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3203 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 36 unused Assets / (1.3 MB). Loaded Objects now: 3679.
+Memory consumption went from 210.5 MB to 209.2 MB.
+Total: 5.811100 ms (FindLiveObjects: 0.513100 ms CreateObjectMapping: 0.204700 ms MarkObjects: 4.558400 ms  DeleteObjects: 0.532800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 237127.585398 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Beaker_Full_Var2.fbx
+  artifactKey: Guid(c161e5586532ebc4e8de1f9a45c2754e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Beaker_Full_Var2.fbx using Guid(c161e5586532ebc4e8de1f9a45c2754e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48d257755e08e3d10037312f4e75471') in 0.394511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.451911 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Book_Big_Brown.fbx
+  artifactKey: Guid(54c2100317f765442a1f247c7d09ccf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Book_Big_Brown.fbx using Guid(54c2100317f765442a1f247c7d09ccf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f7eacae3d516e2ee652beb4efc95642') in 0.060114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.039409 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Book_Big_Green.fbx
+  artifactKey: Guid(40d34602bace745418e82f25e6287075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Book_Big_Green.fbx using Guid(40d34602bace745418e82f25e6287075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb50ec8813cc67479e64ccfb69f6e67b') in 0.031965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.211052 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Book_Brown.fbx
+  artifactKey: Guid(dc2941d78abd1554c898c60a773f4dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Book_Brown.fbx using Guid(dc2941d78abd1554c898c60a773f4dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3367d2d0cff3b19e2914c93ee8d6f419') in 0.039781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.226538 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Book_Open.fbx
+  artifactKey: Guid(6f4b9214b0fbf6749a2aa0d49b616c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Book_Open.fbx using Guid(6f4b9214b0fbf6749a2aa0d49b616c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f64b77cae3fc3b785f57fde05dfe706') in 0.039769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.251804 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Book_Small_DeepRed.fbx
+  artifactKey: Guid(84c3a15b577df7648905fcbe72f4c5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Book_Small_DeepRed.fbx using Guid(84c3a15b577df7648905fcbe72f4c5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd13433b44e7125713435feac8680c943') in 0.039981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.062255 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Book_Small_Green.fbx
+  artifactKey: Guid(e55a876c8839b57418359bcec709a948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Book_Small_Green.fbx using Guid(e55a876c8839b57418359bcec709a948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5528586fb87ee136b989ab118bd6a2db') in 0.034392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.258212 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Bowl.fbx
+  artifactKey: Guid(0bfc3f0c3caabd54994a2b291a3b9637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Bowl.fbx using Guid(0bfc3f0c3caabd54994a2b291a3b9637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '049f2d29fe43bdc95e3c90a8d7b19405') in 0.042767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.464599 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Bread.fbx
+  artifactKey: Guid(66ff87ab9380a334bacec924d01224a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Bread.fbx using Guid(66ff87ab9380a334bacec924d01224a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2813dfbe818755d99a173564283b824') in 0.038823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005668 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Bread_Half.fbx
+  artifactKey: Guid(f3ce4e9067ea46d489a77bbba593436a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Bread_Half.fbx using Guid(f3ce4e9067ea46d489a77bbba593436a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '993464c934dffd1ab1f8a3aaca7e353b') in 0.035605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.022398 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Bucket.fbx
+  artifactKey: Guid(c92f800f4ab0055479becfd4aa479194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Bucket.fbx using Guid(c92f800f4ab0055479becfd4aa479194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43f2a7e554d80a7fb1192598fa10a9bb') in 0.033387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.230262 seconds.
+  path: Assets/Mappa/SimpleLowPolyNature/Prefabs/CampFire.prefab
+  artifactKey: Guid(d6a5e2c4aefa6804b8f7d2af9a9676b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleLowPolyNature/Prefabs/CampFire.prefab using Guid(d6a5e2c4aefa6804b8f7d2af9a9676b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3edda88dd3d8252049702968f540399') in 0.070547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.161142 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Lamps/Candlestick.prefab
+  artifactKey: Guid(23e2a639ca3c8bb43ba7ae9988ecc0e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Lamps/Candlestick.prefab using Guid(23e2a639ca3c8bb43ba7ae9988ecc0e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4989cb17f28b9d425a1c5a581a606bf4') in 0.031358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Lamps/Candlestick_Small.prefab
+  artifactKey: Guid(bf7a7fc00791eb945a5412768a68fffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Lamps/Candlestick_Small.prefab using Guid(bf7a7fc00791eb945a5412768a68fffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9b75a724e2f6336ac9d0cc26921ed9') in 0.030223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.074250 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Lamps/Candlestick_Triple.prefab
+  artifactKey: Guid(34534f9a2d6df1c4f8dee201f8d50aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Lamps/Candlestick_Triple.prefab using Guid(34534f9a2d6df1c4f8dee201f8d50aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f93ad8fe19190e367b6375acfe7df4') in 0.025011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.117647 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Lamps/Candlestick_Wall.prefab
+  artifactKey: Guid(c559a22601843db4c927941c06a8b94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Lamps/Candlestick_Wall.prefab using Guid(c559a22601843db4c927941c06a8b94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ea12db1690f4a910939620d7d96da2') in 0.031389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.119192 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Carpet_Red.fbx
+  artifactKey: Guid(3218aaed8ef5b6b42b5b1fe3ae5b6342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Carpet_Red.fbx using Guid(3218aaed8ef5b6b42b5b1fe3ae5b6342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e22a11a144975a3f505ec7945ae24b') in 0.027990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.125528 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Carrot.fbx
+  artifactKey: Guid(fa1dbf3ce607faa4eaf5d6c71e9ccc66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Carrot.fbx using Guid(fa1dbf3ce607faa4eaf5d6c71e9ccc66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '623fec55e3fb884b93065130b81d9a94') in 0.037311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.064652 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Cauldron_Full.fbx
+  artifactKey: Guid(1dfcafeaf18a4e546b371252addce9da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Cauldron_Full.fbx using Guid(1dfcafeaf18a4e546b371252addce9da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a995fd12422fc22f6108481f16e5b80') in 0.045628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.111741 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Cauldron_Small.fbx
+  artifactKey: Guid(0dbe52e7e22a05648ad36efdc78ea7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Cauldron_Small.fbx using Guid(0dbe52e7e22a05648ad36efdc78ea7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e046992bb65dafe620f177425269532') in 0.040950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Chair.fbx
+  artifactKey: Guid(196b5a548621de443976c8d3e69c75e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Chair.fbx using Guid(196b5a548621de443976c8d3e69c75e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55a864fd24e6f3b8042dd01135073574') in 0.030431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.270191 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Lamps/Chandelier.prefab
+  artifactKey: Guid(2b5f6b76f1ed47f4f8bc90c9aff3184b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Lamps/Chandelier.prefab using Guid(2b5f6b76f1ed47f4f8bc90c9aff3184b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e071685bbd63ecde2c26388695a84a28') in 0.038048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.182293 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Chest.fbx
+  artifactKey: Guid(1bf63c0899d49114e9e0a11b3dbb5187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Chest.fbx using Guid(1bf63c0899d49114e9e0a11b3dbb5187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5f99aaea7bbc86f07a81c9298f7b0b3') in 0.044332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/ChestSmall_Lid.fbx
+  artifactKey: Guid(b51d8a270324c344fbb47301c11f3cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/ChestSmall_Lid.fbx using Guid(b51d8a270324c344fbb47301c11f3cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8872144b9bc8389f3922d7908600a73d') in 0.039467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.650261 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/CoatHook.fbx
+  artifactKey: Guid(3ccb0977f789b7d42a354aaecafd75a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/CoatHook.fbx using Guid(3ccb0977f789b7d42a354aaecafd75a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48ebf2bce063718b6946195bef317a95') in 0.047109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.282978 seconds.
+  path: Assets/PlayerShooting/Models/Crate.obj
+  artifactKey: Guid(b1b9f2bab9dca8343a2d7de993213135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerShooting/Models/Crate.obj using Guid(b1b9f2bab9dca8343a2d7de993213135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb3c5fa933a621851b5638bd852bc436') in 0.117733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.211906 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Desk.fbx
+  artifactKey: Guid(5b206fed98dd6d041b1c804df7d42011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Desk.fbx using Guid(5b206fed98dd6d041b1c804df7d42011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fbdb3d6f96a640346b42207a867b8dc') in 0.045962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Door_Basement_Right.fbx
+  artifactKey: Guid(681220b62dd908f45ada123d56e66448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Door_Basement_Right.fbx using Guid(681220b62dd908f45ada123d56e66448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4043f609e8bd9c4eafc21a5f3a90e7d') in 0.039802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.238199 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Door_Basement_Right.prefab
+  artifactKey: Guid(16efa409f7809d6499a20bf293c5df05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Door_Basement_Right.prefab using Guid(16efa409f7809d6499a20bf293c5df05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13120a19e8856c91eff8f283381eb0fd') in 0.037647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Door_Iron_Left_col.fbx
+  artifactKey: Guid(2fef7facc8502bb4ab10e720dbd39769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Door_Iron_Left_col.fbx using Guid(2fef7facc8502bb4ab10e720dbd39769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0ce2265af4404845c69999888374e0a') in 0.036401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.061612 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Door_Iron_Right.prefab
+  artifactKey: Guid(e22e29840e07aca4693bb3288c909879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Door_Iron_Right.prefab using Guid(e22e29840e07aca4693bb3288c909879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd51d66a0702a8b24c3d63282048a73c') in 0.021153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.104786 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Door_Iron_Right_col.fbx
+  artifactKey: Guid(1a11b99e6435888469582d69e576670a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Door_Iron_Right_col.fbx using Guid(1a11b99e6435888469582d69e576670a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce2f0e48fb30ac7d16256d7b49bbc56c') in 0.025139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Door_Wooden_Right.fbx
+  artifactKey: Guid(3f84f8f63f2eb654891914d3c4f7cdbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Door_Wooden_Right.fbx using Guid(3f84f8f63f2eb654891914d3c4f7cdbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5359259bf9d9af46e9b0c6babff15541') in 0.035021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.053930 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Door_Wooden_Right_col.fbx
+  artifactKey: Guid(cafad2acfc826be42a8b41f005b844b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Door_Wooden_Right_col.fbx using Guid(cafad2acfc826be42a8b41f005b844b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d7c0ebb4bebab55f8133b0063aff10d') in 0.021198 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.183892 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Door_Wooden_Round_Left.prefab
+  artifactKey: Guid(ba93fc15ee14dbf45b36696cb946115f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Door_Wooden_Round_Left.prefab using Guid(ba93fc15ee14dbf45b36696cb946115f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e083a84f2164ff08c2e77509c43af75f') in 0.028904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/DoorGate_Wooden_Left.fbx
+  artifactKey: Guid(a26e8605291c03d42ba85f7364aea582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/DoorGate_Wooden_Left.fbx using Guid(a26e8605291c03d42ba85f7364aea582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d9ba9a1f6da6624b8b905dec8c3c81') in 0.034728 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.074454 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/DoorGate_Wooden_Left.prefab
+  artifactKey: Guid(f5e4cf5af47ee60418f92554c028a4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/DoorGate_Wooden_Left.prefab using Guid(f5e4cf5af47ee60418f92554c028a4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b61d9c951ecd6be830bc48cb6e036c27') in 0.024655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.091342 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/DoorGate_Wooden_Left_col.fbx
+  artifactKey: Guid(3ff66bdc0340eff42b48c79a6f8f0a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/DoorGate_Wooden_Left_col.fbx using Guid(3ff66bdc0340eff42b48c79a6f8f0a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd496d828826ec1469b5b428de10cc66d') in 0.030998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.090686 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Drinkinghorn.fbx
+  artifactKey: Guid(bff0d08e50f52a145bc100bcf4c67b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Drinkinghorn.fbx using Guid(bff0d08e50f52a145bc100bcf4c67b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59427b30c5a152a691a46afd7a0025e3') in 0.019149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.127493 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Big.prefab
+  artifactKey: Guid(6cb084713de342d4d94969b0f4ad068f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Big.prefab using Guid(6cb084713de342d4d94969b0f4ad068f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ff82d24ee3771bb5c83550204141b48') in 0.032962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.096087 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Big_Passage.prefab
+  artifactKey: Guid(b78909d98814b3d42aa488a008c30001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Big_Passage.prefab using Guid(b78909d98814b3d42aa488a008c30001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcb9c0afe1d42edcb1adbd2f5f3150c1') in 0.027751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.068659 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Big_Passage_col.fbx
+  artifactKey: Guid(9534b9817d800ec4cbb6e3c27b4e39de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Big_Passage_col.fbx using Guid(9534b9817d800ec4cbb6e3c27b4e39de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b518ec7bcab08d72b76f401fd52581fa') in 0.030409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Big_to_Custom_col.fbx
+  artifactKey: Guid(42e34643e8222274e9215d99f626c1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Big_to_Custom_col.fbx using Guid(42e34643e8222274e9215d99f626c1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9120989ff71d941e1e0be5499a5a8791') in 0.033068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006281 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Big_Wall.fbx
+  artifactKey: Guid(8211cbe42dc7376499f8a6746bc97fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Big_Wall.fbx using Guid(8211cbe42dc7376499f8a6746bc97fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d816b7bf45d071a529675a38f89c73e') in 0.029870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.023691 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Big_Wall_col.fbx
+  artifactKey: Guid(e4b570bae624ccb44bd100abdc1cc9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Big_Wall_col.fbx using Guid(e4b570bae624ccb44bd100abdc1cc9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3163ce700f65df8e3ffc100db059175c') in 0.030257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.341996 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Big_Window.prefab
+  artifactKey: Guid(e1b562557332b084b8dbc191884e6f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Big_Window.prefab using Guid(e1b562557332b084b8dbc191884e6f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdaea7b7d904b03a1a67fa18d0987522') in 0.045221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_CornerCrossing.prefab
+  artifactKey: Guid(dd7a26e18353799418d77212cc3275fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_CornerCrossing.prefab using Guid(dd7a26e18353799418d77212cc3275fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f2a00d600e92d5f5eca2606b297392') in 0.028266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.176871 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_CornerCrossing_col.fbx
+  artifactKey: Guid(7a2dd36deda6ffe4ea36aef171a456fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_CornerCrossing_col.fbx using Guid(7a2dd36deda6ffe4ea36aef171a456fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf72cd88bc0d6b0d9fd68fc16ab62217') in 0.037581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Custom_Border_Arched_col.fbx
+  artifactKey: Guid(24697760d409b664382f949795e1b485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Custom_Border_Arched_col.fbx using Guid(24697760d409b664382f949795e1b485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c1940770c2f3a2b6fab91975de9fd42') in 0.036901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.204326 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Custom_Border_Flat_col.fbx
+  artifactKey: Guid(f228f9f7af3807f4cb321dc8729bec0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Custom_Border_Flat_col.fbx using Guid(f228f9f7af3807f4cb321dc8729bec0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7af091916d2e91968bd09c86f01e9b92') in 0.039033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.194970 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Custom_Corner_Arched.prefab
+  artifactKey: Guid(da9803df239bac641a76405e07eaaa8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Custom_Corner_Arched.prefab using Guid(da9803df239bac641a76405e07eaaa8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34a4c834686c63bbba1f85a42d20a7e') in 0.035151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Custom_Corner_Arched_col.fbx
+  artifactKey: Guid(dc9b1c503ca0312459789c14d5e4fb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Custom_Corner_Arched_col.fbx using Guid(dc9b1c503ca0312459789c14d5e4fb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '848d3ad433af3b4e1861b7f3b05ed1bd') in 0.035187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.065987 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Custom_Corner_Flat.prefab
+  artifactKey: Guid(5ae2b4c7b8cea2f45a6dcfa4fa52fe95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Custom_Corner_Flat.prefab using Guid(5ae2b4c7b8cea2f45a6dcfa4fa52fe95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42cb0a92e98edae04d186ca2f73beb7a') in 0.025656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Custom_Corner_Inverted.prefab
+  artifactKey: Guid(867c307861a2f9244bc4a3434c515f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Custom_Corner_Inverted.prefab using Guid(867c307861a2f9244bc4a3434c515f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddc3ee51b88e64f2cf46bf3d7711a16e') in 0.025216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.059585 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Custom_Corner_Inverted_col.fbx
+  artifactKey: Guid(f891dad56c0c8ae4bbf7d07300646ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Custom_Corner_Inverted_col.fbx using Guid(f891dad56c0c8ae4bbf7d07300646ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfe5edf543798b62cf6580d909dab4c9') in 0.022217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Hall_Center_col.fbx
+  artifactKey: Guid(55206c072b8e1db48af863cca6d21d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Hall_Center_col.fbx using Guid(55206c072b8e1db48af863cca6d21d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a65a93aeb68dbf3c3ffaae74688b61') in 0.028168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.044027 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Hall_Center_Stairs.prefab
+  artifactKey: Guid(f4372e02dd0e54440977f29b6a4c317b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Hall_Center_Stairs.prefab using Guid(f4372e02dd0e54440977f29b6a4c317b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae3a3d26f05858c9b86cfa4788832922') in 0.020782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.109871 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Hall_Center_Stairs_col.fbx
+  artifactKey: Guid(8b7dca003e8c95446a83b7d9cc42c889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Hall_Center_Stairs_col.fbx using Guid(8b7dca003e8c95446a83b7d9cc42c889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '016472e952f5562978a0537c4aafb66f') in 0.028939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Hall_Corner.fbx
+  artifactKey: Guid(c139cd5cbc01af1429c798486a2d470b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Hall_Corner.fbx using Guid(c139cd5cbc01af1429c798486a2d470b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd031b86955ab4f3a3f69a517329f853') in 0.032327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.040251 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Hall_Corner_Inverted.fbx
+  artifactKey: Guid(652440dd64bfc854c83cb08ebb580eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Hall_Corner_Inverted.fbx using Guid(652440dd64bfc854c83cb08ebb580eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53ddcba5ff554e5a6a73f3b0d4c84aac') in 0.032032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.114340 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Hall_Corner_Inverted_col.fbx
+  artifactKey: Guid(6d7194ac1bbad814a9c59b96f5f65d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Hall_Corner_Inverted_col.fbx using Guid(6d7194ac1bbad814a9c59b96f5f65d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f930255317521392d2ce434cc3a9639') in 0.038501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Hall_Wall_Stairs_Left.prefab
+  artifactKey: Guid(4896ba4e24abe11438ab4b34a382af54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Hall_Wall_Stairs_Left.prefab using Guid(4896ba4e24abe11438ab4b34a382af54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283cd9112c25647298e5d8189f3f8690') in 0.029636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.068222 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Hall_Wall_Stairs_Left_col.fbx
+  artifactKey: Guid(d0b89d21f3483fe47a1e1065c5bfae48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Hall_Wall_Stairs_Left_col.fbx using Guid(d0b89d21f3483fe47a1e1065c5bfae48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bce3613c9cae52b3b1f39e00f0c3124') in 0.023009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.072523 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Hall_Wall_Stairs_Right.prefab
+  artifactKey: Guid(ed465ab6eaa568d4fa325d2c4ebf6436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Hall_Wall_Stairs_Right.prefab using Guid(ed465ab6eaa568d4fa325d2c4ebf6436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e93b50c6e0bde0754f0d09d9b0e01bd8') in 0.018931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.067418 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Passage.fbx
+  artifactKey: Guid(357387220f229a64f8e35720e9d0d121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Passage.fbx using Guid(357387220f229a64f8e35720e9d0d121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86b24b2abf94696cf70ee1123852ccb') in 0.043350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.140158 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Passage_Wood.fbx
+  artifactKey: Guid(410dccb5046b05b47adeaff09f5d9369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Passage_Wood.fbx using Guid(410dccb5046b05b47adeaff09f5d9369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f00abee93c96bb268d8bf9f34f0676f3') in 0.030702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Straight.prefab
+  artifactKey: Guid(97a4b078c0091b947acd8736a2f47884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Straight.prefab using Guid(97a4b078c0091b947acd8736a2f47884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26fded2613c0ead935ffb229aff6a6c0') in 0.020097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.228840 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Straight_14°.prefab
+  artifactKey: Guid(6ed2c478f82171c4083dfd49cea2ac11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Straight_14°.prefab using Guid(6ed2c478f82171c4083dfd49cea2ac11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db06c904b0a2cdc1f7fa74c510f2c8d9') in 0.041190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Straight_14°_col.fbx
+  artifactKey: Guid(32f5a18b8a47ac147b2f6117a519eda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Straight_14°_col.fbx using Guid(32f5a18b8a47ac147b2f6117a519eda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b2f19164fced499cff5eebcb248924c') in 0.033038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.077000 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Straight_col.fbx
+  artifactKey: Guid(10ba4fff00b5cd544b49798a4f73d475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Straight_col.fbx using Guid(10ba4fff00b5cd544b49798a4f73d475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f8a71ec887b87407532e211debebc6') in 0.023554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.578813 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Straight_Half.prefab
+  artifactKey: Guid(a0708bab0e06c414381a6861ecf05a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Straight_Half.prefab using Guid(a0708bab0e06c414381a6861ecf05a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c062bd6fa55e68d6f629135b2cb51cbc') in 0.045048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003545 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Wall_Var1.fbx
+  artifactKey: Guid(4fe4fc7683c898747998c195978256cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Wall_Var1.fbx using Guid(4fe4fc7683c898747998c195978256cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0345242b6ceac37e63007f334f16541') in 0.038529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.322387 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Wall_Var2.prefab
+  artifactKey: Guid(1696222c72e89ab4f9026119ef17826b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Wall_Var2.prefab using Guid(1696222c72e89ab4f9026119ef17826b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272c7b86156f6229282b3b11e8348560') in 0.030041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Wall_Var3.prefab
+  artifactKey: Guid(8cda7687928e5174ea2627e48a3c6d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Prefabs/Tiles/Dungeon_Wall_Var3.prefab using Guid(8cda7687928e5174ea2627e48a3c6d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8151d55ad2d29d1c1e363412ebe32e') in 0.029561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.305510 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Wall_VarX.fbx
+  artifactKey: Guid(ab61c646b6bbc5c498e1e835ea9ac264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Dungeon_Wall_VarX.fbx using Guid(ab61c646b6bbc5c498e1e835ea9ac264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e66e1aad69e494ad09a518cfc1e16dc') in 0.032906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.089403 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Wall_Window.fbx
+  artifactKey: Guid(85215ddb67dce05478420137b344281d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Dungeon_Wall_Window.fbx using Guid(85215ddb67dce05478420137b344281d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4de4d7e3fb530d6dcec3adb9dbdc65e') in 0.032999 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.655142 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Fireplace.fbx
+  artifactKey: Guid(6ed8baf2e73423e46aa82a481016b6b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Fireplace.fbx using Guid(6ed8baf2e73423e46aa82a481016b6b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b30e6f3918101cfa441a6cca881d5de') in 0.041127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.331023 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Firewood.fbx
+  artifactKey: Guid(5f9ecee8406997d4e8e4120512c25f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Firewood.fbx using Guid(5f9ecee8406997d4e8e4120512c25f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc010b363d456b77e643a5d93df53785') in 0.035869 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004823 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.695 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1697ms)
+		BeginReloadAssembly (272ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1237ms)
+			LoadAssemblies (197ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (414ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (545ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (372ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3156 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (1.3 MB). Loaded Objects now: 3727.
+Memory consumption went from 210.6 MB to 209.3 MB.
+Total: 5.363100 ms (FindLiveObjects: 0.446300 ms CreateObjectMapping: 0.184500 ms MarkObjects: 4.197300 ms  DeleteObjects: 0.532800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 16606.810628 seconds.
+  path: Assets/Mappa/Customizable Skybox/Model/Low Poly Island.fbx
+  artifactKey: Guid(9e1cb89bae143d046bb9dba32b57bed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/Customizable Skybox/Model/Low Poly Island.fbx using Guid(9e1cb89bae143d046bb9dba32b57bed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef0a1775d5155ce9bd62841008b0670') in 0.695345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.131599 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Flask.fbx
+  artifactKey: Guid(9ec750fc4cf747f4fbc15d8898b84ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Flask.fbx using Guid(9ec750fc4cf747f4fbc15d8898b84ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af3492aee87ff9a5609672c1611b7552') in 0.042406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.284683 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/FloorTIle.fbx
+  artifactKey: Guid(20f2ea214cfe0d748b1b4b8ad965af69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/FloorTIle.fbx using Guid(20f2ea214cfe0d748b1b4b8ad965af69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb909f773e41fa22a50b1e58ef5809c2') in 0.028528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/FloorTIle_col.fbx
+  artifactKey: Guid(9554d4dacd26c8448bb4f3f907ff1fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/FloorTIle_col.fbx using Guid(9554d4dacd26c8448bb4f3f907ff1fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd60455f881a211b300682ec578fbc0f5') in 0.060930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.358956 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/FloorTIle_col.001.fbx
+  artifactKey: Guid(8153c5e1843182a4fa01e42626ebf323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/FloorTIle_col.001.fbx using Guid(8153c5e1843182a4fa01e42626ebf323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e55c669d809296379b301b6f553f04af') in 0.059191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.707595 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Fork.fbx
+  artifactKey: Guid(053045d0926c27f46b1a625fbb577e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Fork.fbx using Guid(053045d0926c27f46b1a625fbb577e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7fe611e9c9053736bbebd021d32d54e') in 0.063289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.377774 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Goblet.fbx
+  artifactKey: Guid(70f89a7157d12f24faa9cc7887dea3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Goblet.fbx using Guid(70f89a7157d12f24faa9cc7887dea3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a467abef9eff8affc433e7b3f9e873') in 0.061799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.866811 seconds.
+  path: Assets/Mappa/SimpleNaturePack/Models/Ground_01.fbx
+  artifactKey: Guid(d4ad967689295ba4eaf8baeaebc8721b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleNaturePack/Models/Ground_01.fbx using Guid(d4ad967689295ba4eaf8baeaebc8721b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a95e78220c2dadcf0f90699176ea1845') in 0.058641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.382082 seconds.
+  path: Assets/Mappa/SimpleNaturePack/Models/Ground_02.fbx
+  artifactKey: Guid(57d3eed6d2253d24994d5ad37e00aedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleNaturePack/Models/Ground_02.fbx using Guid(57d3eed6d2253d24994d5ad37e00aedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab8ee7d51577c7cab2716336f05ceae7') in 0.030490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.238160 seconds.
+  path: Assets/Mappa/SimpleNaturePack/Models/Ground_03.fbx
+  artifactKey: Guid(661464e19c087564badb2bf5230c842c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleNaturePack/Models/Ground_03.fbx using Guid(661464e19c087564badb2bf5230c842c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3f709f7c865f39a5f6d48714e4c79c4') in 0.022186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.253010 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_Curve_Long.fbx
+  artifactKey: Guid(110316f0afd06df48ac55aee949522bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_Curve_Long.fbx using Guid(110316f0afd06df48ac55aee949522bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3989389826fbbfaf5717bf866bb4fb1b') in 0.022688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.468945 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_Curve_Short.fbx
+  artifactKey: Guid(d8f4c818caaf9f945a40b3460c1818ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_Curve_Short.fbx using Guid(d8f4c818caaf9f945a40b3460c1818ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e51234596205e2134a734a95e0ba4ab') in 0.024948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.290869 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_Double.fbx
+  artifactKey: Guid(17a224d1aeb5e59439a4ddda2f1ef3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_Double.fbx using Guid(17a224d1aeb5e59439a4ddda2f1ef3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5488853625a8fefe75ead164406f46f4') in 0.036316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.334552 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_Full.fbx
+  artifactKey: Guid(181df0eb8277cec4caa4a9a66c7221de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_Full.fbx using Guid(181df0eb8277cec4caa4a9a66c7221de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52256f8d394513dcdb45bf5610dfba93') in 0.035622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.136896 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_Half.fbx
+  artifactKey: Guid(4c61b71bce2758d408c78daf658f7123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_Half.fbx using Guid(4c61b71bce2758d408c78daf658f7123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9af2fbc9ed5935b40310d1ed080154c2') in 0.024278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.527728 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_Quarter.fbx
+  artifactKey: Guid(1b81800f0a37d564196769a09fb61d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_Quarter.fbx using Guid(1b81800f0a37d564196769a09fb61d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8866c1eea0db1e15524ac232814e8b4') in 0.043713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.139087 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_TCrossing.fbx
+  artifactKey: Guid(d68104bcc3c497440a2cb8a67c7295ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_TCrossing.fbx using Guid(d68104bcc3c497440a2cb8a67c7295ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b56ed0b79b8ef421319e965a7bc2de9') in 0.026193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.605817 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_toStaircase_Bottom.fbx
+  artifactKey: Guid(d1cec78074a250041adbcfd9616b1a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Hallway_toStaircase_Bottom.fbx using Guid(d1cec78074a250041adbcfd9616b1a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47edea3e892e9c45594cec6e87fe9a3') in 0.038097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.070718 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Hallway_toStaircase_Top_col.fbx
+  artifactKey: Guid(f5bb8cc8eea4aaf42b2a73db8b3fb1ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Hallway_toStaircase_Top_col.fbx using Guid(f5bb8cc8eea4aaf42b2a73db8b3fb1ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6307851c2efe1d6e5f36b3c1ad5bd609') in 0.060339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.936013 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Holefix_Double.fbx
+  artifactKey: Guid(07823489a1d67a240945aa421b0dde17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Holefix_Double.fbx using Guid(07823489a1d67a240945aa421b0dde17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3231470b4408bf406edad825941624a') in 0.038689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.136681 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/HoleFix_Half.fbx
+  artifactKey: Guid(732bac3878c7504449205c7bffbc0d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/HoleFix_Half.fbx using Guid(732bac3878c7504449205c7bffbc0d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '194ac840a85f390e901eb522c18e89b5') in 0.021616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.219973 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Holefix_Single.fbx
+  artifactKey: Guid(6f299c6c72875e64ba2b937acdb19287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Holefix_Single.fbx using Guid(6f299c6c72875e64ba2b937acdb19287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce74568b12a879fba88326380d6538f6') in 0.026943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.487555 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Inkwell.fbx
+  artifactKey: Guid(61beba42400fa6940aad007d84cba284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Inkwell.fbx using Guid(61beba42400fa6940aad007d84cba284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc7126c35bfa8d9353b40c62c66591b0') in 0.050937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.259243 seconds.
+  path: Assets/Mappa/SimpleLowPolyNature/Models/Ivy1.fbx
+  artifactKey: Guid(f5c94a9017473824b95fdbc555580349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleLowPolyNature/Models/Ivy1.fbx using Guid(f5c94a9017473824b95fdbc555580349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c160535a6b0570dad98dd69222ce04c5') in 0.023079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.134033 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Ivy_Branch.fbx
+  artifactKey: Guid(72c499c22acd8d242bb45e122ec43fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Ivy_Branch.fbx using Guid(72c499c22acd8d242bb45e122ec43fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57f0154745bcdaa0ba8f1d8988caf01a') in 0.023689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.465002 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Jail_Door_Left.fbx
+  artifactKey: Guid(c9b3b22dd59f1954ab57f0d413c9ac6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Jail_Door_Left.fbx using Guid(c9b3b22dd59f1954ab57f0d413c9ac6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4762ac4b1a37b87119ffad00b5d6874e') in 0.031304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.174687 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Jail_Door_Right.fbx
+  artifactKey: Guid(7dc17e9f3a67d6e419d0c8c298690c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Jail_Door_Right.fbx using Guid(7dc17e9f3a67d6e419d0c8c298690c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b836151aa96a599d2d44fffb4adfc62') in 0.023315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.321615 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Jail_Gate.fbx
+  artifactKey: Guid(9d15bb47597152f4b93bdcb9d0f4ff2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Jail_Gate.fbx using Guid(9d15bb47597152f4b93bdcb9d0f4ff2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b2d0d51ca69a7f87d6e66fee852b551') in 0.025565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.393427 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Jail_Wall.fbx
+  artifactKey: Guid(dc9f3484ce4f67f419753556f57cae0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Jail_Wall.fbx using Guid(dc9f3484ce4f67f419753556f57cae0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2338703628fe951cd60c5bb2d4d549b9') in 0.022284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.273245 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Jail_Wall_broken_col.fbx
+  artifactKey: Guid(966992fe649ab084d9f19cef3709ea0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Jail_Wall_broken_col.fbx using Guid(966992fe649ab084d9f19cef3709ea0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53da016a2f53318d91f7545a029778a2') in 0.030644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.138338 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Jar_Big.fbx
+  artifactKey: Guid(b7e1480ce257ecf43ab1570081afc3c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Jar_Big.fbx using Guid(b7e1480ce257ecf43ab1570081afc3c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529b709072aaa61e3679d7244c6c0c43') in 0.028403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.143266 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Jar_Full.fbx
+  artifactKey: Guid(c0469cdae04acd04a848fec5a569effb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Jar_Full.fbx using Guid(c0469cdae04acd04a848fec5a569effb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e84c8c7a7fa86979fe51c7aec3e10be') in 0.025606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.479524 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Key_Golden.fbx
+  artifactKey: Guid(ba63f90d8844c4f4995e182266e20c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Key_Golden.fbx using Guid(ba63f90d8844c4f4995e182266e20c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce58202cdc121eb6a245ebd28ad5f8a6') in 0.065952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.117118 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Key_Rusty.fbx
+  artifactKey: Guid(4009cba106d20f748ab650a274328adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Key_Rusty.fbx using Guid(4009cba106d20f748ab650a274328adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf09a6a47dd9e979842ed2edc5ffe763') in 0.023057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.187878 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Knife.fbx
+  artifactKey: Guid(122018831a92b5f49a92b2094a4062d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Knife.fbx using Guid(122018831a92b5f49a92b2094a4062d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc64ff48710a140818c62480e52b9877') in 0.062596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.702776 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Lock.fbx
+  artifactKey: Guid(c5ad9d55f3f826e44ad8d392fc6b9b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Lock.fbx using Guid(c5ad9d55f3f826e44ad8d392fc6b9b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dad9c2b58879e29191bda837a9491f1') in 0.028856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.135385 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Meat.fbx
+  artifactKey: Guid(fd8f5bc11b0289948b50da67132110ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Meat.fbx using Guid(fd8f5bc11b0289948b50da67132110ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '431c708f3edc61c19b2c2753aa8b85f0') in 0.058353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.520894 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Mug.fbx
+  artifactKey: Guid(882cf729cef5a2e4ab2a057cb8072a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Mug.fbx using Guid(882cf729cef5a2e4ab2a057cb8072a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4edc38eea0e588d5ca27941a8a5a07eb') in 0.022950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.216824 seconds.
+  path: Assets/Mappa/SimpleLowPolyNature/Models/Mushroom1.fbx
+  artifactKey: Guid(2c7af3c4dc7207a43b3b8baeed6d5ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleLowPolyNature/Models/Mushroom1.fbx using Guid(2c7af3c4dc7207a43b3b8baeed6d5ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f66e135338da435dcf9796be081c548') in 0.034912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.184677 seconds.
+  path: Assets/Mappa/SimpleNaturePack/Models/Mushroom_01.fbx
+  artifactKey: Guid(d062f5c56ffb55c4f832432ada269abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleNaturePack/Models/Mushroom_01.fbx using Guid(d062f5c56ffb55c4f832432ada269abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1494377d7d24eb296fc9b5415a1717d9') in 0.021875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.134960 seconds.
+  path: Assets/Mappa/SimpleLowPolyNature/Models/MushroomLarge.fbx
+  artifactKey: Guid(f5e25367993acbf438c5aeffe76fa5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleLowPolyNature/Models/MushroomLarge.fbx using Guid(f5e25367993acbf438c5aeffe76fa5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66dea9a8af988330ec87a58701c91c7b') in 0.020524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.356152 seconds.
+  path: Assets/Mappa/SimpleLowPolyNature/Models/Paddle.fbx
+  artifactKey: Guid(b62293594e3695c48b305cd99fdd72e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleLowPolyNature/Models/Paddle.fbx using Guid(b62293594e3695c48b305cd99fdd72e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89c9071a5d463158ad4271fb863f8279') in 0.031356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.314335 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Pillar_col.fbx
+  artifactKey: Guid(bf11c7c665964f64f932f9720db2633f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Pillar_col.fbx using Guid(bf11c7c665964f64f932f9720db2633f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9887de8e3ef1f62331f425cb3a579a41') in 0.054806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.767037 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Plant_Root.fbx
+  artifactKey: Guid(88572447e83b2514ab33f918fad7afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Plant_Root.fbx using Guid(88572447e83b2514ab33f918fad7afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd26846941b0aad9725b79bea38196143') in 0.031870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.223279 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Plate_Small.fbx
+  artifactKey: Guid(69a7edade3532ac41a5500bd7987aaec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Plate_Small.fbx using Guid(69a7edade3532ac41a5500bd7987aaec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38cf94ff2238e4bfb3855dd7814fea29') in 0.030010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.138832 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Portcullis_Metal_col.fbx
+  artifactKey: Guid(825310f923447084fb8cd4d1729dc0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Portcullis_Metal_col.fbx using Guid(825310f923447084fb8cd4d1729dc0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4784e9d780f89c4506cff17a600b0d1c') in 0.022508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.374724 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Portcullis_Wood_col.fbx
+  artifactKey: Guid(d6c5272c24aac2241b77698daa7a38a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Colliders/Tiles/Portcullis_Wood_col.fbx using Guid(d6c5272c24aac2241b77698daa7a38a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85eee56be5553dc1c27285ddbcacf4c') in 0.022038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.084379 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Potato.fbx
+  artifactKey: Guid(0f7a0546cdceb1f4d8df8c7fb52f2523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Potato.fbx using Guid(0f7a0546cdceb1f4d8df8c7fb52f2523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a6ea753ba26ee3067059234f0f1f4e') in 0.048076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.848293 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Potion_Green.fbx
+  artifactKey: Guid(7e1b98bbe17b88644aea6625cb61b2c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Potion_Green.fbx using Guid(7e1b98bbe17b88644aea6625cb61b2c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022cf9f6173817d1f7e111fca7e9d8ed') in 0.032244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.068612 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Quill.fbx
+  artifactKey: Guid(2e41661bbaacdea4dbb88e6b20ca88d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Quill.fbx using Guid(2e41661bbaacdea4dbb88e6b20ca88d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '285ac433d981f8401cb1171ec5044964') in 0.065795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.286893 seconds.
+  path: Assets/Mappa/SimpleLowPolyNature/Models/Rock2.fbx
+  artifactKey: Guid(ff14cd0f332a7e04baab73f8c39b3918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleLowPolyNature/Models/Rock2.fbx using Guid(ff14cd0f332a7e04baab73f8c39b3918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97fe1580660ff21b913518783ca10423') in 0.022459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.336627 seconds.
+  path: Assets/Mappa/SimpleLowPolyNature/Models/Rock4.fbx
+  artifactKey: Guid(4c3cbb765dc1a514e95c24a788dcf485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleLowPolyNature/Models/Rock4.fbx using Guid(4c3cbb765dc1a514e95c24a788dcf485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d5072a4921d1b38ca2d5e99e3f8efa1') in 0.020814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.147757 seconds.
+  path: Assets/Mappa/SimpleLowPolyNature/Models/Rock6.fbx
+  artifactKey: Guid(4cfe42c97b386f64db12ed55713310df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleLowPolyNature/Models/Rock6.fbx using Guid(4cfe42c97b386f64db12ed55713310df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b53ce4ee6e043a868eda9137fd6369b') in 0.022355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.134744 seconds.
+  path: Assets/Mappa/SimpleLowPolyNature/Models/Rock8.fbx
+  artifactKey: Guid(432dbfb06e4b27c4685dd4b73d12867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleLowPolyNature/Models/Rock8.fbx using Guid(432dbfb06e4b27c4685dd4b73d12867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7d64a54f192b00b05b6d607aeb51e5') in 0.020773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.434971 seconds.
+  path: Assets/Mappa/SimpleLowPolyNature/Models/Rock10.fbx
+  artifactKey: Guid(d288b039beecd234b907927b55a30107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleLowPolyNature/Models/Rock10.fbx using Guid(d288b039beecd234b907927b55a30107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26fad212afda74d2f1f514f566de734b') in 0.028224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.389122 seconds.
+  path: Assets/Mappa/SimpleLowPolyNature/Models/Rock12.fbx
+  artifactKey: Guid(43ee757e6d4e733469e710178cf7e322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleLowPolyNature/Models/Rock12.fbx using Guid(43ee757e6d4e733469e710178cf7e322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dfab5c8ff747231fd5e7817b3f6150f') in 0.031371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.384817 seconds.
+  path: Assets/Mappa/SimpleNaturePack/Models/Rock_02.fbx
+  artifactKey: Guid(3a775dc2c1a334b45a5667a56fe92c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleNaturePack/Models/Rock_02.fbx using Guid(3a775dc2c1a334b45a5667a56fe92c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '920279a9b41bfe0736f52a0cae0daa2e') in 0.026384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.524443 seconds.
+  path: Assets/Mappa/SimpleNaturePack/Models/Rock_03.fbx
+  artifactKey: Guid(14125b656fb71fd4d9d65bfe344107ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleNaturePack/Models/Rock_03.fbx using Guid(14125b656fb71fd4d9d65bfe344107ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a67f2212597489bcdb78345e1aecea7') in 0.019543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.487069 seconds.
+  path: Assets/Mappa/SimpleNaturePack/Models/Rock_05.fbx
+  artifactKey: Guid(fa2e670bb3648a84b9df8d16da25b85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleNaturePack/Models/Rock_05.fbx using Guid(fa2e670bb3648a84b9df8d16da25b85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe48104e1666734537b8880d744a99a') in 0.028020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.369868 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Scroll_Big.fbx
+  artifactKey: Guid(1da1c0220f154654db607bfbdae2c3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Scroll_Big.fbx using Guid(1da1c0220f154654db607bfbdae2c3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2edbc2ddee1121cfcedd707d6517f02b') in 0.033860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.131029 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Scroll_Open.fbx
+  artifactKey: Guid(ac8910006b2a62947a9342d2b6ddfa2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Scroll_Open.fbx using Guid(ac8910006b2a62947a9342d2b6ddfa2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20194f6d75513ad71036e2310a0d05d5') in 0.021176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.768433 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Scroll_Stack.fbx
+  artifactKey: Guid(0f9577e3d59f81a45a567d9e256f092c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Scroll_Stack.fbx using Guid(0f9577e3d59f81a45a567d9e256f092c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0662a6872cc2db592eb8dc36b42d8590') in 0.033371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.358187 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Shelf_Wall.fbx
+  artifactKey: Guid(2635c774666268e47b7d059c5f4ebbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Shelf_Wall.fbx using Guid(2635c774666268e47b7d059c5f4ebbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d739de1bb24906e203dbb7aca2fbff1') in 0.032841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.203486 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Skull.fbx
+  artifactKey: Guid(34636936646bab64fb61023e7f3410ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Skull.fbx using Guid(34636936646bab64fb61023e7f3410ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8ccf7b5d2ce81e449328a4caa27021') in 0.032307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.476004 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Spoon.fbx
+  artifactKey: Guid(0b8129244588a614b874c1ef934695a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Spoon.fbx using Guid(0b8129244588a614b874c1ef934695a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6697061ff3cf6260438770ca42e2103b') in 0.022220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.426677 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Staircase.fbx
+  artifactKey: Guid(4886ccf4840cd474a9e74a3f8898a3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Staircase.fbx using Guid(4886ccf4840cd474a9e74a3f8898a3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e0d594f19f238f83f3dc8d548fc46c4') in 0.047772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.118365 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Stairs_High.fbx
+  artifactKey: Guid(bfcfcf03589499346b24e110b74a3822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Stairs_High.fbx using Guid(bfcfcf03589499346b24e110b74a3822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8663bc97c438cf28a50c575a3d2be9e') in 0.025547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.335523 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Stairs_Low.fbx
+  artifactKey: Guid(49fcc1a1bf581d4489a835b31d909c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Stairs_Low.fbx using Guid(49fcc1a1bf581d4489a835b31d909c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77aaa9a8360cf263adbfa8bbefdabe62') in 0.034809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.542835 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Stairs_Platform.fbx
+  artifactKey: Guid(99e55592c6d88984cb6b00f2455032dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Stairs_Platform.fbx using Guid(99e55592c6d88984cb6b00f2455032dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b029e3647a1e675b5078d9c540aa6bd') in 0.034358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.479584 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Steps_Small.fbx
+  artifactKey: Guid(57a472d517a1c0940938e58eef4271cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Tiles/Steps_Small.fbx using Guid(57a472d517a1c0940938e58eef4271cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00a6111053f991140ab4a50a6944955') in 0.032098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.496363 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Stool_round.fbx
+  artifactKey: Guid(2fecc0ac19ff3de449e712fce3335198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Stool_round.fbx using Guid(2fecc0ac19ff3de449e712fce3335198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '318561114d5d7e203ceed8587a74e2c2') in 0.033029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.413270 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Switch_Base.fbx
+  artifactKey: Guid(e8de3c78bf8d07f4db67b03c1597a3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Switch_Base.fbx using Guid(e8de3c78bf8d07f4db67b03c1597a3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19a5c4ea90058e8f60b9e76a9924ae48') in 0.030252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.332287 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Switch_Lever.fbx
+  artifactKey: Guid(2155eacbc07fc2346859c2f4ff50e91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Switch_Lever.fbx using Guid(2155eacbc07fc2346859c2f4ff50e91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712023679a349843af0d091cf24080d8') in 0.021753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.144694 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/SwitchSecret_Button.fbx
+  artifactKey: Guid(b3ac41660e62c834b85393751870f565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/SwitchSecret_Button.fbx using Guid(b3ac41660e62c834b85393751870f565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0920f7bb84efc10ac25074ce89bddfab') in 0.025828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.708018 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Table_Big.fbx
+  artifactKey: Guid(f82b9f16845dc9b419151a2519c758f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Table_Big.fbx using Guid(f82b9f16845dc9b419151a2519c758f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cac43981ed6844eabec80c754503ca2') in 0.067379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.098958 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Table_Small.fbx
+  artifactKey: Guid(5cb6753c16611884384f3beaff2906bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Table_Small.fbx using Guid(5cb6753c16611884384f3beaff2906bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1959e020b2bcc87a8591a894aeef6ae') in 0.028974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.316729 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Throne.fbx
+  artifactKey: Guid(5733f9122e42eac43a5c2fe88ce50d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/Throne.fbx using Guid(5733f9122e42eac43a5c2fe88ce50d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d24f819148b58bbc502a55541878974') in 0.026351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.615771 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Tree_Branch.fbx
+  artifactKey: Guid(294ff253ed23b9d478d6cb365d6faf6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Clutter/Tree_Branch.fbx using Guid(294ff253ed23b9d478d6cb365d6faf6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b30ed93b8c4d36e817d06f395f37c54') in 0.067788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.113047 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/WeaponRack_Big.fbx
+  artifactKey: Guid(5a3630cf5f3e0b7489e748180d9a081a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/WeaponRack_Big.fbx using Guid(5a3630cf5f3e0b7489e748180d9a081a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20c39e4c724ae281f6e0c9d4bcbe822b') in 0.070822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.444186 seconds.
+  path: Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/WeaponRack_Small.fbx
+  artifactKey: Guid(43dd9523f76f5d4448be24e15c4a347c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/BrokenVector/LowPolyDungeon/Models/Furniture/WeaponRack_Small.fbx using Guid(43dd9523f76f5d4448be24e15c4a347c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487a9a5f0592a2cf7c0327d79f5c4b9e') in 0.031555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.350908 seconds.
+  path: Assets/Mappa/SimpleLowPolyNature/Models/WoodBoat.fbx
+  artifactKey: Guid(eab23c9c4322e3e48842315d6748b1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/SimpleLowPolyNature/Models/WoodBoat.fbx using Guid(eab23c9c4322e3e48842315d6748b1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaa335f013991511c4a94c0e701e1d90') in 0.058442 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005035 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.845 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1847ms)
+		BeginReloadAssembly (411ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (162ms)
+		EndReloadAssembly (1261ms)
+			LoadAssemblies (199ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (445ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (548ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (381ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3156 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (1.3 MB). Loaded Objects now: 3730.
+Memory consumption went from 210.9 MB to 209.6 MB.
+Total: 7.370300 ms (FindLiveObjects: 0.380300 ms CreateObjectMapping: 0.119700 ms MarkObjects: 6.163200 ms  DeleteObjects: 0.705500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2259.660728 seconds.
+  path: Assets/Mappa/Handpainted_Grass_and_Ground_Textures/Demo/New Terrain.asset
+  artifactKey: Guid(a4503dc03081cd84aa03d1a3fb0dc910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/Handpainted_Grass_and_Ground_Textures/Demo/New Terrain.asset using Guid(a4503dc03081cd84aa03d1a3fb0dc910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c039f4a956a27445c1992694fa1da7e4') in 0.553652 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007166 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.728 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2730ms)
+		BeginReloadAssembly (475ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (19ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (166ms)
+		EndReloadAssembly (1996ms)
+			LoadAssemblies (254ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (665ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (105ms)
+			SetupLoadedEditorAssemblies (844ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (161ms)
+				ProcessInitializeOnLoadAttributes (590ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (25ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3156 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (1.3 MB). Loaded Objects now: 3735.
+Memory consumption went from 211.0 MB to 209.7 MB.
+Total: 7.416000 ms (FindLiveObjects: 0.460500 ms CreateObjectMapping: 0.162100 ms MarkObjects: 6.247700 ms  DeleteObjects: 0.543600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1640.022997 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d6dae8098298f53866af261d686620') in 0.059546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 148.065829 seconds.
+  path: Assets/Scene_matteo.unity
+  artifactKey: Guid(1f61a4d55eab5d5439340bd4d424ccdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scene_matteo.unity using Guid(1f61a4d55eab5d5439340bd4d424ccdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3726d343671d4ed561421d16bda460b7') in 0.004882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.776738 seconds.
+  path: Assets/Scene_matteo.unity
+  artifactKey: Guid(1f61a4d55eab5d5439340bd4d424ccdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scene_matteo.unity using Guid(1f61a4d55eab5d5439340bd4d424ccdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5037e6ec4d1b0877bc59b7a1dcc14504') in 0.003995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.616141 seconds.
+  path: Assets/TextMesh Pro/Sprites
+  artifactKey: Guid(d0603b6d5186471b96c778c3949c7ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites using Guid(d0603b6d5186471b96c778c3949c7ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4422417d3661f4c22446971b0764e282') in 0.040903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.060342 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd694a092e6f9a2258da5d6f098c8f2c8') in 0.141960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.896804 seconds.
+  path: Assets/TextMesh Pro/Shaders
+  artifactKey: Guid(e9f693669af91aa45ad615fc681ed29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Shaders using Guid(e9f693669af91aa45ad615fc681ed29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c1ee854f4c9db2f287c0defc2b21702') in 0.004561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.020884 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro.cginc
+  artifactKey: Guid(407bc68d299748449bbf7f48ee690f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Shaders/TMPro.cginc using Guid(407bc68d299748449bbf7f48ee690f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7395dd04a5e9f7329f6d00895a1b3f59') in 0.021907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc
+  artifactKey: Guid(d930090c0cd643c7b55f19a38538c162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc using Guid(d930090c0cd643c7b55f19a38538c162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b115a6d707a6d062181fb1f47f2d772') in 0.010005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc
+  artifactKey: Guid(3997e2241185407d80309a82f9148466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc using Guid(3997e2241185407d80309a82f9148466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a571301edaf3ef31f347c8859d10fb7') in 0.006704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.797623 seconds.
+  path: Assets/TextMesh Pro/Resources
+  artifactKey: Guid(243e06394e614e5d99fab26083b707fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources using Guid(243e06394e614e5d99fab26083b707fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b25fcc2b6957111a9e254e1bce62b86') in 0.040758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001043 seconds.
+  path: Assets/TextMesh Pro/Resources/TMP Settings.asset
+  artifactKey: Guid(3f5b5dff67a942289a9defa416b206f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/TMP Settings.asset using Guid(3f5b5dff67a942289a9defa416b206f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb606ad70dabfa70adaa1be5ff45163') in 0.100798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.966500 seconds.
+  path: Assets/TextMesh Pro/Fonts
+  artifactKey: Guid(6ab70aee4d56447429c680537fbf93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts using Guid(6ab70aee4d56447429c680537fbf93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cbcf11b9c0db8e93a500315a7744f16') in 0.039723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e85d55384b22641579099d0f1ce7e8') in 0.150350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.617490 seconds.
+  path: Assets/TextMesh Pro/Documentation
+  artifactKey: Guid(8e7e8f5a82a3a134e91c54efd2274ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Documentation using Guid(8e7e8f5a82a3a134e91c54efd2274ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '365e95d1c1490fa81b8510ec77c394a2') in 0.040162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.200942 seconds.
+  path: Assets/Mappa/Terrain
+  artifactKey: Guid(5ad1cfddd9e97774584eee1fb6c6600b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/Terrain using Guid(5ad1cfddd9e97774584eee1fb6c6600b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec55ec1edc188fa9bbc7073661c4b09') in 0.004547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.619547 seconds.
+  path: Assets/Mappa/Scripts
+  artifactKey: Guid(22ad4783f3576ee43bcdc5c1fa7271b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/Scripts using Guid(22ad4783f3576ee43bcdc5c1fa7271b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a54fbc7c7b600711ac35291b491f106') in 0.005355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.095586 seconds.
+  path: Assets/Mappa/Scenes
+  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc172811d573b296104adb4d2728db37') in 0.040851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.395696 seconds.
+  path: Assets/Mappa/LowPolyDungeonsLite
+  artifactKey: Guid(7c2863a75c9cff54aae00863f942d1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/LowPolyDungeonsLite using Guid(7c2863a75c9cff54aae00863f942d1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd18de3ec41dbd288983bb89f2865c719') in 0.006858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.413115 seconds.
+  path: Assets/Mappa/Tree_Textures
+  artifactKey: Guid(48ca6f769d7452340939ff9d0abaa086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/Tree_Textures using Guid(48ca6f769d7452340939ff9d0abaa086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9c5cdb04cb71d1bd026f0a956eabbe') in 0.006474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.079558 seconds.
+  path: Assets/Mappa/Tree_Textures/diffuse.png
+  artifactKey: Guid(13283854e5ddf7445a73d856be205b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/Tree_Textures/diffuse.png using Guid(13283854e5ddf7445a73d856be205b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '976fbb5fe0b6820831062c1413972935') in 0.044869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Mappa/Tree_Textures/shadow.png
+  artifactKey: Guid(c6ba37877c11df4499d82fa137cf6aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mappa/Tree_Textures/shadow.png using Guid(c6ba37877c11df4499d82fa137cf6aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd039f9a98adf7ea579de8bbc34cf8cb') in 0.045130 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008502 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.551 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2553ms)
+		BeginReloadAssembly (386ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (79ms)
+		EndReloadAssembly (1908ms)
+			LoadAssemblies (289ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (685ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (800ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (157ms)
+				ProcessInitializeOnLoadAttributes (550ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (26ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3156 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (1.3 MB). Loaded Objects now: 3744.
+Memory consumption went from 211.2 MB to 209.9 MB.
+Total: 10.262300 ms (FindLiveObjects: 0.674100 ms CreateObjectMapping: 0.375700 ms MarkObjects: 8.425400 ms  DeleteObjects: 0.780700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006693 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.888 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2890ms)
+		BeginReloadAssembly (385ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (81ms)
+		EndReloadAssembly (2237ms)
+			LoadAssemblies (266ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (861ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (110ms)
+			SetupLoadedEditorAssemblies (903ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (162ms)
+				ProcessInitializeOnLoadAttributes (636ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+				AfterProcessingInitializeOnLoad (25ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3156 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (1.3 MB). Loaded Objects now: 3747.
+Memory consumption went from 211.2 MB to 209.9 MB.
+Total: 8.230200 ms (FindLiveObjects: 0.586700 ms CreateObjectMapping: 0.479700 ms MarkObjects: 6.153100 ms  DeleteObjects: 1.008500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 820.758586 seconds.
+  path: Assets/enemy/C&C_Pack/Goblin_rouge/Goblin_ro_amim.controller
+  artifactKey: Guid(83107c796bf2ec348afb5e040bea51c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/enemy/C&C_Pack/Goblin_rouge/Goblin_ro_amim.controller using Guid(83107c796bf2ec348afb5e040bea51c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '002c7a94652790d639077a53e1dda85c') in 0.096105 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008506 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.517 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2519ms)
+		BeginReloadAssembly (354ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (79ms)
+		EndReloadAssembly (1942ms)
+			LoadAssemblies (243ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (679ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (106ms)
+			SetupLoadedEditorAssemblies (843ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (152ms)
+				ProcessInitializeOnLoadAttributes (591ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (30ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3156 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (1.3 MB). Loaded Objects now: 3750.
+Memory consumption went from 211.2 MB to 209.9 MB.
+Total: 8.622700 ms (FindLiveObjects: 0.641000 ms CreateObjectMapping: 0.607400 ms MarkObjects: 6.421800 ms  DeleteObjects: 0.949700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 164.688021 seconds.
+  path: Assets/enemy/generatore.mat
+  artifactKey: Guid(010f328e409ad6c42bbc0587c8c2bf31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/enemy/generatore.mat using Guid(010f328e409ad6c42bbc0587c8c2bf31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec583e1d6c8589bc2012c430ad871b6') in 0.221710 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006116 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.458 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2461ms)
+		BeginReloadAssembly (360ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (107ms)
+		EndReloadAssembly (1856ms)
+			LoadAssemblies (226ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (607ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (108ms)
+			SetupLoadedEditorAssemblies (813ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (143ms)
+				ProcessInitializeOnLoadAttributes (583ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (25ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3156 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (1.3 MB). Loaded Objects now: 3753.
+Memory consumption went from 211.2 MB to 209.9 MB.
+Total: 10.147100 ms (FindLiveObjects: 0.696700 ms CreateObjectMapping: 0.659400 ms MarkObjects: 7.851000 ms  DeleteObjects: 0.936200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
