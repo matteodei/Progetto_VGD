@@ -351,6 +351,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/enemy/EnemyChase.cs"
 "Assets/enemy/EnemyGeneration.cs"
+"Assets/enemy/EnemyHealt.cs"
 "Assets/Mappa/BrokenVector/LowPolyDungeon/Demo Scenes/MouseCamLook.cs"
 "Assets/Mappa/BrokenVector/LowPolyDungeon/Demo Scenes/PlayerMovement.cs"
 "Assets/Mappa/BrokenVector/LowPolyDungeon/Demo Scenes/ScreenshotMaker.cs"
