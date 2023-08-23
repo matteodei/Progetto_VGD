@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public Transform cameraTransform;
     private float rotation = 0f;
 
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -47,5 +49,20 @@ public class PlayerController : MonoBehaviour
 
         cameraTransform.localRotation = Quaternion.Euler(rotation, 0f, 0f);
         transform.Rotate(Vector3.up * mouseX);
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
+        }
+
+
+       
+
+
     }
+
+
+   
 }

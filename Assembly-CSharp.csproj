@@ -59,6 +59,7 @@
     <Compile Include="Assets\Mappa\BrokenVector\LowPolyDungeon\Demo Scenes\ScreenshotMaker.cs" />
     <Compile Include="Assets\Mappa\BrokenVector\LowPolyDungeon\Demo Scenes\PlayerMovement.cs" />
     <Compile Include="Assets\PlayerShooting\Scripts\Weapon.cs" />
+    <Compile Include="Assets\Mappa\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\Mappa\BrokenVector\LowPolyDungeon\Demo Scenes\MouseCamLook.cs" />
     <Compile Include="Assets\PlayerShooting\Scripts\WeaponManager.cs" />
     <Compile Include="Assets\Mappa\Scripts\PlayerController.cs" />
