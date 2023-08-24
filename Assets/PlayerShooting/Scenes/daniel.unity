@@ -785,6 +785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1588785505}
+  speed: 20
   mouseSens: 200
   cameraTransform: {fileID: 1293227352}
   jumpSpeed: 5
@@ -1501,14 +1502,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1231619558, guid: 2349aa84883eccf479a2c41722fa3a07, type: 3}
-      propertyPath: resetSmooth
-      value: 11.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 1231619558, guid: 2349aa84883eccf479a2c41722fa3a07, type: 3}
-      propertyPath: kickbackForce
-      value: 0.075
-      objectReference: {fileID: 0}
     - target: {fileID: 3253317125375500579, guid: 2349aa84883eccf479a2c41722fa3a07, type: 3}
       propertyPath: m_RootOrder
       value: 3
