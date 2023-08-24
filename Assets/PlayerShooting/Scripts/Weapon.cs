@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 public class Weapon : MonoBehaviour
@@ -41,6 +42,7 @@ public class Weapon : MonoBehaviour
 
     private void Update()
     {
+        
         if (!_held) return;
 
         if(Input.GetKeyDown(KeyCode.R) && ! _reloading && _ammo < maxAmmo) 
@@ -50,6 +52,7 @@ public class Weapon : MonoBehaviour
 
         if ((tapable ? Input.GetMouseButtonDown(0) : Input.GetMouseButton(0)) && ! _shooting && ! _reloading) 
         {
+
             _ammo--;
             _ammoText.text = _ammo + " / " + maxAmmo;
             Shoot();
@@ -59,10 +62,25 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
-        if (!Physics.Raycast(_playerCamera.position, _playerCamera.forward, out var hitInfo, range)) return;
-        var rb = hitInfo.transform.GetComponent<Rigidbody>();
-        if (rb == null) return;
-        rb.velocity += _playerCamera.forward * hitForce;
+        if (Physics.Raycast(_playerCamera.position, _playerCamera.forward, out var hitInfo, range))
+        { //var rb = hitInfo.transform.GetComponent<Rigidbody>();
+            Debug.Log("Hai colpito un oggetto a una distanza di " + hitInfo.distance + " unità.");
+            //Debug.Log("Colpito");
+            //enemy.velocity += _playerCamera.forward * hitForce;
+            if (hitInfo.collider.CompareTag("Enemy"))
+            {
+                EnemyHealt enemy = hitInfo.collider.GetComponent<EnemyHealt>();
+                if (enemy != null)
+                {
+                    enemy.TakeDamage(25);
+                }
+            }
+        }
+        else
+        {
+            return;
+        }
+
 
     }
 

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 C:\Users\feder\OneDrive\Documenti\GitHub\Progetto_VGD
+=======
+D:\Users\carlo\OneDrive\Documenti\GitHub\Progetto_VGD
+>>>>>>> main_copy_carlo
