@@ -7,7 +7,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
-    private float speed = 20f;
+    public float speed = 20f;
     private Vector3 velocity;
     private float gravity = -9.81f;
     public float mouseSens = 100f;
