@@ -20,6 +20,8 @@ public class SettingsMenu : MonoBehaviour
     public bool menuScelta;
     public bool menuSetting;
 
+    private bool isPaused = false;
+
     public AudioMixer audioMixer;
 
     Resolution[] resolutions;
@@ -77,14 +79,17 @@ public class SettingsMenu : MonoBehaviour
                 Cursor.visible = true;
                 scelta();
                 menuScelta = true;
+                Pause();
             }
             else if (menuScelta == true && menuSetting == false)
             {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
+                
                 Gioco();
                 menuSetting = false;
                 menuScelta = false;
+                Pause();
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
             }
             else if (menuScelta == true && menuSetting == true)
             {
@@ -92,6 +97,7 @@ public class SettingsMenu : MonoBehaviour
                 scelta();
                 menuScelta = true;
                 menuSetting = false;
+                
             }
             
 
@@ -148,6 +154,8 @@ public class SettingsMenu : MonoBehaviour
 
     public void Gioco()
     {
+        
+
         testi.SetActive(false);
         fullscreen.SetActive(false);
         volume.SetActive(false);
@@ -158,7 +166,41 @@ public class SettingsMenu : MonoBehaviour
     }
 
 
+    public void Pause()
+    {
+        isPaused = !isPaused;
 
+        if (isPaused)
+        {
+            Time.timeScale = 0; // Mette in pausa il tempo di gioco
+        }
+        else
+        {
+            Time.timeScale = 1; // Ripristina il tempo di gioco normale
+        }
+    }
+
+    
+
+    public void Resume()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        testi.SetActive(false);
+        fullscreen.SetActive(false);
+        volume.SetActive(false);
+        grafica.SetActive(false);
+        risoluzione.SetActive(false);
+        bottoneSetting.SetActive(false);
+        bottoneResume.SetActive(false);
+
+        Pause();
+
+        menuScelta = false;
+
+
+    }
 
 }
  
