@@ -71,17 +71,22 @@ public class SettingsMenu : MonoBehaviour
             
             if (menuScelta == false && menuSetting == false)
             {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 scelta();
                 menuScelta = true;
             }
             else if (menuScelta == true && menuSetting == false)
             {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
                 Gioco();
                 menuSetting = false;
                 menuScelta = false;
             }
             else if (menuScelta == true && menuSetting == true)
             {
+
                 scelta();
                 menuScelta = true;
                 menuSetting = false;
