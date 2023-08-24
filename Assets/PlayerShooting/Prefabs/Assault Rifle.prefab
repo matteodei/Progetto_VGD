@@ -54,6 +54,9 @@ MonoBehaviour:
   hitForce: 3.5
   range: 20
   tapable: 0
+  kickbackForce: 0.075
+  resetSmooth: 11.75
+  scopePos: {x: -0.656, y: 0.055, z: -0.1}
   weaponGfxLayer: 6
   weaponGfxs:
   - {fileID: 8060838135715413982}

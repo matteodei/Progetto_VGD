@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public float mouseSens = 100f;
     public Transform cameraTransform;
     private float rotation = 0f;
+    public float jumpSpeed;
     
 
     
@@ -37,9 +38,9 @@ public class PlayerController : MonoBehaviour
 
         Vector3 move = transform.right * hzMove + transform.forward * vtMove;
 
-        if (controller.isGrounded && velocity.y < 0)
+        if (controller.isGrounded && velocity.y < 0 && Input.GetKeyDown(KeyCode.Space))
         {
-            velocity.y = -2f;
+            velocity.y = jumpSpeed;
         }
 
 

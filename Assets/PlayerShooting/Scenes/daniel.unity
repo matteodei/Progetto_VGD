@@ -355,15 +355,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3253317125375500579, guid: 2349aa84883eccf479a2c41722fa3a07, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3253317125375500579, guid: 2349aa84883eccf479a2c41722fa3a07, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3253317125375500579, guid: 2349aa84883eccf479a2c41722fa3a07, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3253317125375500579, guid: 2349aa84883eccf479a2c41722fa3a07, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -485,6 +485,38 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &674533926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 674533927}
+  m_Layer: 0
+  m_Name: Sway Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &674533927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674533926}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 784442864}
+  m_Father: {fileID: 1975378439}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &784442863
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,12 +540,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784442863}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.66, y: -0.2, z: 0.62}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.66, y: -0.20000005, z: 0.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1975378439}
+  m_Father: {fileID: 674533927}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1069534254
@@ -573,7 +605,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 70
   orthographic: 0
   orthographic size: 5
   m_Depth: 1
@@ -755,6 +787,7 @@ MonoBehaviour:
   controller: {fileID: 1588785505}
   mouseSens: 200
   cameraTransform: {fileID: 1293227352}
+  jumpSpeed: 5
 --- !u!143 &1588785505
 CharacterController:
   m_ObjectHideFlags: 0
@@ -841,7 +874,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 70
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1372,7 +1405,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 784442864}
+  - {fileID: 674533927}
   m_Father: {fileID: 1690002835}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1391,9 +1424,19 @@ MonoBehaviour:
   pickupRange: 2
   pickupRadius: 0.25
   weaponLayer: 3
+  swaySize: 0.004
+  swaySmooth: 25
+  defaultFov: 70
+  scopedFov: 40
+  fovSmooth: 11
   weaponHolder: {fileID: 784442864}
   playerCamera: {fileID: 1690002835}
+  swayHolder: {fileID: 674533927}
   ammoText: {fileID: 12391733}
+  playerCams:
+  - {fileID: 1069534256}
+  - {fileID: 1690002834}
+  crosshairImage: {fileID: 1758119951}
 --- !u!1001 &811162159897706424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1458,6 +1501,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1231619558, guid: 2349aa84883eccf479a2c41722fa3a07, type: 3}
+      propertyPath: resetSmooth
+      value: 11.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231619558, guid: 2349aa84883eccf479a2c41722fa3a07, type: 3}
+      propertyPath: kickbackForce
+      value: 0.075
+      objectReference: {fileID: 0}
     - target: {fileID: 3253317125375500579, guid: 2349aa84883eccf479a2c41722fa3a07, type: 3}
       propertyPath: m_RootOrder
       value: 3

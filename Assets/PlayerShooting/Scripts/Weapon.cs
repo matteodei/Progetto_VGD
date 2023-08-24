@@ -19,13 +19,18 @@ public class Weapon : MonoBehaviour
     public float hitForce;
     public float range;
     public bool tapable;
+    public float kickbackForce;
+    public float resetSmooth;
+    public Vector3 scopePos;
 
     //Data
     public int weaponGfxLayer; //No wall clipping
     public GameObject[] weaponGfxs;
     public Collider[] gfxColliders;
 
+    private float _rotationTime;
     private bool _held;
+    private bool _scoping;
     private bool _reloading;
     private bool _shooting;
     private int _ammo;
@@ -45,6 +50,17 @@ public class Weapon : MonoBehaviour
         
         if (!_held) return;
 
+        _scoping = Input.GetMouseButton(1) && !_reloading;
+        transform.localRotation = Quaternion.identity;
+        transform.localPosition = Vector3.Lerp(transform.localPosition, _scoping ? scopePos : Vector3.zero, resetSmooth * Time.deltaTime);
+
+        if (_reloading)
+        {
+            _rotationTime += Time.deltaTime;
+            var spinDelta = -(Mathf.Cos(Mathf.PI * (_rotationTime / reloadSpeed)) - 1f) / 2f;
+            transform.localRotation = Quaternion.Euler(new Vector3(spinDelta * 360f, 0, 0));
+        }
+
         if(Input.GetKeyDown(KeyCode.R) && ! _reloading && _ammo < maxAmmo) 
         {
             StartCoroutine(ReloadCooldown());
@@ -62,10 +78,11 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
+        transform.localPosition -= new Vector3(0, 0, kickbackForce);
         if (Physics.Raycast(_playerCamera.position, _playerCamera.forward, out var hitInfo, range))
         { //var rb = hitInfo.transform.GetComponent<Rigidbody>();
             Debug.Log("Hai colpito un oggetto a una distanza di " + hitInfo.distance + " unità.");
-            //Debug.Log("Colpito");
+            
             //enemy.velocity += _playerCamera.forward * hitForce;
             if (hitInfo.collider.CompareTag("Enemy"))
             {
@@ -95,6 +112,7 @@ public class Weapon : MonoBehaviour
     {
         _reloading = true;
         _ammoText.text = "RICARICANDO";
+        _rotationTime = 0f;
         yield return new WaitForSeconds(reloadSpeed);
         _ammo = maxAmmo;
         _ammoText.text = _ammo + " / " + maxAmmo;
@@ -119,6 +137,7 @@ public class Weapon : MonoBehaviour
         _playerCamera = playerCamera;
         _ammoText = ammoText;
         _ammoText.text = _ammo + " / " + maxAmmo;
+        _scoping = false;
     }
 
     public void Drop(Transform playerCamera)
@@ -145,5 +164,7 @@ public class Weapon : MonoBehaviour
         _held = false;
 
     }
+
+    public bool Scoping => _scoping;
 
 }
