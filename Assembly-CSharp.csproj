@@ -67,6 +67,7 @@
     <Compile Include="Assets\PlayerShooting\Scripts\WeaponManager.cs" />
     <Compile Include="Assets\enemy\EnemyHealt.cs" />
     <Compile Include="Assets\Mappa\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\NextScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
