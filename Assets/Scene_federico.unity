@@ -1828,6 +1828,7 @@ MonoBehaviour:
   GemmaRossaObj: {fileID: 1496498486}
   GemmaRossaCan: {fileID: 652720188}
   prova: {fileID: 878321126}
+  player: {fileID: 1537588356}
 --- !u!1 &2079846021
 GameObject:
   m_ObjectHideFlags: 0
