@@ -16,13 +16,12 @@ public class EnemyHealt : MonoBehaviour
     private void Start()
     {
         stateHealt = GetComponent<Animator>();
+        enemy = GetComponent<NavMeshAgent>();
     }
 
     private void Update()
     {
 
-        enemy = GetComponent<NavMeshAgent>();
-        stateHealt = GetComponent<Animator>();
         // Controllo per reimpostare lo stato solo dopo il cooldown
         if (Time.time - lastDamageTime >= damageCooldown)
         {
@@ -60,7 +59,6 @@ public class EnemyHealt : MonoBehaviour
     void Die()
     {
         stateHealt.SetBool("isDead", true);
-        // Implementa qui il comportamento quando il nemico muore
     }
 
     public void DieAnimationFinished()
