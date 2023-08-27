@@ -6,7 +6,10 @@ TagManager:
   tags:
   - Enemy
   - Gemma
-  - Altare
+  - ZonaGemmaRossa
+  - ZonaGemmaBlu
+  - AltareBlu
+  - AltareRosso
   layers:
   - Default
   - TransparentFX
