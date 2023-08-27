@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
+    <Compile Include="Assets\Player\PlayerHealt.cs" />
     <Compile Include="Assets\Mappa\BrokenVector\LowPolyDungeon\Demo Scenes\ScreenshotMaker.cs" />
     <Compile Include="Assets\enemy\EnemyGeneration.cs" />
     <Compile Include="Assets\Mappa\BrokenVector\LowPolyDungeon\Demo Scenes\PlayerMovement.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Assets\Mappa\BrokenVector\LowPolyDungeon\Demo Scenes\MouseCamLook.cs" />
     <Compile Include="Assets\enemy\EnemyChase.cs" />
     <Compile Include="Assets\PlayerShooting\Scripts\WeaponManager.cs" />
+    <Compile Include="Assets\enemy\EnemyAttack.cs" />
     <Compile Include="Assets\enemy\EnemyHealt.cs" />
     <Compile Include="Assets\NextScene.cs" />
     <Compile Include="Assets\Mappa\Scripts\PlayerController.cs" />
