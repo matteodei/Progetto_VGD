@@ -61,11 +61,13 @@
     <Compile Include="Assets\enemy\EnemyGeneration.cs" />
     <Compile Include="Assets\Mappa\BrokenVector\LowPolyDungeon\Demo Scenes\PlayerMovement.cs" />
     <Compile Include="Assets\PlayerShooting\Scripts\Weapon.cs" />
+    <Compile Include="Assets\HUD\UsoOggetti.cs" />
     <Compile Include="Assets\HUD\SettingsMenu.cs" />
     <Compile Include="Assets\Mappa\BrokenVector\LowPolyDungeon\Demo Scenes\MouseCamLook.cs" />
     <Compile Include="Assets\enemy\EnemyChase.cs" />
     <Compile Include="Assets\PlayerShooting\Scripts\WeaponManager.cs" />
     <Compile Include="Assets\enemy\EnemyHealt.cs" />
+    <Compile Include="Assets\NextScene.cs" />
     <Compile Include="Assets\Mappa\Scripts\PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>
