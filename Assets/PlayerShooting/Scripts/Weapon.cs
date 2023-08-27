@@ -38,11 +38,13 @@ public class Weapon : MonoBehaviour
     private Transform _playerCamera;
     private TMP_Text _ammoText;
 
+
     private void Start()
     {
         _rb = gameObject.AddComponent<Rigidbody>();
         _rb.mass = 1.0f;
         _ammo = maxAmmo;
+        
     }
 
     private void Update()
@@ -80,10 +82,7 @@ public class Weapon : MonoBehaviour
     {
         transform.localPosition -= new Vector3(0, 0, kickbackForce);
         if (Physics.Raycast(_playerCamera.position, _playerCamera.forward, out var hitInfo, range))
-        { //var rb = hitInfo.transform.GetComponent<Rigidbody>();
-            Debug.Log("Hai colpito un oggetto a una distanza di " + hitInfo.distance + " unità.");
-            
-            //enemy.velocity += _playerCamera.forward * hitForce;
+        {
             if (hitInfo.collider.CompareTag("Enemy"))
             {
                 EnemyHealt enemy = hitInfo.collider.GetComponent<EnemyHealt>();
