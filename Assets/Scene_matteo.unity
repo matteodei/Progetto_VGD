@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.23058249, g: 0.6002799, b: 0.9876264, a: 1}
+  m_IndirectSpecularColor: {r: 0.23058246, g: 0.60027987, b: 0.9876263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5916,6 +5916,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 461918, guid: f8e5b2f39b57ccf45ae8321cac39d04e, type: 3}
   m_PrefabInstance: {fileID: 1758093599}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &114693847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114693834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea17bc6776691e4eb75bd7dd287e4f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  attackCooldown: 1
+  attackRange: 1.5
 --- !u!1 &142626690
 GameObject:
   m_ObjectHideFlags: 0
@@ -6528,6 +6543,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 457434, guid: c1d92bdd55f8c154c957dcd4f7cfe669, type: 3}
   m_PrefabInstance: {fileID: 635375380}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &234662547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234662534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea17bc6776691e4eb75bd7dd287e4f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  attackCooldown: 1
+  attackRange: 1.5
 --- !u!4 &264406953 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ab5bc92d03930514493987d17e921ade, type: 3}
@@ -19237,7 +19267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457434, guid: c1d92bdd55f8c154c957dcd4f7cfe669, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.27
+      value: 51.7
       objectReference: {fileID: 0}
     - target: {fileID: 457434, guid: c1d92bdd55f8c154c957dcd4f7cfe669, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19245,7 +19275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457434, guid: c1d92bdd55f8c154c957dcd4f7cfe669, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.7
+      value: -92.9
       objectReference: {fileID: 0}
     - target: {fileID: 457434, guid: c1d92bdd55f8c154c957dcd4f7cfe669, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23934,6 +23964,7 @@ GameObject:
   - component: {fileID: 1109800234}
   - component: {fileID: 1109800233}
   - component: {fileID: 1109800236}
+  - component: {fileID: 1109800237}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -24021,6 +24052,19 @@ MonoBehaviour:
   antaDestraAperta: {fileID: 1179452475}
   antaSinistraAperta: {fileID: 1366641315}
   player: {fileID: 1109800234}
+--- !u!114 &1109800237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109800232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676a240750791084f9517029a3d5875f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!4 &1114315761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4342671295866887495, guid: 27f210ed52b6c0f409f410ac194d0a7c, type: 3}
@@ -38368,6 +38412,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 470266, guid: 00a11f3eb5ba2aa4a9fe95591be93e28, type: 3}
   m_PrefabInstance: {fileID: 2121523316}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2111819437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111819423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea17bc6776691e4eb75bd7dd287e4f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  attackCooldown: 1
+  attackRange: 1.5
 --- !u!1001 &2113727729
 PrefabInstance:
   m_ObjectHideFlags: 0
