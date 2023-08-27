@@ -9,20 +9,47 @@ public class UsoOggetti : MonoBehaviour
 
     public GameObject GemmaRossaObj;
     public GameObject GemmaRossaCan;
+    public GameObject prova;
+    
 
     private void Start()
     {
+       
         GemmaRossaCan.SetActive(false);
+        prova.SetActive(false);
+       
     }
+
+    
 
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Gemma"))
         {
-           redgem = true;
-            GemmaRossaObj.SetActive (false);
+
+            
+            GemmaRossaObj.SetActive(false);
             GemmaRossaCan.SetActive(true);
+            redgem = true;
+
         }
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        
+        {
+            
+              if (Input.GetKeyDown(KeyCode.C) && redgem == true)
+               {
+                print("Stai premendo C");
+                prova.SetActive(true);
+               }
+         
+        }
+    }
+
+
+
 }

@@ -14,6 +14,7 @@ public class Weapon : MonoBehaviour
 
     //Shooting
     public int maxAmmo;
+    public int maxExtraAmmo;
     public int shotsPerSecond;
     public float reloadSpeed;
     public float hitForce;
@@ -34,15 +35,20 @@ public class Weapon : MonoBehaviour
     private bool _reloading;
     private bool _shooting;
     private int _ammo;
+    private int _extraAmmo;
     private Rigidbody _rb;
     private Transform _playerCamera;
     private TMP_Text _ammoText;
+    private int numReloads;
+
 
     private void Start()
     {
         _rb = gameObject.AddComponent<Rigidbody>();
         _rb.mass = 1.0f;
         _ammo = maxAmmo;
+        _extraAmmo = maxExtraAmmo;
+        
     }
 
     private void Update()
@@ -63,16 +69,30 @@ public class Weapon : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.R) && ! _reloading && _ammo < maxAmmo) 
         {
-            StartCoroutine(ReloadCooldown());
+            if(_extraAmmo <= 0)
+            {
+                _ammoText.text = " MUNIZIONI EXTRA ESAURITE, IMPOSSIBILE RICARICARE ";
+            }
+            else
+            {
+                StartCoroutine(ReloadCooldown());
+            }
+            
         }
 
         if ((tapable ? Input.GetMouseButtonDown(0) : Input.GetMouseButton(0)) && ! _shooting && ! _reloading) 
         {
-
-            _ammo--;
-            _ammoText.text = _ammo + " / " + maxAmmo;
-            Shoot();
-            StartCoroutine(_ammo <= 0 ? ReloadCooldown() : ShootingCooldown());
+            if(_ammo > 0)
+            {
+                _ammo--;
+                _ammoText.text = _ammo + " / " + _extraAmmo;
+                Shoot();
+                StartCoroutine(_ammo <= 0 ? ReloadCooldown() : ShootingCooldown());
+            } else if(_ammo <= 0 && _extraAmmo <= 0)
+            {
+                _ammoText.text = " MUNIZIONI ESAURITE ";
+            }
+           
         }
     }
 
@@ -80,10 +100,7 @@ public class Weapon : MonoBehaviour
     {
         transform.localPosition -= new Vector3(0, 0, kickbackForce);
         if (Physics.Raycast(_playerCamera.position, _playerCamera.forward, out var hitInfo, range))
-        { //var rb = hitInfo.transform.GetComponent<Rigidbody>();
-            Debug.Log("Hai colpito un oggetto a una distanza di " + hitInfo.distance + " unità.");
-            
-            //enemy.velocity += _playerCamera.forward * hitForce;
+        {
             if (hitInfo.collider.CompareTag("Enemy"))
             {
                 EnemyHealt enemy = hitInfo.collider.GetComponent<EnemyHealt>();
@@ -110,13 +127,27 @@ public class Weapon : MonoBehaviour
 
     private IEnumerator ReloadCooldown()
     {
-        _reloading = true;
-        _ammoText.text = "RICARICANDO";
-        _rotationTime = 0f;
-        yield return new WaitForSeconds(reloadSpeed);
-        _ammo = maxAmmo;
-        _ammoText.text = _ammo + " / " + maxAmmo;
-        _reloading = false;
+        if(_extraAmmo > 0)
+        {
+            _reloading = true;
+            _ammoText.text = "RICARICANDO";
+            _rotationTime = 0f;
+            yield return new WaitForSeconds(reloadSpeed);
+
+            int ammoNeeded = maxAmmo - _ammo;
+            int ammoToReload = Mathf.Min(ammoNeeded, _extraAmmo);
+
+            _extraAmmo -= ammoToReload;
+            _ammo += ammoToReload;
+
+            _ammoText.text = _ammo + " / " + _extraAmmo;
+            _reloading = false;
+        }
+        else if(_extraAmmo <= 0)
+        {
+            _ammoText.text = " MUNIZIONI ESAURITE ";
+        }
+        
     }
 
     public void Pickup(Transform weaponHolder, Transform playerCamera, TMP_Text ammoText)
@@ -136,7 +167,7 @@ public class Weapon : MonoBehaviour
         _held = true;
         _playerCamera = playerCamera;
         _ammoText = ammoText;
-        _ammoText.text = _ammo + " / " + maxAmmo;
+        _ammoText.text = _ammo + " / " + _extraAmmo;
         _scoping = false;
     }
 

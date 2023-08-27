@@ -15,6 +15,7 @@ public class EnemyChase : MonoBehaviour
     private NavMeshAgent enemy;
     private Animator enemyState;
 
+
     private float distanceEnemyPlayer;
 
     [SerializeField] private float rangeAlert;
@@ -96,7 +97,6 @@ public class EnemyChase : MonoBehaviour
             enemy.isStopped = true;
             enemyState.SetBool("isAlert", false);
             enemyState.SetBool("isAttack", true);
-
         }
         else if (distanceEnemyPlayer < rangeAlert)
         {
