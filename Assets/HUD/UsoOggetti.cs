@@ -7,6 +7,10 @@ public class UsoOggetti : MonoBehaviour
 {
     public bool redgem;
     public bool bluegem;
+    public bool dooropen;
+
+    public bool redgemalt;
+    public bool bluegemalt;
 
     
 
@@ -18,8 +22,13 @@ public class UsoOggetti : MonoBehaviour
     public GameObject GemmaBluCan;
     public GameObject GemmaBlu;
 
+    public GameObject antaDestra;
+    public GameObject antaSinistra;
+    public GameObject antaDestraAperta;
+    public GameObject antaSinistraAperta;
 
-   // public GameObject prova;
+
+    // public GameObject prova;
     public Collider player;
 
     private void Start()
@@ -29,7 +38,9 @@ public class UsoOggetti : MonoBehaviour
         GemmaRossaAlt.SetActive(false);
         GemmaBluCan.SetActive(false);
         GemmaBluAlt.SetActive(false);
-        //prova.SetActive(false);
+        antaDestraAperta.SetActive(false);
+        antaSinistraAperta.SetActive(false);
+        dooropen = false;
        
     }
 
@@ -37,6 +48,9 @@ public class UsoOggetti : MonoBehaviour
     {
         OnTriggerStay(player);
         OnTriggerEnter(player);
+
+        if (dooropen == false)
+            apriPorta();
     }
 
 
@@ -76,6 +90,7 @@ public class UsoOggetti : MonoBehaviour
             {
                 GemmaRossaAlt.SetActive(true);
                 GemmaRossaCan.SetActive(false);
+                redgemalt = true;
             }
         }
         else if (other.CompareTag("AltareBlu"))
@@ -84,22 +99,27 @@ public class UsoOggetti : MonoBehaviour
             {
                 GemmaBluAlt.SetActive(true);
                 GemmaBluCan.SetActive(false);
+                bluegemalt = true;
 
             }
             
           
         }
 
-
-
-           /* if (Input.GetKeyDown(KeyCode.C) && redgem == true)
-              { 
-                    print("Stai premendo C");
-                    prova.SetActive(true);
-              
-              }*/
-         
         
+    }
+
+    private void apriPorta()
+    {
+        if (redgemalt == true && bluegemalt == true)
+        {
+            antaSinistraAperta.SetActive(true);
+            antaDestraAperta.SetActive(true);
+            antaDestra.SetActive(false);
+            antaSinistra.SetActive(false);
+            
+            dooropen = true;
+        }
     }
 
 
