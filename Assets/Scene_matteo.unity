@@ -5139,7 +5139,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -585.53174, y: 252.58813}
+  m_AnchoredPosition: {x: -309, y: 143}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &20086005
@@ -5928,8 +5928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea17bc6776691e4eb75bd7dd287e4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackCooldown: 1
+  damageAmount: 3
+  attackCooldown: 0.5
   attackRange: 1.5
 --- !u!1 &142626690
 GameObject:
@@ -6555,8 +6555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea17bc6776691e4eb75bd7dd287e4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackCooldown: 1
+  damageAmount: 3
+  attackCooldown: 0.5
   attackRange: 1.5
 --- !u!4 &264406953 stripped
 Transform:
@@ -37025,7 +37025,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -495.42725, y: 253.17896}
+  m_AnchoredPosition: {x: -393, y: 140}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1966177805
@@ -38424,8 +38424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea17bc6776691e4eb75bd7dd287e4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackCooldown: 1
+  damageAmount: 3
+  attackCooldown: 0.5
   attackRange: 1.5
 --- !u!1001 &2113727729
 PrefabInstance:
