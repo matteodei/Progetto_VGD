@@ -191,6 +191,7 @@ public class SettingsMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
+        CanvasGame.SetActive(true);
         testi.SetActive(false);
         fullscreen.SetActive(false);
         volume.SetActive(false);
