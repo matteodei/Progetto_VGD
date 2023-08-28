@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,7 @@ public class UsoOggetti : MonoBehaviour
     public bool redgem;
     public bool bluegem;
     public bool dooropen;
+    
 
     public bool redgemalt;
     public bool bluegemalt;
@@ -27,8 +29,10 @@ public class UsoOggetti : MonoBehaviour
     public GameObject antaDestraAperta;
     public GameObject antaSinistraAperta;
 
+   
+    
 
-    // public GameObject prova;
+
     public Collider player;
 
     private void Start()
@@ -41,7 +45,11 @@ public class UsoOggetti : MonoBehaviour
         antaDestraAperta.SetActive(false);
         antaSinistraAperta.SetActive(false);
         dooropen = false;
-       
+       // healed = false;
+
+
+
+
     }
 
     private void Update()
@@ -102,9 +110,18 @@ public class UsoOggetti : MonoBehaviour
                 bluegemalt = true;
 
             }
-            
-          
         }
+       /* else if (other.CompareTag("HealtZone"))
+        {
+           
+            if (Input.GetKeyDown(KeyCode.E) && healed == false)
+            {
+                print("Cura");
+                healt.currentHealth = 75;
+                healed = true;
+            }
+
+        }*/
 
         
     }

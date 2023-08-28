@@ -10,6 +10,7 @@ TagManager:
   - ZonaGemmaBlu
   - AltareBlu
   - AltareRosso
+  - HealtZone
   layers:
   - Default
   - TransparentFX
