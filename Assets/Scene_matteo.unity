@@ -21809,7 +21809,7 @@ MonoBehaviour:
   risoluzione: {fileID: 1703079583}
   bottoneSetting: {fileID: 879687628}
   bottoneResume: {fileID: 1335215252}
-  "bottoneMen\xF9": {fileID: 1209457475}
+  bottoneMenu: {fileID: 1209457475}
   testi: {fileID: 127932391}
   CanvasGame: {fileID: 1498270601}
   back: {fileID: 1343913473}

@@ -16,7 +16,7 @@ public class SettingsMenu : MonoBehaviour
     public GameObject risoluzione;
     public GameObject bottoneSetting;
     public GameObject bottoneResume;
-    public GameObject bottoneMenù;
+    public GameObject bottoneMenu;
     public GameObject testi;
     public GameObject CanvasGame;
     public GameObject back;
@@ -44,7 +44,7 @@ public class SettingsMenu : MonoBehaviour
         risoluzione.SetActive(false);
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
-        bottoneMenù.SetActive(false);
+        bottoneMenu.SetActive(false);
         testi.SetActive(false);
         CanvasGame.SetActive(true);
         back.SetActive(false);
@@ -146,7 +146,7 @@ public class SettingsMenu : MonoBehaviour
         risoluzione.SetActive(true);
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
-        bottoneMenù.SetActive(false);
+        bottoneMenu.SetActive(false);
         back.SetActive(true);
         menuSetting = true;
        
@@ -155,7 +155,7 @@ public class SettingsMenu : MonoBehaviour
     public void scelta()
     {
         testi.SetActive(false);
-        bottoneMenù.SetActive(true);
+        bottoneMenu.SetActive(true);
         bottoneSetting.SetActive(true);
         bottoneResume.SetActive(true);
         fullscreen.SetActive(false);
@@ -177,7 +177,7 @@ public class SettingsMenu : MonoBehaviour
         risoluzione.SetActive(false);
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
-        bottoneMenù.SetActive(false);
+        bottoneMenu.SetActive(false);
         //back.SetActive(false);
     }
 
@@ -211,7 +211,7 @@ public class SettingsMenu : MonoBehaviour
         risoluzione.SetActive(false);
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
-        bottoneMenù.SetActive(false);
+        bottoneMenu.SetActive(false);
         //back.SetActive(false);
 
         Pause();
@@ -221,9 +221,9 @@ public class SettingsMenu : MonoBehaviour
 
     }
 
-    public void menù()
+    public void menu()
     { 
-        SceneManager.LoadScene("Menù_iniziale");
+        SceneManager.LoadScene("Menu_iniziale");
     }
 
     

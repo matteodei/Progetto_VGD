@@ -28,6 +28,8 @@ public class Weapon : MonoBehaviour
     public int weaponGfxLayer; //No wall clipping
     public GameObject[] weaponGfxs;
     public Collider[] gfxColliders;
+    public AudioSource shootingSound;
+    public AudioSource reloadingSound;
 
     private float _rotationTime;
     private bool _held;
@@ -40,6 +42,7 @@ public class Weapon : MonoBehaviour
     private Transform _playerCamera;
     private TMP_Text _ammoText;
     private int numReloads;
+    private AudioSource _shootingSound;
 
 
     private void Start()
@@ -48,7 +51,8 @@ public class Weapon : MonoBehaviour
         _rb.mass = 1.0f;
         _ammo = maxAmmo;
         _extraAmmo = maxExtraAmmo;
-        
+        //shootingSound = GetComponent<AudioSource>();
+        //reloadingSound = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -98,6 +102,7 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
+        shootingSound.Play();
         transform.localPosition -= new Vector3(0, 0, kickbackForce);
         if (Physics.Raycast(_playerCamera.position, _playerCamera.forward, out var hitInfo, range))
         {
@@ -129,6 +134,7 @@ public class Weapon : MonoBehaviour
     {
         if(_extraAmmo > 0)
         {
+            reloadingSound.Play();
             _reloading = true;
             _ammoText.text = "RICARICANDO";
             _rotationTime = 0f;
@@ -142,6 +148,7 @@ public class Weapon : MonoBehaviour
 
             _ammoText.text = _ammo + " / " + _extraAmmo;
             _reloading = false;
+            reloadingSound.Stop();
         }
         else if(_extraAmmo <= 0)
         {
@@ -153,7 +160,7 @@ public class Weapon : MonoBehaviour
     public void Pickup(Transform weaponHolder, Transform playerCamera, TMP_Text ammoText)
     {
         if (_held) return;
-        Destroy(_rb); //Non interagisce più col mondo una volta raccolta
+        Destroy(_rb); //Non interagisce piï¿½ col mondo una volta raccolta
         transform.parent = weaponHolder;
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
