@@ -5,6 +5,7 @@ using UnityEngine.Audio;
 using TMPro;
 using static UnityEngine.Rendering.PostProcessing.SubpixelMorphologicalAntialiasing;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class SettingsMenu : MonoBehaviour
 {
@@ -15,8 +16,10 @@ public class SettingsMenu : MonoBehaviour
     public GameObject risoluzione;
     public GameObject bottoneSetting;
     public GameObject bottoneResume;
+    public GameObject bottoneMenù;
     public GameObject testi;
     public GameObject CanvasGame;
+    public GameObject back;
 
     public bool menuScelta;
     public bool menuSetting;
@@ -41,8 +44,10 @@ public class SettingsMenu : MonoBehaviour
         risoluzione.SetActive(false);
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
+        bottoneMenù.SetActive(false);
         testi.SetActive(false);
         CanvasGame.SetActive(true);
+        back.SetActive(false);
 
 
         resolutions = Screen.resolutions;
@@ -141,6 +146,8 @@ public class SettingsMenu : MonoBehaviour
         risoluzione.SetActive(true);
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
+        bottoneMenù.SetActive(false);
+        back.SetActive(true);
         menuSetting = true;
        
     }
@@ -148,12 +155,15 @@ public class SettingsMenu : MonoBehaviour
     public void scelta()
     {
         testi.SetActive(false);
+        bottoneMenù.SetActive(true);
         bottoneSetting.SetActive(true);
         bottoneResume.SetActive(true);
         fullscreen.SetActive(false);
         volume.SetActive(false);
         grafica.SetActive(false);
         risoluzione.SetActive(false);
+        back.SetActive(false);
+        menuSetting = false;
     }
 
     public void Gioco()
@@ -167,6 +177,8 @@ public class SettingsMenu : MonoBehaviour
         risoluzione.SetActive(false);
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
+        bottoneMenù.SetActive(false);
+        //back.SetActive(false);
     }
 
 
@@ -199,6 +211,8 @@ public class SettingsMenu : MonoBehaviour
         risoluzione.SetActive(false);
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
+        bottoneMenù.SetActive(false);
+        //back.SetActive(false);
 
         Pause();
 
@@ -207,10 +221,12 @@ public class SettingsMenu : MonoBehaviour
 
     }
 
-    public void prova() 
-    {
-        print("bottone funzinoa");
+    public void menù()
+    { 
+        SceneManager.LoadScene("Menù_iniziale");
     }
+
+    
 
 }
  
