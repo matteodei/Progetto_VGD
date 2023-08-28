@@ -16,6 +16,7 @@ public class SettingsMenu : MonoBehaviour
     public GameObject bottoneSetting;
     public GameObject bottoneResume;
     public GameObject testi;
+    public GameObject CanvasGame;
 
     public bool menuScelta;
     public bool menuSetting;
@@ -41,6 +42,7 @@ public class SettingsMenu : MonoBehaviour
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
         testi.SetActive(false);
+        CanvasGame.SetActive(true);
 
 
         resolutions = Screen.resolutions;
@@ -75,8 +77,10 @@ public class SettingsMenu : MonoBehaviour
             
             if (menuScelta == false && menuSetting == false)
             {
+                
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
+                CanvasGame.SetActive(false);
                 scelta();
                 menuScelta = true;
                 Pause();
@@ -154,8 +158,8 @@ public class SettingsMenu : MonoBehaviour
 
     public void Gioco()
     {
-        
 
+        CanvasGame.SetActive(true);
         testi.SetActive(false);
         fullscreen.SetActive(false);
         volume.SetActive(false);
@@ -200,6 +204,11 @@ public class SettingsMenu : MonoBehaviour
         menuScelta = false;
 
 
+    }
+
+    public void prova() 
+    {
+        print("bottone funzinoa");
     }
 
 }
