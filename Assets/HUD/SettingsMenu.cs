@@ -19,6 +19,7 @@ public class SettingsMenu : MonoBehaviour
     public GameObject bottoneMenù;
     public GameObject testi;
     public GameObject CanvasGame;
+    public GameObject back;
 
     public bool menuScelta;
     public bool menuSetting;
@@ -46,6 +47,7 @@ public class SettingsMenu : MonoBehaviour
         bottoneMenù.SetActive(false);
         testi.SetActive(false);
         CanvasGame.SetActive(true);
+        back.SetActive(false);
 
 
         resolutions = Screen.resolutions;
@@ -145,6 +147,7 @@ public class SettingsMenu : MonoBehaviour
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
+        back.SetActive(true);
         menuSetting = true;
        
     }
@@ -159,6 +162,8 @@ public class SettingsMenu : MonoBehaviour
         volume.SetActive(false);
         grafica.SetActive(false);
         risoluzione.SetActive(false);
+        back.SetActive(false);
+        menuSetting = false;
     }
 
     public void Gioco()
@@ -173,6 +178,7 @@ public class SettingsMenu : MonoBehaviour
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
+        //back.SetActive(false);
     }
 
 
@@ -206,6 +212,7 @@ public class SettingsMenu : MonoBehaviour
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
+        //back.SetActive(false);
 
         Pause();
 
