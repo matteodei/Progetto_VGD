@@ -18,6 +18,7 @@ public class SettingsMenu : MonoBehaviour
     public GameObject bottoneSetting;
     public GameObject bottoneResume;
     public GameObject bottoneMenù;
+    public GameObject bottoneBack;
     public GameObject testi;
     public GameObject CanvasGame;
     public GameObject barraDellaVita;
@@ -49,6 +50,8 @@ public class SettingsMenu : MonoBehaviour
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
+        bottoneBack.SetActive(false);
+        
         testi.SetActive(false);
         CanvasGame.SetActive(true);
 
@@ -151,9 +154,11 @@ public class SettingsMenu : MonoBehaviour
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
+        bottoneBack.SetActive(true);
         menuSetting = true;
-       
-    }
+        
+
+}
 
     public void scelta()
     {
@@ -162,10 +167,12 @@ public class SettingsMenu : MonoBehaviour
         bottoneMenù.SetActive(true);
         bottoneSetting.SetActive(true);
         bottoneResume.SetActive(true);
+        bottoneBack.SetActive(false);
         fullscreen.SetActive(false);
         volume.SetActive(false);
         grafica.SetActive(false);
         risoluzione.SetActive(false);
+        menuSetting = false;
     }
 
     public void Gioco()
@@ -181,6 +188,7 @@ public class SettingsMenu : MonoBehaviour
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
+        bottoneBack.SetActive(false);
     }
 
 
@@ -191,6 +199,7 @@ public class SettingsMenu : MonoBehaviour
         if (isPaused)
         {
             Time.timeScale = 0; // Mette in pausa il tempo di gioco
+
         }
         else
         {
@@ -215,6 +224,7 @@ public class SettingsMenu : MonoBehaviour
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
+        bottoneBack.SetActive(false);
 
         Pause();
 
@@ -228,6 +238,7 @@ public class SettingsMenu : MonoBehaviour
         SceneManager.LoadScene("Menù_iniziale");
     }
 
+    
     
     
 
