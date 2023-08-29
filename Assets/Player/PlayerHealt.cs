@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerHealt : MonoBehaviour
 {
@@ -9,7 +11,8 @@ public class PlayerHealt : MonoBehaviour
     public int currentHealth;
     public bool healed;
     public Collider player;
-
+    public Image barraVita;
+    public TMP_Text vita;
     private void Start()
     {
         currentHealth = maxHealth;
@@ -18,6 +21,8 @@ public class PlayerHealt : MonoBehaviour
     private void Update()
     {
         OnTriggerStay(player);
+        barraDellaVita();
+        vita.text = currentHealth.ToString();
     }
     public void TakeEnemiesDamage(int damage)
     {
@@ -51,6 +56,11 @@ public class PlayerHealt : MonoBehaviour
         }
 
 
+    }
+
+    public void barraDellaVita()
+    {
+        barraVita.fillAmount = currentHealth / 100f;
     }
 }
 

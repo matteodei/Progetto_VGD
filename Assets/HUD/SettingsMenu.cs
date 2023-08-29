@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Audio;
 using TMPro;
 using static UnityEngine.Rendering.PostProcessing.SubpixelMorphologicalAntialiasing;
@@ -19,6 +20,9 @@ public class SettingsMenu : MonoBehaviour
     public GameObject bottoneMenù;
     public GameObject testi;
     public GameObject CanvasGame;
+    public GameObject barraDellaVita;
+
+   
 
     public bool menuScelta;
     public bool menuSetting;
@@ -37,6 +41,7 @@ public class SettingsMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        barraDellaVita.SetActive(true);
         fullscreen.SetActive(false);
         volume.SetActive(false);
         grafica.SetActive(false);
@@ -137,6 +142,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void setting()
     {
+        barraDellaVita.SetActive(false);
         testi.SetActive(true);
         fullscreen.SetActive(true);
         volume.SetActive(true);
@@ -151,6 +157,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void scelta()
     {
+        barraDellaVita.SetActive(false);
         testi.SetActive(false);
         bottoneMenù.SetActive(true);
         bottoneSetting.SetActive(true);
@@ -165,6 +172,7 @@ public class SettingsMenu : MonoBehaviour
     {
 
         CanvasGame.SetActive(true);
+        barraDellaVita.SetActive(true);
         testi.SetActive(false);
         fullscreen.SetActive(false);
         volume.SetActive(false);
@@ -198,6 +206,7 @@ public class SettingsMenu : MonoBehaviour
         Cursor.visible = false;
 
         CanvasGame.SetActive(true);
+        barraDellaVita.SetActive(true);
         testi.SetActive(false);
         fullscreen.SetActive(false);
         volume.SetActive(false);
@@ -219,6 +228,7 @@ public class SettingsMenu : MonoBehaviour
         SceneManager.LoadScene("Menù_iniziale");
     }
 
+    
     
 
 }
