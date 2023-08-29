@@ -100,6 +100,12 @@ public class Weapon : MonoBehaviour
         }
     }
 
+
+
+    }
+
+
+
     private void Shoot()
     {
         shootingSound.Play();
