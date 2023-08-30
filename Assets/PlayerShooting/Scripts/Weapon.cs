@@ -72,6 +72,10 @@ public class Weapon : MonoBehaviour
         {
             _ammoText.text = "MUNIZIONI INFINITE";
         }
+        else if(!_reloading)
+        {
+            _ammoText.text = _ammo + " / " + _extraAmmo;
+        }
 
         _scoping = Input.GetMouseButton(1) && !_reloading;
         transform.localRotation = Quaternion.identity;
