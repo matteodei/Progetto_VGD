@@ -10,7 +10,7 @@ public class EnemyHealt : MonoBehaviour
     private NavMeshAgent enemy;
 
     private bool isTakingDamage = false;
-    private float damageCooldown = 0.5f; // Tempo di cooldown tra i danni
+    private float damageCooldown = 0.1f; // Tempo di cooldown tra i danni
     private float lastDamageTime = 0f; // Memorizza il tempo dell'ultimo danno
 
     private void Start()
@@ -60,6 +60,8 @@ public class EnemyHealt : MonoBehaviour
     void Die()
     {
         stateHealt.SetBool("isDead", true);
+        enemy.isStopped = true;
+        enemy.velocity = Vector3.zero;
     }
 
     public void DieAnimationFinished()

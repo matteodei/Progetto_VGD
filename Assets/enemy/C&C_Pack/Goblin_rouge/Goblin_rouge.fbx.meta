@@ -578,7 +578,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -2798,7 +2798,7 @@ ModelImporter:
       takeName: Goblin_armature|ArmatureAction
       internalID: 0
       firstFrame: 285
-      lastFrame: 295
+      lastFrame: 288
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -2818,7 +2818,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.31271473
+      - time: 0.53459924
         functionName: DamageAnimationFinished
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 0827ffd8610eb6944a4b82fcabc4e340, type: 3}
