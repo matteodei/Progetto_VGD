@@ -12,6 +12,9 @@ public class Weapon : MonoBehaviour
     public float throwExtraForce;
     public float rotationForce;
 
+    //weapon col
+    public Collider wepCollider;
+
     //Shooting
     public int maxAmmo;
     public int maxExtraAmmo;
@@ -37,7 +40,7 @@ public class Weapon : MonoBehaviour
     private bool _reloading;
     private bool _shooting;
     private int _ammo;
-    private int _extraAmmo;
+    public int _extraAmmo;
     private Rigidbody _rb;
     private Transform _playerCamera;
     private TMP_Text _ammoText;
@@ -53,6 +56,7 @@ public class Weapon : MonoBehaviour
         _ammo = maxAmmo;
         _extraAmmo = maxExtraAmmo;
 
+        wepCollider = GetComponent<Collider>();
         
 
         //shootingSound = GetComponent<AudioSource>();
@@ -93,6 +97,9 @@ public class Weapon : MonoBehaviour
             
         }
 
+
+
+
         if ((tapable ? Input.GetMouseButtonDown(0) : Input.GetMouseButton(0)) && ! _shooting && ! _reloading) 
         {
             if (SettingsMenu.statoTrucchi)
@@ -114,6 +121,21 @@ public class Weapon : MonoBehaviour
            
         }
     }
+     private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("AmmoZone"))
+        {
+            // Incrementa la variabile _extraAmmo
+            _extraAmmo = 300; // Puoi cambiare il valore 10 con qualsiasi altro valore desiderato
+            // Puoi anche aggiornare il testo per mostrare il nuovo valore dell'extra ammo
+            _ammoText.text = _ammo + " / " + _extraAmmo;
+            other.gameObject.SetActive(false);
+
+            // Disattiva l'oggetto "AmmoZone" per evitare futuri contatti
+      
+        }
+    }
+
 
 
 
@@ -177,7 +199,7 @@ public class Weapon : MonoBehaviour
     public void Pickup(Transform weaponHolder, Transform playerCamera, TMP_Text ammoText)
     {
         if (_held) return;
-        Destroy(_rb); //Non interagisce pi� col mondo una volta raccolta
+        _rb.isKinematic = true; 
         transform.parent = weaponHolder;
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
@@ -198,7 +220,7 @@ public class Weapon : MonoBehaviour
     public void Drop(Transform playerCamera)
     {
         if (!_held) return;
-        _rb = gameObject.AddComponent<Rigidbody>();
+        _rb.isKinematic = false;
         _rb.mass = 1.0f;
         var forward = playerCamera.forward;
         forward.y = 0f;
