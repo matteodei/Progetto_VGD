@@ -1,16 +1,11 @@
 ﻿<Properties StartupConfiguration="{06BEC4ED-E004-DF95-8EA7-D7E8AA8067E5}|">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PlayerShooting/Scripts/SettingsMenu.cs">
     <Files>
       <File FileName="Assets/PlayerShooting/Scripts/WeaponManager.cs" />
-      <File FileName="Assets/PlayerShooting/Scripts/Weapon.cs" Line="40" Column="29" />
-      <File FileName="Assets/PlayerShooting/Scripts/SettingsMenu.cs" Line="125" Column="42" />
-      <File FileName="Assets/PlayerShooting/Scripts/PlayerHealt.cs" Line="25" Column="31" />
+      <File FileName="Assets/PlayerShooting/Scripts/Weapon.cs" Line="36" Column="37" />
+      <File FileName="Assets/PlayerShooting/Scripts/SettingsMenu.cs" Line="73" Column="24" />
+      <File FileName="Assets/PlayerShooting/Scripts/PlayerHealt.cs" Line="11" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -27,5 +22,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="aae78c92-4092-43c6-8b23-12b77f8802ee" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="24838726-872d-4e6d-b2a0-48ebd2a05b11" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

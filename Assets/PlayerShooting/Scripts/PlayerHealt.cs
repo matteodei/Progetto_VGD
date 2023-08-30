@@ -8,6 +8,7 @@ using TMPro;
 public class PlayerHealt : MonoBehaviour
 {
     public int maxHealth = 100;
+    public AudioSource _healingSound;
     public int currentHealth;
     public Collider player;
     public Image barraVita;
@@ -55,6 +56,7 @@ public class PlayerHealt : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E) && currentHealth < 100 )
             {
+                _healingSound.Play();
                 print("Cura");
                 currentHealth += 50;
                 if(currentHealth >= maxHealth){

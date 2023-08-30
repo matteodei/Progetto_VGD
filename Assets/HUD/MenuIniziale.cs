@@ -25,6 +25,8 @@ public class MenuIniziale : MonoBehaviour
     public GameObject tastiRisoluzione;
     public GameObject tastiGrafica;
     public GameObject menuRisoluzione;
+    public GameObject livelli;
+    public GameObject bottoneLivelli;
 
     public AudioMixer audioMixer;
 
@@ -45,6 +47,8 @@ public class MenuIniziale : MonoBehaviour
         menuGrafica.SetActive(false);
         fullScreenOn.SetActive(false);
         fullScreenOff.SetActive(false);
+        livelli.SetActive(true);
+        bottoneLivelli.SetActive(false);
 
 
 
@@ -84,6 +88,8 @@ public class MenuIniziale : MonoBehaviour
         menuGrafica.SetActive(true);
         fullScreenOff.SetActive(true);
         fullScreenOn.SetActive(false);
+        livelli.SetActive(false);
+        bottoneLivelli.SetActive(false);
     }
 
     public void menu()
@@ -101,6 +107,8 @@ public class MenuIniziale : MonoBehaviour
         menuGrafica.SetActive(false);
         fullScreenOn.SetActive(false);
         fullScreenOff.SetActive(false);
+        livelli.SetActive(true);
+        bottoneLivelli.SetActive(false);
 
     }
 
@@ -126,6 +134,42 @@ public class MenuIniziale : MonoBehaviour
 
         
     }
+
+    public void sceltaLivello()
+    {
+        testi.SetActive(false);
+        volume.SetActive(false);
+        newGame.SetActive(false);
+        loadGame.SetActive(false);
+        option.SetActive(false);
+        quit.SetActive(false);
+        back.SetActive(true);
+        tastiGrafica.SetActive(false);
+        tastiRisoluzione.SetActive(false);
+        menuRisoluzione.SetActive(false);
+        menuGrafica.SetActive(false);
+        fullScreenOn.SetActive(false);
+        fullScreenOff.SetActive(false);
+        bottoneLivelli.SetActive(true);
+        livelli.SetActive(false);
+        
+    }
+
+    public void firstLevel()
+    {
+        SceneManager.LoadScene("MappaUno");
+    }
+
+    public void secondLevel()
+    {
+        SceneManager.LoadScene("MappaDue");
+    }
+
+    public void thirdLevel()
+    {
+        SceneManager.LoadScene("MappaTre");
+    }
+
 
     public void graphicMenu()
     {
@@ -226,5 +270,12 @@ public class MenuIniziale : MonoBehaviour
         }
 
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+
 
 }
