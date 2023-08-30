@@ -9,14 +9,13 @@ public class PlayerHealt : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
-    public bool healed;
     public Collider player;
     public Image barraVita;
     public TMP_Text vita;
     private void Start()
     {
         currentHealth = maxHealth;
-        healed = false;
+     ;
     }
     private void Update()
     {
@@ -45,11 +44,15 @@ public class PlayerHealt : MonoBehaviour
          if (other.CompareTag("HealtZone"))
         {
 
-            if (Input.GetKeyDown(KeyCode.E) && healed == false && currentHealth < 75)
+            if (Input.GetKeyDown(KeyCode.E) && currentHealth < 100 )
             {
                 print("Cura");
-                currentHealth = 75;
-                healed = true;
+                currentHealth += 50;
+                if(currentHealth >= maxHealth){
+                currentHealth = maxHealth;
+                    
+                }
+                other.gameObject.SetActive(false);
 
             }
 
