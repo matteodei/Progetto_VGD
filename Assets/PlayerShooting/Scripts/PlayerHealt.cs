@@ -19,9 +19,18 @@ public class PlayerHealt : MonoBehaviour
     }
     private void Update()
     {
-        OnTriggerStay(player);
-        barraDellaVita();
-        vita.text = currentHealth.ToString();
+
+        if (SettingsMenu.statoTrucchi)
+        {
+            vita.text = "INF";
+        }
+        else
+        {
+            OnTriggerStay(player);
+            barraDellaVita();
+            vita.text = currentHealth.ToString();
+        }
+        
     }
     public void TakeEnemiesDamage(int damage)
     {
