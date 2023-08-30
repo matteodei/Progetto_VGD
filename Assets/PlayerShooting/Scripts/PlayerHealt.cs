@@ -8,19 +8,37 @@ using TMPro;
 public class PlayerHealt : MonoBehaviour
 {
     public int maxHealth = 100;
+    public GameObject portaAperta;
+    public GameObject portaChiusa;
+    public GameObject portaUscitaAperta;
+    public GameObject portaUscitaChiusa;
     public AudioSource _healingSound;
     public int currentHealth;
     public Collider player;
     public Image barraVita;
     public TMP_Text vita;
+    public static bool ArenaModeFlag = false;
     private void Start()
     {
         currentHealth = maxHealth;
-     ;
+        portaChiusa.SetActive(false);
+        portaUscitaChiusa.SetActive(true);
+
     }
     private void Update()
     {
+        if (ArenaModeFlag == true)
+        {
+            portaAperta.SetActive(false);
+            portaChiusa.SetActive(true);
+            portaUscitaAperta.SetActive(false);
+            portaUscitaChiusa.SetActive(true);
+        }
+        if (ArenaModeFlag == false) {
+            portaUscitaAperta.SetActive(true);
+            portaUscitaChiusa.SetActive(false);
 
+        }
         if (SettingsMenu.statoTrucchi)
         {
             vita.text = "INF";
@@ -70,6 +88,15 @@ public class PlayerHealt : MonoBehaviour
         }
 
 
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("ArenaMode"))
+        {
+            ArenaModeFlag = true;
+            Debug.Log("Arena");
+            other.gameObject.SetActive(false);
+        }
     }
 
     public void barraDellaVita()
