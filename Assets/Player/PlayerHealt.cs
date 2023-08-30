@@ -44,7 +44,7 @@ public class PlayerHealt : MonoBehaviour
          if (other.CompareTag("HealtZone"))
         {
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && currentHealth < 100 )
             {
                 print("Cura");
                 currentHealth += 50;
