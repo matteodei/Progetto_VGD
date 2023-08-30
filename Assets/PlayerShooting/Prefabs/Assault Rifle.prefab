@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1231619558}
   - component: {fileID: 2076919174}
   - component: {fileID: 2076919177}
+  - component: {fileID: 1743836303}
   m_Layer: 3
   m_Name: Assault Rifle
   m_TagString: Untagged
@@ -50,6 +51,7 @@ MonoBehaviour:
   throwForce: 3
   throwExtraForce: 4
   rotationForce: 120
+  wepCollider: {fileID: 0}
   maxAmmo: 25
   maxExtraAmmo: 50
   shotsPerSecond: 10
@@ -73,6 +75,7 @@ MonoBehaviour:
   - {fileID: 124781135}
   shootingSound: {fileID: 2076919174}
   reloadingSound: {fileID: 2076919177}
+  _extraAmmo: 0
 --- !u!82 &2076919174
 AudioSource:
   m_ObjectHideFlags: 0
@@ -82,7 +85,7 @@ AudioSource:
   m_GameObject: {fileID: 7936457210596843508}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 781c493b76a01b84c837588c2bc66f81, type: 2}
   m_audioClip: {fileID: 8300000, guid: 8602b7d5cd15c1943a50aa53f171c8cf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.15
@@ -178,7 +181,7 @@ AudioSource:
   m_GameObject: {fileID: 7936457210596843508}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 781c493b76a01b84c837588c2bc66f81, type: 2}
   m_audioClip: {fileID: 8300000, guid: 3c5c1d4d7b9307c458890a4beb12e4ae, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
@@ -265,6 +268,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!64 &1743836303
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7936457210596843508}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 4974c3aa5aa3dca4e847ca65904285a1, type: 3}
 --- !u!1001 &8060838135715379582
 PrefabInstance:
   m_ObjectHideFlags: 0
