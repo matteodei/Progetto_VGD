@@ -22,6 +22,10 @@ public class SettingsMenu : MonoBehaviour
     public GameObject testi;
     public GameObject CanvasGame;
     public GameObject barraDellaVita;
+    public GameObject tastiGrafica;
+    public GameObject menuGrafica;
+    public GameObject tastiRisoluzione;
+    public GameObject menuRisoluzione;
 
    
 
@@ -51,6 +55,8 @@ public class SettingsMenu : MonoBehaviour
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
         bottoneBack.SetActive(false);
+        tastiGrafica.SetActive(false);
+        tastiRisoluzione.SetActive(false);
         
         testi.SetActive(false);
         CanvasGame.SetActive(true);
@@ -238,9 +244,78 @@ public class SettingsMenu : MonoBehaviour
         SceneManager.LoadScene("Menù_iniziale");
     }
 
-    
-    
-    
+    public void graphicMenu()
+    {
+        tastiGrafica.SetActive(true);
+        menuGrafica.SetActive(false);
+
+    }
+    public void setGraphicLow()
+    {
+        QualitySettings.SetQualityLevel(0);
+        tastiGrafica.SetActive(false);
+        menuGrafica.SetActive(true);
+    }
+
+    public void setGraphicMid()
+    {
+        QualitySettings.SetQualityLevel(1);
+        tastiGrafica.SetActive(false);
+        menuGrafica.SetActive(true);
+    }
+
+    public void setGraphicHigh()
+    {
+        QualitySettings.SetQualityLevel(2);
+        tastiGrafica.SetActive(false);
+        menuGrafica.SetActive(true);
+    }
+
+    public void resolutionMenu()
+    {
+        tastiRisoluzione.SetActive(true);
+        menuRisoluzione.SetActive(false);
+    }
+
+    public void setRes1()
+    {
+        Screen.SetResolution(720, 480, true);
+        SetFullScreen(true);
+        tastiRisoluzione.SetActive(false);
+        menuRisoluzione.SetActive(true);
+    }
+
+    public void setRes2()
+    {
+        Screen.SetResolution(1024, 768, true);
+        SetFullScreen(true);
+        tastiRisoluzione.SetActive(false);
+        menuRisoluzione.SetActive(true);
+
+    }
+
+    public void setRes3()
+    {
+        Screen.SetResolution(1440, 900, true);
+        SetFullScreen(true);
+        tastiRisoluzione.SetActive(false);
+        menuRisoluzione.SetActive(true);
+
+    }
+
+    public void setRes4()
+    {
+        Screen.SetResolution(1920, 1080, true);
+        SetFullScreen(true);
+        tastiRisoluzione.SetActive(false);
+        menuRisoluzione.SetActive(true);
+
+
+    }
+
+
+
+
 
 }
  
