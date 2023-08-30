@@ -10,38 +10,31 @@ public class BossHealt : MonoBehaviour
     private NavMeshAgent boss;
 
     private bool isTakingDamage = false;
-    private bool firstDeath;
-    private float damageCooldown = 0.1f; // Tempo di cooldown tra i danni
-    private float lastDamageTime = 0f; // Memorizza il tempo dell'ultimo danno
+    private float damageCooldown = 0.1f;
+    private float lastDamageTime = 0f;
 
+    private bool bosscreati;
 
-    // Start is called before the first frame update
+    public GameObject bossPhase2Prefab; // Prefab per la seconda fase del boss
+
     void Start()
     {
         stateBoss = GetComponent<Animator>();
         boss = GetComponent<NavMeshAgent>();
-        firstDeath = true; 
+        bosscreati = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Controllo per reimpostare lo stato solo dopo il cooldown
         if (Time.time - lastDamageTime >= damageCooldown)
         {
             stateBoss.SetBool("isDamage", false);
             isTakingDamage = false;
         }
 
-        if (firstDeath)
+        if (health <= 0 && !bosscreati)
         {
-            if (health <= 0)
-            {
-                SecondFase();
-            }
-        }else if (health<= 0)
-        {
-            Die();
+            SecondPhase();
         }
     }
 
@@ -54,7 +47,7 @@ public class BossHealt : MonoBehaviour
             isTakingDamage = true;
             boss.isStopped = true;
             boss.velocity = Vector3.zero;
-            lastDamageTime = Time.time; // Aggiorna il tempo dell'ultimo danno
+            lastDamageTime = Time.time;
 
             if (health <= 0)
             {
@@ -65,7 +58,6 @@ public class BossHealt : MonoBehaviour
 
     public void DamageAnimationFinished()
     {
-        // Questo metodo viene chiamato dall'animazione quando è finita
         stateBoss.SetBool("isDamage", false);
         isTakingDamage = false;
         boss.isStopped = false;
@@ -83,12 +75,11 @@ public class BossHealt : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    public void SecondFase()
+    public void SecondPhase()
     {
         Die();
-        Instantiate(this.gameObject, transform.position, Quaternion.identity);
-        Instantiate(this.gameObject, transform.position, Quaternion.identity);
-        firstDeath = false;
-        health = 300;
+        Instantiate(bossPhase2Prefab, transform.position, Quaternion.identity);
+        Instantiate(bossPhase2Prefab, transform.position, Quaternion.identity);
+        bosscreati = true;
     }
 }

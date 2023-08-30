@@ -157,6 +157,15 @@ public class Weapon : MonoBehaviour
                     enemy.TakeDamage(hitForce);
                 }
             }
+
+            if (hitInfo.collider.CompareTag("Boss"))
+            {
+                BossHealt boss = hitInfo.collider.GetComponent<BossHealt>();
+                if (boss != null)
+                {
+                    boss.TakeDamage(25);
+                }
+            }
         }
         else
         {
