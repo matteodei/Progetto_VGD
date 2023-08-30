@@ -97,6 +97,8 @@ public class EnemyChase : MonoBehaviour
             enemy.isStopped = true;
             enemyState.SetBool("isAlert", false);
             enemyState.SetBool("isAttack", true);
+            Debug.Log("nemico in attaco");
+            Debug.Log(distanceEnemyPlayer.ToString());
         }
         else if (distanceEnemyPlayer < rangeAlert)
         {
@@ -104,6 +106,8 @@ public class EnemyChase : MonoBehaviour
             enemy.destination = playerPos;
             enemy.SetDestination(playerTarget.transform.position);
             enemyState.SetBool("isAlert", true);
+            Debug.Log("Nemico ti sta inseguendo");
+            Debug.Log(distanceEnemyPlayer.ToString());
         }
     }
 

@@ -39,6 +39,7 @@ public class EnemyHealt : MonoBehaviour
             stateHealt.SetBool("isDamage", true);
             isTakingDamage = true;
             enemy.isStopped = true;
+            enemy.velocity = Vector3.zero;
             lastDamageTime = Time.time; // Aggiorna il tempo dell'ultimo danno
 
             if (health <= 0)
