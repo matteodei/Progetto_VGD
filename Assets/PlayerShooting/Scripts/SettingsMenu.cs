@@ -26,12 +26,15 @@ public class SettingsMenu : MonoBehaviour
     public GameObject menuRisoluzione;
     public GameObject fullScreenOn;
     public GameObject fullScreenOff;
+    public GameObject cheatOn;
+    public GameObject cheatOff;
     
 
 
     public bool schermoIntero;
     public bool menuScelta;
     public bool menuSetting;
+    public static bool statoTrucchi;
 
     
 
@@ -60,6 +63,8 @@ public class SettingsMenu : MonoBehaviour
         menuGrafica.SetActive(false);
         fullScreenOn.SetActive(false);
         fullScreenOff.SetActive(false);
+        cheatOn.SetActive(false);
+        cheatOff.SetActive(false);
 
         testi.SetActive(false);
         CanvasGame.SetActive(true);
@@ -136,9 +141,11 @@ public class SettingsMenu : MonoBehaviour
         menuGrafica.SetActive(true);
         fullScreenOff.SetActive(true);
         fullScreenOn.SetActive(false);
+        cheatOn.SetActive(false);
+        cheatOff.SetActive(true);
 
 
-        
+
 
 
 
@@ -162,7 +169,9 @@ public class SettingsMenu : MonoBehaviour
         menuSetting = false;
         fullScreenOn.SetActive(false);
         fullScreenOff.SetActive(false);
-        
+        cheatOn.SetActive(false);
+        cheatOff.SetActive(false);
+
 
     }
 
@@ -186,6 +195,8 @@ public class SettingsMenu : MonoBehaviour
         menuGrafica.SetActive(false);
         fullScreenOn.SetActive(false);
         fullScreenOff.SetActive(false);
+        cheatOn.SetActive(false);
+        cheatOff.SetActive(false);
 
     }
 
@@ -229,6 +240,8 @@ public class SettingsMenu : MonoBehaviour
         menuGrafica.SetActive(false);
         fullScreenOn.SetActive(false);
         fullScreenOff.SetActive(false);
+        cheatOn.SetActive(false);
+        cheatOff.SetActive(false);
 
         Pause();
 
@@ -342,6 +355,26 @@ public class SettingsMenu : MonoBehaviour
             
         }
 
+    }
+
+
+    public void SetCheat()
+    {
+        if (statoTrucchi == false)
+        {
+            statoTrucchi = true;
+            cheatOn.SetActive(true);
+            cheatOff.SetActive(false);
+
+        }
+
+        else
+        {
+            statoTrucchi = false;
+            cheatOn.SetActive(false);
+            cheatOff.SetActive(true);
+
+        }
     }
 
 

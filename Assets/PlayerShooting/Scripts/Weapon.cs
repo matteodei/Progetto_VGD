@@ -43,6 +43,7 @@ public class Weapon : MonoBehaviour
     private TMP_Text _ammoText;
     private int numReloads;
     private AudioSource _shootingSound;
+    //public SettingsMenu _trucchi = GetComponent<SettingsMenu>();
 
 
     private void Start()
@@ -51,6 +52,9 @@ public class Weapon : MonoBehaviour
         _rb.mass = 1.0f;
         _ammo = maxAmmo;
         _extraAmmo = maxExtraAmmo;
+
+        
+
         //shootingSound = GetComponent<AudioSource>();
         //reloadingSound = GetComponent<AudioSource>();
     }
@@ -59,6 +63,11 @@ public class Weapon : MonoBehaviour
     {
         
         if (!_held) return;
+
+        if (SettingsMenu.statoTrucchi)
+        {
+            _ammoText.text = "MUNIZIONI INFINITE";
+        }
 
         _scoping = Input.GetMouseButton(1) && !_reloading;
         transform.localRotation = Quaternion.identity;
@@ -71,7 +80,7 @@ public class Weapon : MonoBehaviour
             transform.localRotation = Quaternion.Euler(new Vector3(spinDelta * 360f, 0, 0));
         }
 
-        if(Input.GetKeyDown(KeyCode.R) && ! _reloading && _ammo < maxAmmo) 
+        if(Input.GetKeyDown(KeyCode.R) && ! _reloading && _ammo < maxAmmo && (SettingsMenu.statoTrucchi == false)) 
         {
             if(_extraAmmo <= 0)
             {
@@ -86,8 +95,14 @@ public class Weapon : MonoBehaviour
 
         if ((tapable ? Input.GetMouseButtonDown(0) : Input.GetMouseButton(0)) && ! _shooting && ! _reloading) 
         {
-            if(_ammo > 0)
+            if (SettingsMenu.statoTrucchi)
             {
+                Shoot();
+                StartCoroutine(ShootingCooldown());
+                _ammoText.text = "MUNIZIONI INFINITE";
+            }
+            else if(_ammo > 0)
+            {    
                 _ammo--;
                 _ammoText.text = _ammo + " / " + _extraAmmo;
                 Shoot();
