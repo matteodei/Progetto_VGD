@@ -15,7 +15,7 @@ public class SettingsMenu : MonoBehaviour
     public GameObject volume;
     public GameObject bottoneSetting;
     public GameObject bottoneResume;
-    public GameObject bottoneMenù;
+    public GameObject bottoneMenu;
     public GameObject bottoneBack;
     public GameObject testi;
     public GameObject CanvasGame;
@@ -52,7 +52,7 @@ public class SettingsMenu : MonoBehaviour
         
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
-        bottoneMenù.SetActive(false);
+        bottoneMenu.SetActive(false);
         bottoneBack.SetActive(false);
         tastiGrafica.SetActive(false);
         tastiRisoluzione.SetActive(false);
@@ -127,7 +127,7 @@ public class SettingsMenu : MonoBehaviour
         
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
-        bottoneMenù.SetActive(false);
+        bottoneMenu.SetActive(false);
         bottoneBack.SetActive(true);
         menuSetting = true;
         tastiGrafica.SetActive(false);
@@ -148,7 +148,7 @@ public class SettingsMenu : MonoBehaviour
     {
         barraDellaVita.SetActive(false);
         testi.SetActive(false);
-        bottoneMenù.SetActive(true);
+        bottoneMenu.SetActive(true);
         bottoneSetting.SetActive(true);
         bottoneResume.SetActive(true);
         bottoneBack.SetActive(false);
@@ -178,7 +178,7 @@ public class SettingsMenu : MonoBehaviour
        
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
-        bottoneMenù.SetActive(false);
+        bottoneMenu.SetActive(false);
         bottoneBack.SetActive(false);
         tastiGrafica.SetActive(false);
         tastiRisoluzione.SetActive(false);
@@ -221,7 +221,7 @@ public class SettingsMenu : MonoBehaviour
         
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
-        bottoneMenù.SetActive(false);
+        bottoneMenu.SetActive(false);
         bottoneBack.SetActive(false);
         tastiGrafica.SetActive(false);
         tastiRisoluzione.SetActive(false);

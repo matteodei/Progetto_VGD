@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.23058249, g: 0.6002799, b: 0.9876264, a: 1}
+  m_IndirectSpecularColor: {r: 0.23058246, g: 0.60027987, b: 0.9876263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -31830,7 +31830,7 @@ MonoBehaviour:
   volume: {fileID: 1497354793}
   bottoneSetting: {fileID: 879687628}
   bottoneResume: {fileID: 1335215252}
-  "bottoneMen\xF9": {fileID: 1209457475}
+  bottoneMenu: {fileID: 1209457475}
   bottoneBack: {fileID: 1343913473}
   testi: {fileID: 127932391}
   CanvasGame: {fileID: 1498270601}
