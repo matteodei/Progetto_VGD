@@ -112,6 +112,20 @@ public class SettingsMenu : MonoBehaviour
 
         }
 
+        if(menuScelta && menuSetting)
+        {
+            if (statoTrucchi)
+            {
+                cheatOn.SetActive(true);
+                cheatOff.SetActive(false);
+            }
+            else
+            {
+                cheatOn.SetActive(false);
+                cheatOff.SetActive(true);
+            }
+        }
+
 
 
        
@@ -141,14 +155,7 @@ public class SettingsMenu : MonoBehaviour
         menuGrafica.SetActive(true);
         fullScreenOff.SetActive(true);
         fullScreenOn.SetActive(false);
-        cheatOn.SetActive(false);
-        cheatOff.SetActive(true);
-
-
-
-
-
-
+      
     }
 
     public void scelta()
