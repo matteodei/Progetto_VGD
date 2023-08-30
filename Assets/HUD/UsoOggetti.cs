@@ -29,6 +29,11 @@ public class UsoOggetti : MonoBehaviour
     public GameObject antaDestraAperta;
     public GameObject antaSinistraAperta;
 
+    public GameObject consegnaGem;
+    public GameObject consegnaRossa;
+    public GameObject consegnaBlu;
+    public GameObject consegnaAlt;
+
    
     
 
@@ -44,6 +49,10 @@ public class UsoOggetti : MonoBehaviour
         GemmaBluAlt.SetActive(false);
         antaDestraAperta.SetActive(false);
         antaSinistraAperta.SetActive(false);
+        consegnaGem.SetActive(true);
+        consegnaRossa.SetActive(false);
+        consegnaBlu.SetActive(false);
+        consegnaAlt.SetActive(false);
         dooropen = false;
        // healed = false;
 
@@ -84,6 +93,64 @@ public class UsoOggetti : MonoBehaviour
                 GemmaRossaCan.SetActive(true);
             }
         }
+        if (Time.timeScale == 0)
+        {
+            consegnaGem.SetActive(false);
+            consegnaRossa.SetActive(false);
+            consegnaBlu.SetActive(false);
+            consegnaAlt.SetActive(false);
+        }
+        else
+        {
+            if (bluegem == false && redgem == false && bluegemalt == false && redgemalt == false && dooropen == false)
+            {
+                consegnaGem.SetActive(true);
+                consegnaRossa.SetActive(false);
+                consegnaBlu.SetActive(false);
+                consegnaAlt.SetActive(false);
+            }
+            else if (bluegem == true && redgem == false && bluegemalt == false && redgemalt == false)
+            {
+                consegnaGem.SetActive(false);
+                consegnaRossa.SetActive(true);
+                consegnaBlu.SetActive(false);
+                consegnaAlt.SetActive(false);
+            }
+            else if (bluegem == false && redgem == true && bluegemalt == false && redgemalt == false)
+            {
+                consegnaGem.SetActive(false);
+                consegnaRossa.SetActive(false);
+                consegnaBlu.SetActive(true);
+                consegnaAlt.SetActive(false);
+            }
+            else if ((bluegem == true || redgem == true) && (bluegemalt == true || redgemalt == true))
+            {
+                consegnaGem.SetActive(false);
+                consegnaRossa.SetActive(false);
+                consegnaBlu.SetActive(false);
+                consegnaAlt.SetActive(true);
+            }
+            else if (bluegem == false && redgem == false && bluegemalt == false && redgemalt == false && dooropen == true)
+            {
+                consegnaGem.SetActive(false);
+                consegnaRossa.SetActive(false);
+                consegnaBlu.SetActive(false);
+                consegnaAlt.SetActive(false);
+            }
+            else if (bluegem == true && redgem == true && bluegemalt == false && redgemalt == false)
+            {
+                consegnaGem.SetActive(false);
+                consegnaRossa.SetActive(false);
+                consegnaBlu.SetActive(false);
+                consegnaAlt.SetActive(true);
+            }
+
+
+
+
+
+
+        }
     }
 
 
@@ -104,6 +171,21 @@ public class UsoOggetti : MonoBehaviour
                 GemmaRossa.SetActive(false);
                 GemmaRossaCan.SetActive(true);
                 redgem = true;
+                if (bluegem == false)
+                {
+                    consegnaBlu.SetActive(true);
+                    consegnaGem.SetActive(false);
+
+                }
+
+                else
+                {
+                    consegnaBlu.SetActive(false);
+                    consegnaRossa.SetActive(false);
+                    consegnaAlt.SetActive(true);
+                    consegnaGem.SetActive(false);
+                }
+
 
             }
         }
@@ -114,7 +196,22 @@ public class UsoOggetti : MonoBehaviour
                 GemmaBlu.SetActive(false);
                 GemmaBluCan.SetActive(true);
                 bluegem = true;
+                if (redgem == false)
+                {
+                    consegnaRossa.SetActive(true);
+                    consegnaGem.SetActive(false);
 
+                }
+                    
+                else
+                {
+                    consegnaBlu.SetActive(false);
+                    consegnaRossa.SetActive(false);
+                    consegnaAlt.SetActive(true);
+                    consegnaGem.SetActive(false);
+                }
+                    
+                    
             }
         }
         else if (other.CompareTag("AltareRosso"))
@@ -125,6 +222,8 @@ public class UsoOggetti : MonoBehaviour
                 GemmaRossaCan.SetActive(false);
                 redgemalt = true;
                 redgem = false;
+                if (bluegemalt == true)
+                    consegnaAlt.SetActive(false);
             }
         }
         else if (other.CompareTag("AltareBlu"))
@@ -135,7 +234,8 @@ public class UsoOggetti : MonoBehaviour
                 GemmaBluCan.SetActive(false);
                 bluegemalt = true;
                 bluegem = false;
-
+                if (redgemalt == true)
+                    consegnaAlt.SetActive(false);
             }
         }
        /* else if (other.CompareTag("HealtZone"))
