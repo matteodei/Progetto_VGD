@@ -11,10 +11,8 @@ using UnityEngine.SceneManagement;
 public class SettingsMenu : MonoBehaviour
 {
    
-    public GameObject fullscreen;
+    
     public GameObject volume;
-    public GameObject grafica;
-    public GameObject risoluzione;
     public GameObject bottoneSetting;
     public GameObject bottoneResume;
     public GameObject bottoneMenù;
@@ -26,20 +24,22 @@ public class SettingsMenu : MonoBehaviour
     public GameObject menuGrafica;
     public GameObject tastiRisoluzione;
     public GameObject menuRisoluzione;
+    public GameObject fullScreenOn;
+    public GameObject fullScreenOff;
+    
 
 
-   
-
+    public bool schermoIntero;
     public bool menuScelta;
     public bool menuSetting;
+
+    
 
     private bool isPaused = false;
 
     public AudioMixer audioMixer;
 
-    Resolution[] resolutions;
-
-    public TMP_Dropdown resolutionDropdown;
+    
 
 
 
@@ -48,10 +48,8 @@ public class SettingsMenu : MonoBehaviour
     void Start()
     {
         barraDellaVita.SetActive(true);
-        fullscreen.SetActive(false);
         volume.SetActive(false);
-        grafica.SetActive(false);
-        risoluzione.SetActive(false);
+        
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
@@ -60,32 +58,15 @@ public class SettingsMenu : MonoBehaviour
         tastiRisoluzione.SetActive(false);
         menuRisoluzione.SetActive(false);
         menuGrafica.SetActive(false);
-        
+        fullScreenOn.SetActive(false);
+        fullScreenOff.SetActive(false);
+
         testi.SetActive(false);
         CanvasGame.SetActive(true);
 
+        
 
-        resolutions = Screen.resolutions;
-
-        resolutionDropdown.ClearOptions();
-
-        List<string> options = new List<string>();
-
-        int currentResolutionIndex = 0;
-        for (int i = 0; i < resolutions.Length; i++)
-        { 
-            string option = resolutions[i].width + " x " + resolutions[i].height;
-            options.Add(option);
-
-            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
-            {
-                currentResolutionIndex = i;
-            }
-        }
-
-        resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = currentResolutionIndex;
-        resolutionDropdown.RefreshShownValue();
+  
     }
 
     // Update is called once per frame
@@ -123,10 +104,12 @@ public class SettingsMenu : MonoBehaviour
                 menuSetting = false;
                 
             }
-            
-
 
         }
+
+
+
+       
     }
 
     public void SetVolume(float volume)
@@ -134,32 +117,14 @@ public class SettingsMenu : MonoBehaviour
         audioMixer.SetFloat("volume", volume);
     }
 
-    public void SetQuality(int qualityIndex)
-    { 
-        QualitySettings.SetQualityLevel(qualityIndex);
-    }
-
-    public void SetFullScreen(bool isFullscreen)
-    { 
-        Screen.fullScreen = isFullscreen;
-    }
-
-    public void SetResolution(int resolutionIndex)
-    {
-        Resolution resolution = resolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-    }
-
     
-
     public void setting()
     {
         barraDellaVita.SetActive(false);
         testi.SetActive(true);
-        fullscreen.SetActive(true);
+        
         volume.SetActive(true);
-        grafica.SetActive(true);
-        risoluzione.SetActive(true);
+        
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
@@ -169,10 +134,15 @@ public class SettingsMenu : MonoBehaviour
         tastiRisoluzione.SetActive(false);
         menuRisoluzione.SetActive(true);
         menuGrafica.SetActive(true);
+        fullScreenOff.SetActive(true);
+        fullScreenOn.SetActive(false);
+
+
+        
 
 
 
-}
+    }
 
     public void scelta()
     {
@@ -182,15 +152,18 @@ public class SettingsMenu : MonoBehaviour
         bottoneSetting.SetActive(true);
         bottoneResume.SetActive(true);
         bottoneBack.SetActive(false);
-        fullscreen.SetActive(false);
+       
         volume.SetActive(false);
-        grafica.SetActive(false);
-        risoluzione.SetActive(false);
+       
         tastiGrafica.SetActive(false);
         tastiRisoluzione.SetActive(false);
         menuRisoluzione.SetActive(false);
         menuGrafica.SetActive(false);
         menuSetting = false;
+        fullScreenOn.SetActive(false);
+        fullScreenOff.SetActive(false);
+        
+
     }
 
     public void Gioco()
@@ -199,10 +172,10 @@ public class SettingsMenu : MonoBehaviour
         CanvasGame.SetActive(true);
         barraDellaVita.SetActive(true);
         testi.SetActive(false);
-        fullscreen.SetActive(false);
+        
         volume.SetActive(false);
-        grafica.SetActive(false);
-        risoluzione.SetActive(false);
+        
+       
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
@@ -211,6 +184,9 @@ public class SettingsMenu : MonoBehaviour
         tastiRisoluzione.SetActive(false);
         menuRisoluzione.SetActive(false);
         menuGrafica.SetActive(false);
+        fullScreenOn.SetActive(false);
+        fullScreenOff.SetActive(false);
+
     }
 
 
@@ -221,11 +197,12 @@ public class SettingsMenu : MonoBehaviour
         if (isPaused)
         {
             Time.timeScale = 0; // Mette in pausa il tempo di gioco
-
+            
         }
         else
         {
             Time.timeScale = 1; // Ripristina il tempo di gioco normale
+            
         }
     }
 
@@ -239,10 +216,9 @@ public class SettingsMenu : MonoBehaviour
         CanvasGame.SetActive(true);
         barraDellaVita.SetActive(true);
         testi.SetActive(false);
-        fullscreen.SetActive(false);
+        
         volume.SetActive(false);
-        grafica.SetActive(false);
-        risoluzione.SetActive(false);
+        
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
@@ -251,17 +227,21 @@ public class SettingsMenu : MonoBehaviour
         tastiRisoluzione.SetActive(false);
         menuRisoluzione.SetActive(false);
         menuGrafica.SetActive(false);
+        fullScreenOn.SetActive(false);
+        fullScreenOff.SetActive(false);
 
         Pause();
 
         menuScelta = false;
 
+        
+            
 
     }
 
-    public void menù()
+    public void menu()
     { 
-        SceneManager.LoadScene("Menù_iniziale");
+        SceneManager.LoadScene("Menu_iniziale");
     }
 
     public void graphicMenu()
@@ -300,32 +280,67 @@ public class SettingsMenu : MonoBehaviour
     public void setRes1()
     {
         Screen.SetResolution(720, 480, true);
+        schermoIntero = true;
         tastiRisoluzione.SetActive(false);
         menuRisoluzione.SetActive(true);
+        fullScreenOn.SetActive(true);
+        fullScreenOff.SetActive(false);
+
     }
 
     public void setRes2()
     {
         Screen.SetResolution(1024, 768, true);
+        schermoIntero = true;
         tastiRisoluzione.SetActive(false);
         menuRisoluzione.SetActive(true);
+        fullScreenOn.SetActive(true);
+        fullScreenOff.SetActive(false);
 
     }
 
     public void setRes3()
     {
         Screen.SetResolution(1440, 900, true);
+        schermoIntero = true;
         tastiRisoluzione.SetActive(false);
         menuRisoluzione.SetActive(true);
+        fullScreenOn.SetActive(true);
+        fullScreenOff.SetActive(false);
 
     }
 
     public void setRes4()
     {
         Screen.SetResolution(1920, 1080, true);
+        schermoIntero = true;
         tastiRisoluzione.SetActive(false);
         menuRisoluzione.SetActive(true);
+        fullScreenOn.SetActive(true);
+        fullScreenOff.SetActive(false);
+        
+    }
 
+    public void SetFullScreen()
+    {
+        
+        if (schermoIntero == false)
+        {
+            schermoIntero = true;
+            Screen.fullScreen = schermoIntero ;
+            fullScreenOn.SetActive(true);
+            fullScreenOff.SetActive(false);
+           
+        }
+
+        else
+        {
+            schermoIntero = false;
+            Screen.fullScreen = schermoIntero;
+            fullScreenOn.SetActive(false);
+            fullScreenOff.SetActive(true);
+            
+        }
 
     }
 
@@ -333,5 +348,6 @@ public class SettingsMenu : MonoBehaviour
 
 
 
+
+
 }
- 

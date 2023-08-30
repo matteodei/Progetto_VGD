@@ -7,7 +7,7 @@ using static UnityEngine.Rendering.PostProcessing.SubpixelMorphologicalAntialias
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 
-public class MenùIniziale : MonoBehaviour
+public class MenuIniziale : MonoBehaviour
 {
 
 

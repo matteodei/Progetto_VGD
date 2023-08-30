@@ -59,6 +59,31 @@ public class UsoOggetti : MonoBehaviour
 
         if (dooropen == false)
             apriPorta();
+
+        if (Time.timeScale == 0)
+        {
+            GemmaBluCan.SetActive(false);
+            GemmaRossaCan.SetActive(false);
+        }
+        else
+        {
+            if (redgem == true && bluegem == true)
+            {
+                GemmaBluCan.SetActive(true);
+                GemmaRossaCan.SetActive(true);
+            }
+            else if (redgem == false && bluegem == true)
+            {
+                GemmaBluCan.SetActive(true);
+                GemmaRossaCan.SetActive(false);
+
+            }
+            else if (redgem == true && bluegem == false)
+            {
+                GemmaBluCan.SetActive(false);
+                GemmaRossaCan.SetActive(true);
+            }
+        }
     }
 
 
@@ -99,6 +124,7 @@ public class UsoOggetti : MonoBehaviour
                 GemmaRossaAlt.SetActive(true);
                 GemmaRossaCan.SetActive(false);
                 redgemalt = true;
+                redgem = false;
             }
         }
         else if (other.CompareTag("AltareBlu"))
@@ -108,6 +134,7 @@ public class UsoOggetti : MonoBehaviour
                 GemmaBluAlt.SetActive(true);
                 GemmaBluCan.SetActive(false);
                 bluegemalt = true;
+                bluegem = false;
 
             }
         }
