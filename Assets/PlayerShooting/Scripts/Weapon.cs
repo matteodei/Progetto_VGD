@@ -20,7 +20,7 @@ public class Weapon : MonoBehaviour
     public int maxExtraAmmo;
     public int shotsPerSecond;
     public float reloadSpeed;
-    public float hitForce;
+    public int hitForce;
     public float range;
     public bool tapable;
     public float kickbackForce;
@@ -156,7 +156,7 @@ public class Weapon : MonoBehaviour
                 EnemyHealt enemy = hitInfo.collider.GetComponent<EnemyHealt>();
                 if (enemy != null)
                 {
-                    enemy.TakeDamage(25);
+                    enemy.TakeDamage(hitForce);
                 }
             }
         }
