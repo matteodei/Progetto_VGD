@@ -27,6 +27,7 @@ public class SettingsMenu : MonoBehaviour
     public GameObject tastiRisoluzione;
     public GameObject menuRisoluzione;
 
+
    
 
     public bool menuScelta;
@@ -57,6 +58,8 @@ public class SettingsMenu : MonoBehaviour
         bottoneBack.SetActive(false);
         tastiGrafica.SetActive(false);
         tastiRisoluzione.SetActive(false);
+        menuRisoluzione.SetActive(false);
+        menuGrafica.SetActive(false);
         
         testi.SetActive(false);
         CanvasGame.SetActive(true);
@@ -162,7 +165,12 @@ public class SettingsMenu : MonoBehaviour
         bottoneMenù.SetActive(false);
         bottoneBack.SetActive(true);
         menuSetting = true;
-        
+        tastiGrafica.SetActive(false);
+        tastiRisoluzione.SetActive(false);
+        menuRisoluzione.SetActive(true);
+        menuGrafica.SetActive(true);
+
+
 
 }
 
@@ -178,6 +186,10 @@ public class SettingsMenu : MonoBehaviour
         volume.SetActive(false);
         grafica.SetActive(false);
         risoluzione.SetActive(false);
+        tastiGrafica.SetActive(false);
+        tastiRisoluzione.SetActive(false);
+        menuRisoluzione.SetActive(false);
+        menuGrafica.SetActive(false);
         menuSetting = false;
     }
 
@@ -195,6 +207,10 @@ public class SettingsMenu : MonoBehaviour
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
         bottoneBack.SetActive(false);
+        tastiGrafica.SetActive(false);
+        tastiRisoluzione.SetActive(false);
+        menuRisoluzione.SetActive(false);
+        menuGrafica.SetActive(false);
     }
 
 
@@ -231,6 +247,10 @@ public class SettingsMenu : MonoBehaviour
         bottoneResume.SetActive(false);
         bottoneMenù.SetActive(false);
         bottoneBack.SetActive(false);
+        tastiGrafica.SetActive(false);
+        tastiRisoluzione.SetActive(false);
+        menuRisoluzione.SetActive(false);
+        menuGrafica.SetActive(false);
 
         Pause();
 
@@ -280,7 +300,6 @@ public class SettingsMenu : MonoBehaviour
     public void setRes1()
     {
         Screen.SetResolution(720, 480, true);
-        SetFullScreen(true);
         tastiRisoluzione.SetActive(false);
         menuRisoluzione.SetActive(true);
     }
@@ -288,7 +307,6 @@ public class SettingsMenu : MonoBehaviour
     public void setRes2()
     {
         Screen.SetResolution(1024, 768, true);
-        SetFullScreen(true);
         tastiRisoluzione.SetActive(false);
         menuRisoluzione.SetActive(true);
 
@@ -297,7 +315,6 @@ public class SettingsMenu : MonoBehaviour
     public void setRes3()
     {
         Screen.SetResolution(1440, 900, true);
-        SetFullScreen(true);
         tastiRisoluzione.SetActive(false);
         menuRisoluzione.SetActive(true);
 
@@ -306,7 +323,6 @@ public class SettingsMenu : MonoBehaviour
     public void setRes4()
     {
         Screen.SetResolution(1920, 1080, true);
-        SetFullScreen(true);
         tastiRisoluzione.SetActive(false);
         menuRisoluzione.SetActive(true);
 
