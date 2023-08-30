@@ -12,6 +12,7 @@ TagManager:
   - AltareRosso
   - HealtZone
   - AmmoZone
+  - Boss
   layers:
   - Default
   - TransparentFX
