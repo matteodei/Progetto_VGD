@@ -1596,7 +1596,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
-  healed: 0
   player: {fileID: 644075197}
   barraVita: {fileID: 0}
   vita: {fileID: 0}
@@ -1627,6 +1626,10 @@ MonoBehaviour:
   antaSinistra: {fileID: 0}
   antaDestraAperta: {fileID: 0}
   antaSinistraAperta: {fileID: 0}
+  consegnaGem: {fileID: 0}
+  consegnaRossa: {fileID: 0}
+  consegnaBlu: {fileID: 0}
+  consegnaAlt: {fileID: 0}
   player: {fileID: 644075197}
 --- !u!114 &644075196
 MonoBehaviour:
@@ -23812,19 +23815,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1496454829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496454824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0827ffd8610eb6944a4b82fcabc4e340, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!114 &1496454830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23854,6 +23844,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6434008096517374666, guid: 63e974d9ec82619419e69ae2287be94e, type: 3}
+--- !u!114 &1496454832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496454824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dc760fc65c5394a886b58ec93939f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1001 &1510756747
 PrefabInstance:
   m_ObjectHideFlags: 0
