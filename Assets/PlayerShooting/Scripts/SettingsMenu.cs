@@ -69,6 +69,8 @@ public class SettingsMenu : MonoBehaviour
         testi.SetActive(false);
         CanvasGame.SetActive(true);
 
+
+        SetVolume(-20);
         
 
   

@@ -33,6 +33,7 @@ public class Weapon : MonoBehaviour
     public Collider[] gfxColliders;
     public AudioSource shootingSound;
     public AudioSource reloadingSound;
+    public AudioSource ammoBoxSound;
 
     private float _rotationTime;
     private bool _held;
@@ -129,6 +130,7 @@ public class Weapon : MonoBehaviour
     {
         if (other.CompareTag("AmmoZone"))
         {
+            ammoBoxSound.Play();
             // Incrementa la variabile _extraAmmo
             _extraAmmo = 300; // Puoi cambiare il valore 10 con qualsiasi altro valore desiderato
             // Puoi anche aggiornare il testo per mostrare il nuovo valore dell'extra ammo
