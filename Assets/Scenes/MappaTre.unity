@@ -1386,7 +1386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea17bc6776691e4eb75bd7dd287e4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
+  damageAmount: 15
   attackCooldown: 1
   attackRange: 1.7
 --- !u!114 &227165454
@@ -1415,7 +1415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61aad81c38b8474e96b092f9d78540f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 300
 --- !u!1001 &234557107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2106,8 +2106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea17bc6776691e4eb75bd7dd287e4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackCooldown: 1
+  damageAmount: 5
+  attackCooldown: 2
   attackRange: 1.7
 --- !u!195 &290338419
 NavMeshAgent:
@@ -20092,7 +20092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea17bc6776691e4eb75bd7dd287e4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
+  damageAmount: 20
   attackCooldown: 1
   attackRange: 1.7
 --- !u!64 &1496454831
@@ -20121,7 +20121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6dc760fc65c5394a886b58ec93939f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 600
   bossSecondPhase: {fileID: 227165449}
   skeletonSecondPhase: {fileID: 290338415}
 --- !u!136 &1496454833

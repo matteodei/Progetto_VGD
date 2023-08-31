@@ -32,15 +32,19 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        if(Time.timeScale == 1)
         {
-            walkingSound.enabled = true;
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            {
+                walkingSound.enabled = true;
 
+            }
+            else
+            {
+                walkingSound.enabled = false;
+            }
         }
-        else
-        {
-            walkingSound.enabled = false;
-        }
+        
         float hzMove = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         float vtMove = Input.GetAxis("Vertical") * speed * Time.deltaTime;
 
