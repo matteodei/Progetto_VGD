@@ -64,6 +64,7 @@
     <Compile Include="Assets\Imported\BrokenVector\LowPolyDungeon\Demo Scenes\ScreenshotMaker.cs" />
     <Compile Include="Assets\Script\EnemyGeneration.cs" />
     <Compile Include="Assets\Imported\BrokenVector\LowPolyDungeon\Demo Scenes\PlayerMovement.cs" />
+    <Compile Include="Assets\Script\ArenaMode.cs" />
     <Compile Include="Assets\Script\Weapon.cs" />
     <Compile Include="Assets\Script\UsoOggetti.cs" />
     <Compile Include="Assets\Script\SettingsMenu.cs" />
