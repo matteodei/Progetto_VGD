@@ -1,5 +1,3 @@
 # Progetto_VGD
- 
- Ciao prova di commit 
-
- prova di commit di carlo
+Progetto VGD - Dungeon Shooter
+Di: Matteo Deiana - Federico Basciu - Daniel Dettori - Carlo bistrussu

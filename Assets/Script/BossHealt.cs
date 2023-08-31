@@ -15,7 +15,8 @@ public class BossHealt : MonoBehaviour
 
     private bool bosscreati;
 
-    public GameObject bossPhase2Prefab; // Prefab per la seconda fase del boss
+    public GameObject bossSecondPhase;
+    public GameObject skeletonSecondPhase;
 
     void Start()
     {
@@ -34,7 +35,7 @@ public class BossHealt : MonoBehaviour
 
         if (health <= 0 && !bosscreati)
         {
-            SecondPhase();
+            Die();
         }
     }
 
@@ -68,18 +69,23 @@ public class BossHealt : MonoBehaviour
         stateBoss.SetBool("isDead", true);
         boss.isStopped = true;
         boss.velocity = Vector3.zero;
+        bosscreati = true;
     }
 
     public void DieAnimationFinished()
     {
         Destroy(this.gameObject);
+        SecondPhase();
     }
 
     public void SecondPhase()
     {
-        Die();
-        Instantiate(bossPhase2Prefab, transform.position, Quaternion.identity);
-        Instantiate(bossPhase2Prefab, transform.position, Quaternion.identity);
-        bosscreati = true;
+        Instantiate(bossSecondPhase, transform.position , Quaternion.identity);
+        Instantiate(bossSecondPhase, transform.position, Quaternion.identity);
+        Instantiate(skeletonSecondPhase, transform.position, Quaternion.identity);
+        Instantiate(skeletonSecondPhase, transform.position, Quaternion.identity);
+        Instantiate(skeletonSecondPhase, transform.position, Quaternion.identity);
+        Instantiate(skeletonSecondPhase, transform.position, Quaternion.identity);
+
     }
 }
