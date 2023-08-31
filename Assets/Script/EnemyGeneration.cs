@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyGeneration : MonoBehaviour
 {
@@ -20,6 +22,8 @@ public class EnemyGeneration : MonoBehaviour
     static private int nEnemies;
     public int maxEnemy;
 
+    public TMP_Text timer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +38,7 @@ public class EnemyGeneration : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        timer.text = tempoTrascorso.ToString();
 
         if (ArenaMode.ArenaModeFlag == false)
         {
@@ -62,28 +66,31 @@ public class EnemyGeneration : MonoBehaviour
 
         else
         {
-            tempoTrascorso += Time.deltaTime;
-            if (tempoTrascorso >= tempoMax)
+            if (Time.timeScale == 1)
             {
-                ArenaMode.ArenaModeFlag = false;
-            }
+                tempoTrascorso += Time.deltaTime;
+                if (tempoTrascorso >= tempoMax)
+                {
+                    ArenaMode.ArenaModeFlag = false;
+                }
 
 
-            if (waitTime <= 0)
-            {
+                if (waitTime <= 0)
+                {
 
-                Debug.Log("spawn");
-                Instantiate(myEnemies[randomIndexEnemy], Spawn1, Quaternion.identity);
-                Instantiate(myEnemies[randomIndexEnemy], Spawn1, Quaternion.identity);
-                Instantiate(myEnemies[randomIndexEnemy], Spawn2, Quaternion.identity);
-                Instantiate(myEnemies[randomIndexEnemy], Spawn2, Quaternion.identity); 
-                nEnemies++;
-                initWaitTime = 15f;
-                waitTime = initWaitTime;
-            }
-            else
-            {
-                waitTime -= Time.deltaTime;
+                    Debug.Log("spawn");
+                    Instantiate(myEnemies[randomIndexEnemy], Spawn1, Quaternion.identity);
+                    Instantiate(myEnemies[randomIndexEnemy], Spawn1, Quaternion.identity);
+                    Instantiate(myEnemies[randomIndexEnemy], Spawn2, Quaternion.identity);
+                    Instantiate(myEnemies[randomIndexEnemy], Spawn2, Quaternion.identity);
+                    nEnemies++;
+                    initWaitTime = 15f;
+                    waitTime = initWaitTime;
+                }
+                else
+                {
+                    waitTime -= Time.deltaTime;
+                }
             }
         }
     }
