@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyHealt : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     public int health = 100;
     private Animator stateHealt;
     private NavMeshAgent enemy;
-
     private bool isTakingDamage = false;
     private float damageCooldown = 0.1f; // Tempo di cooldown tra i danni
     private float lastDamageTime = 0f; // Memorizza il tempo dell'ultimo danno
@@ -44,6 +43,7 @@ public class EnemyHealt : MonoBehaviour
 
             if (health <= 0)
             {
+                EnemyGeneration.nEnemies--;
                 Die();
             }
         }
