@@ -40,7 +40,7 @@ public class Weapon : MonoBehaviour
     private bool _scoping;
     private bool _reloading;
     private bool _shooting;
-    private int _ammo;
+    public int _ammo;
     public int _extraAmmo;
     private Rigidbody _rb;
     private Transform _playerCamera;
@@ -55,9 +55,6 @@ public class Weapon : MonoBehaviour
         _rb = gameObject.AddComponent<Rigidbody>();
         _rb.mass = 1.0f;
         _ammo = maxAmmo;
-        _extraAmmo = maxExtraAmmo;
-
-        wepCollider = GetComponent<Collider>();
         
 
         //shootingSound = GetComponent<AudioSource>();
@@ -128,16 +125,14 @@ public class Weapon : MonoBehaviour
     }
      private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("a1");
         if (other.CompareTag("AmmoZone"))
         {
+            Debug.Log("aa");
             ammoBoxSound.Play();
-            // Incrementa la variabile _extraAmmo
-            _extraAmmo = 300; // Puoi cambiare il valore 10 con qualsiasi altro valore desiderato
-            // Puoi anche aggiornare il testo per mostrare il nuovo valore dell'extra ammo
+            _extraAmmo = maxExtraAmmo; 
             _ammoText.text = _ammo + " / " + _extraAmmo;
             other.gameObject.SetActive(false);
-
-            // Disattiva l'oggetto "AmmoZone" per evitare futuri contatti
       
         }
     }
@@ -156,7 +151,7 @@ public class Weapon : MonoBehaviour
                 EnemyHealt enemy = hitInfo.collider.GetComponent<EnemyHealt>();
                 if (enemy != null)
                 {
-                    enemy.TakeDamage(25);
+                    enemy.TakeDamage(hitForce);
                 }
             }
 
@@ -165,7 +160,7 @@ public class Weapon : MonoBehaviour
                 BossHealt boss = hitInfo.collider.GetComponent<BossHealt>();
                 if (boss != null)
                 {
-                    boss.TakeDamage(25);
+                    boss.TakeDamage(hitForce);
                 }
             }
         }
