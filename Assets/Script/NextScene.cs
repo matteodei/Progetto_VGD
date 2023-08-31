@@ -21,5 +21,10 @@ public class NextScene : MonoBehaviour
         SceneManager.LoadScene(scenename);
     }
 
+    public void riprova()
+    {
+        SceneManager.LoadScene(SettingsMenu.scenaAttuale);
+        Time.timeScale = 1;
+    }
 
 }
