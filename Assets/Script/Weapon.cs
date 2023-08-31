@@ -156,7 +156,7 @@ public class Weapon : MonoBehaviour
                 EnemyHealt enemy = hitInfo.collider.GetComponent<EnemyHealt>();
                 if (enemy != null)
                 {
-                    enemy.TakeDamage(hitForce);
+                    enemy.TakeDamage(25);
                 }
             }
 

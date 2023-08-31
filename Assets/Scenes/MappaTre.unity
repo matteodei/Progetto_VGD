@@ -681,7 +681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 10
   attackCooldown: 1
-  attackRange: 1.5
+  attackRange: 1.7
 --- !u!114 &227165454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e68bf5be36c5a4a86f2661825a09f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rangeAttack: 1.5
+  rangeAttack: 1.7
   playerTarget: {fileID: 644075193}
 --- !u!1001 &234557107
 PrefabInstance:
@@ -1754,6 +1754,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  portaAperta: {fileID: 0}
+  portaChiusa: {fileID: 0}
+  portaUscitaAperta: {fileID: 0}
+  portaUscitaChiusa: {fileID: 0}
+  _healingSound: {fileID: 0}
   currentHealth: 0
   player: {fileID: 644075197}
   barraVita: {fileID: 0}
@@ -23973,7 +23978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e68bf5be36c5a4a86f2661825a09f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rangeAttack: 1.5
+  rangeAttack: 1.7
   playerTarget: {fileID: 644075193}
 --- !u!195 &1496454826
 NavMeshAgent:
@@ -24011,7 +24016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 10
   attackCooldown: 1
-  attackRange: 1.5
+  attackRange: 1.7
 --- !u!64 &1496454831
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24637,7 +24642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 63e974d9ec82619419e69ae2287be94e, type: 3}
       propertyPath: m_TagString
-      value: Boss
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 63e974d9ec82619419e69ae2287be94e, type: 3}
       propertyPath: m_Controller

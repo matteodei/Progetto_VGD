@@ -25,7 +25,7 @@ public class EnemyHealt : MonoBehaviour
         // Controllo per reimpostare lo stato solo dopo il cooldown
         if (Time.time - lastDamageTime >= damageCooldown)
         {
-            stateHealt.SetBool("isDamage", false);
+            stateHealt.SetBool("isHit", false);
             isTakingDamage = false;
         }
 
@@ -36,7 +36,7 @@ public class EnemyHealt : MonoBehaviour
         if (!isTakingDamage)
         {
             health -= damage;
-            stateHealt.SetBool("isDamage", true);
+            stateHealt.SetBool("isHit", true);
             isTakingDamage = true;
             enemy.isStopped = true;
             enemy.velocity = Vector3.zero;
@@ -52,7 +52,7 @@ public class EnemyHealt : MonoBehaviour
     public void DamageAnimationFinished()
     {
         // Questo metodo viene chiamato dall'animazione quando è finita
-        stateHealt.SetBool("isDamage", false);
+        stateHealt.SetBool("isHit", false);
         isTakingDamage = false;
         enemy.isStopped = false;
     }

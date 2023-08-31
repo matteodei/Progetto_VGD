@@ -28,7 +28,7 @@ public class BossHealt : MonoBehaviour
     {
         if (Time.time - lastDamageTime >= damageCooldown)
         {
-            stateBoss.SetBool("isDamage", false);
+            stateBoss.SetBool("isHit", false);
             isTakingDamage = false;
         }
 
@@ -43,7 +43,7 @@ public class BossHealt : MonoBehaviour
         if (!isTakingDamage)
         {
             health -= damage;
-            stateBoss.SetBool("isDamage", true);
+            stateBoss.SetBool("isHit", true);
             isTakingDamage = true;
             boss.isStopped = true;
             boss.velocity = Vector3.zero;
@@ -58,7 +58,7 @@ public class BossHealt : MonoBehaviour
 
     public void DamageAnimationFinished()
     {
-        stateBoss.SetBool("isDamage", false);
+        stateBoss.SetBool("isHit", false);
         isTakingDamage = false;
         boss.isStopped = false;
     }
