@@ -6326,7 +6326,7 @@ MonoBehaviour:
   - {fileID: 1484546060}
   - {fileID: 1003941148}
   - {fileID: 1244739767}
-  maxEnemy: 10
+  maxEnemy: 30
 --- !u!4 &143586000 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3392177451024396610, guid: e41d746696116cc41881f2c82c8aa7c4, type: 3}
@@ -6580,11 +6580,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a84a636a35a83fe408bd4b3d8c2b8058, type: 3}
---- !u!4 &173682914 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4232641428546220, guid: e7152d23c09aee845a9594ff1308f6a8, type: 3}
-  m_PrefabInstance: {fileID: 630456413}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &195684773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7418,13 +7413,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1386664752, guid: e7152d23c09aee845a9594ff1308f6a8, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1728619453497436, guid: e7152d23c09aee845a9594ff1308f6a8, type: 3}
       propertyPath: m_Name
       value: Ammo_box (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1728619453497436, guid: e7152d23c09aee845a9594ff1308f6a8, type: 3}
       propertyPath: m_TagString
-      value: AmmoZone
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4232641428546220, guid: e7152d23c09aee845a9594ff1308f6a8, type: 3}
       propertyPath: m_RootOrder
@@ -25182,10 +25181,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ammo_box
       objectReference: {fileID: 0}
-    - target: {fileID: 1728619453497436, guid: e7152d23c09aee845a9594ff1308f6a8, type: 3}
-      propertyPath: m_TagString
-      value: AmmoZone
-      objectReference: {fileID: 0}
     - target: {fileID: 4232641428546220, guid: e7152d23c09aee845a9594ff1308f6a8, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -25270,15 +25265,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457434, guid: c1d92bdd55f8c154c957dcd4f7cfe669, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 51.7
+      value: 123.688
       objectReference: {fileID: 0}
     - target: {fileID: 457434, guid: c1d92bdd55f8c154c957dcd4f7cfe669, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.68
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 457434, guid: c1d92bdd55f8c154c957dcd4f7cfe669, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -92.9
+      value: -111.126
       objectReference: {fileID: 0}
     - target: {fileID: 457434, guid: c1d92bdd55f8c154c957dcd4f7cfe669, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30247,7 +30242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647730159}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.1, y: 0, z: 117.6}
+  m_LocalPosition: {x: 52.82, y: 5.99, z: 110.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30866,7 +30861,7 @@ MonoBehaviour:
   - {fileID: 1484546060}
   - {fileID: 1003941148}
   - {fileID: 1244739767}
-  maxEnemy: 10
+  maxEnemy: 30
 --- !u!1001 &685973091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31164,7 +31159,7 @@ MonoBehaviour:
   - {fileID: 1484546060}
   - {fileID: 1003941148}
   - {fileID: 1244739767}
-  maxEnemy: 10
+  maxEnemy: 30
 --- !u!1001 &706902162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34031,7 +34026,7 @@ MonoBehaviour:
   - {fileID: 1484546060}
   - {fileID: 1003941148}
   - {fileID: 1244739767}
-  maxEnemy: 10
+  maxEnemy: 30
 --- !u!1 &998058390
 GameObject:
   m_ObjectHideFlags: 0
@@ -37422,7 +37417,7 @@ MonoBehaviour:
   - {fileID: 1484546060}
   - {fileID: 1003941148}
   - {fileID: 1244739767}
-  maxEnemy: 10
+  maxEnemy: 30
 --- !u!1 &1254213164
 GameObject:
   m_ObjectHideFlags: 0
@@ -43455,7 +43450,7 @@ MonoBehaviour:
   - {fileID: 1484546060}
   - {fileID: 1003941148}
   - {fileID: 1244739767}
-  maxEnemy: 10
+  maxEnemy: 30
 --- !u!1 &1321301121
 GameObject:
   m_ObjectHideFlags: 0
@@ -43577,7 +43572,7 @@ MonoBehaviour:
   - {fileID: 1484546060}
   - {fileID: 1003941148}
   - {fileID: 1244739767}
-  maxEnemy: 10
+  maxEnemy: 30
 --- !u!1001 &1327768808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44314,7 +44309,7 @@ MonoBehaviour:
   - {fileID: 1484546060}
   - {fileID: 1003941148}
   - {fileID: 1244739767}
-  maxEnemy: 10
+  maxEnemy: 30
 --- !u!1 &1354091885 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 501295248943222296, guid: d6a5e2c4aefa6804b8f7d2af9a9676b5, type: 3}
@@ -44628,103 +44623,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381574041}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1386664751
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1386664752}
-  - component: {fileID: 1386664755}
-  - component: {fileID: 1386664754}
-  - component: {fileID: 1386664753}
-  m_Layer: 0
-  m_Name: AmmoZone
-  m_TagString: AmmoZone
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1386664752
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386664751}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 173682914}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1386664753
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386664751}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1386664754
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386664751}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1386664755
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386664751}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1395086988
 GameObject:
@@ -51335,25 +51233,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522957466}
   m_CullTransparentMesh: 1
---- !u!1 &1523792354 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1728619453497436, guid: e7152d23c09aee845a9594ff1308f6a8, type: 3}
-  m_PrefabInstance: {fileID: 630456413}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1523792357
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523792354}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 88aa462b1e93f2947bec032e953ba29a, type: 3}
 --- !u!4 &1538877469 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 6a987db90277a804ca12763b4edaac0d, type: 3}
@@ -53545,15 +53424,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 461918, guid: f8e5b2f39b57ccf45ae8321cac39d04e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 46.346172
+      value: 122
       objectReference: {fileID: 0}
     - target: {fileID: 461918, guid: f8e5b2f39b57ccf45ae8321cac39d04e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.93
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 461918, guid: f8e5b2f39b57ccf45ae8321cac39d04e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -94.660706
+      value: -111.91
       objectReference: {fileID: 0}
     - target: {fileID: 461918, guid: f8e5b2f39b57ccf45ae8321cac39d04e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -53910,13 +53789,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1386664752, guid: e7152d23c09aee845a9594ff1308f6a8, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1728619453497436, guid: e7152d23c09aee845a9594ff1308f6a8, type: 3}
       propertyPath: m_Name
       value: Ammo_box (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1728619453497436, guid: e7152d23c09aee845a9594ff1308f6a8, type: 3}
       propertyPath: m_TagString
-      value: AmmoZone
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4232641428546220, guid: e7152d23c09aee845a9594ff1308f6a8, type: 3}
       propertyPath: m_RootOrder
@@ -54467,7 +54350,7 @@ MonoBehaviour:
   - {fileID: 1484546060}
   - {fileID: 1003941148}
   - {fileID: 1244739767}
-  maxEnemy: 10
+  maxEnemy: 30
 --- !u!1 &1859712556
 GameObject:
   m_ObjectHideFlags: 0
@@ -57212,15 +57095,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 470266, guid: 00a11f3eb5ba2aa4a9fe95591be93e28, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 50.53
+      value: 122.343
       objectReference: {fileID: 0}
     - target: {fileID: 470266, guid: 00a11f3eb5ba2aa4a9fe95591be93e28, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.05
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 470266, guid: 00a11f3eb5ba2aa4a9fe95591be93e28, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -94.61
+      value: -111.161
       objectReference: {fileID: 0}
     - target: {fileID: 470266, guid: 00a11f3eb5ba2aa4a9fe95591be93e28, type: 3}
       propertyPath: m_LocalRotation.w

@@ -19,7 +19,7 @@ public class EnemyGeneration : MonoBehaviour
 
     public GameObject[] myEnemies;
     public Transform[] mySpawner;
-    static private int nEnemies;
+    public static int nEnemies;
     public int maxEnemy;
 
 
@@ -40,27 +40,22 @@ public class EnemyGeneration : MonoBehaviour
 
         if (ArenaMode.ArenaModeFlag == false)
         {
-            if (nEnemies >= maxEnemy)
-            {
-                return;
-            }
+            if (nEnemies <= maxEnemy) { 
             if (waitTime <= 0)
             {
                 randomIndexEnemy = Random.Range(0, myEnemies.Length);
                 randomIndexSpawner = mySpawner[Random.Range(0, 13)].position;
-                if (nEnemies <= 50)
-                {
-                    Instantiate(myEnemies[randomIndexEnemy], randomIndexSpawner, Quaternion.identity);
-                    nEnemies++;
-                }
+                Instantiate(myEnemies[randomIndexEnemy], randomIndexSpawner, Quaternion.identity);
+                nEnemies++;
                 waitTime = initWaitTime;
-
+                    Debug.Log(nEnemies);
             }
             else
             {
                 waitTime -= Time.deltaTime;
             }
         }
+    }
 
         else
         {
@@ -91,16 +86,6 @@ public class EnemyGeneration : MonoBehaviour
                 }
             }
         }
-    }
-
-    public int GetNEnemy()
-    {
-        return nEnemies;
-    }
-
-    public int enemyKilled()
-    {
-        return nEnemies--;
     }
 
 }
