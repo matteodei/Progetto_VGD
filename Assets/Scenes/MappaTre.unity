@@ -1968,6 +1968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton@Skin
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -28149,7 +28153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  bossPhase2Prefab: {fileID: 227165449}
+  bossSecondPhase: {fileID: 227165449}
+  skeletonSecondPhase: {fileID: 290338415}
 --- !u!136 &1496454833
 CapsuleCollider:
   m_ObjectHideFlags: 0
