@@ -16,5 +16,10 @@ public class NextScene : MonoBehaviour
         }
     }
 
+    public void apriMenu(string scenename)
+    {
+        SceneManager.LoadScene(scenename);
+    }
+
 
 }
