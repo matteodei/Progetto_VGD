@@ -1387,7 +1387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 15
-  attackCooldown: 1
+  attackCooldown: 3
   attackRange: 1.7
 --- !u!114 &227165454
 MonoBehaviour:
@@ -1415,7 +1415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61aad81c38b8474e96b092f9d78540f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
+  health: 1500
 --- !u!1001 &234557107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16759,7 +16759,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Men\xF9"
+  m_text: "Men\xF9 iniziale"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 96cd04f2172a0de43884753ec3be80e5, type: 2}
   m_sharedMaterial: {fileID: 8212719392095127557, guid: 96cd04f2172a0de43884753ec3be80e5, type: 2}
@@ -20093,7 +20093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 20
-  attackCooldown: 1
+  attackCooldown: 3
   attackRange: 1.7
 --- !u!64 &1496454831
 MeshCollider:
@@ -20121,7 +20121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6dc760fc65c5394a886b58ec93939f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 600
+  health: 2000
   bossSecondPhase: {fileID: 227165449}
   skeletonSecondPhase: {fileID: 290338415}
 --- !u!136 &1496454833

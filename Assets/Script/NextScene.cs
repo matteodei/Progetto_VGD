@@ -13,6 +13,8 @@ public class NextScene : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             SceneManager.LoadScene(scenename);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 

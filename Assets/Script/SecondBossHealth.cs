@@ -36,6 +36,7 @@ public class SecondBossHealth : MonoBehaviour
             SceneManager.LoadScene("Fine_gioco_vittoria");
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            bossMorti = 0;
 
         }
     }
@@ -62,7 +63,7 @@ public class SecondBossHealth : MonoBehaviour
 
     public void DamageAnimationFinished()
     {
-        // Questo metodo viene chiamato dall'animazione quando è finita
+        // Questo metodo viene chiamato dall'animazione quando ï¿½ finita
         stateHealt.SetBool("isHit", false);
         isTakingDamage = false;
         enemy.isStopped = false;
@@ -80,7 +81,7 @@ public class SecondBossHealth : MonoBehaviour
     public void DieAnimationFinished()
     {
         bossMorti++;
-        Debug.Log(bossMorti);
+        
         Destroy(this.gameObject);
     }
 }

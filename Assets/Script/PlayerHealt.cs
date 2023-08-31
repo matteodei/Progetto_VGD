@@ -41,7 +41,7 @@ public class PlayerHealt : MonoBehaviour
     {
         if (currentHealth > 0) 
         {
-            Debug.Log("Danno, vita rimanente:" + currentHealth);
+           
             currentHealth -= damage;
         }
         else

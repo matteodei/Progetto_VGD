@@ -1,8 +1,29 @@
 ﻿<Properties StartupConfiguration="{06BEC4ED-E004-DF95-8EA7-D7E8AA8067E5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/PlayerController.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/NextScene.cs">
     <Files>
-      <File FileName="Assets/Script/PlayerController.cs" Line="45" Column="14" />
-      <File FileName="Assets/Script/Weapon.cs" Line="107" Column="39" />
+      <File FileName="Assets/Script/AnimationScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/ArenaMode.cs" Line="51" Column="11" />
+      <File FileName="Assets/Script/BossHealt.cs" Line="69" Column="30" />
+      <File FileName="Assets/Script/BossMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/EnemyAttack.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/EnemyChase.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/EnemyGeneration.cs" Line="74" Column="21" />
+      <File FileName="Assets/Script/EnemyHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/MenuIniziale.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/NextScene.cs" Line="28" Column="59" />
+      <File FileName="Assets/Script/PlayerController.cs" Line="27" Column="32" />
+      <File FileName="Assets/Script/PlayerHealt.cs" Line="44" Column="12" />
+      <File FileName="Assets/Script/SecondBossHealth.cs" Line="84" Column="9" />
+      <File FileName="Assets/Script/SettingsMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/UsoOggetti.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Weapon.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/WeaponManager.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,11 +38,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="de962a13-988d-48d0-a212-2cf9efabbcb8" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7b0f5d2c-b00e-4c3b-ab3c-fe121c74e4d5" />
 </Properties>

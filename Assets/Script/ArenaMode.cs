@@ -48,7 +48,7 @@ public class ArenaMode : MonoBehaviour
         if (other.CompareTag("ArenaMode"))
         {
             ArenaModeFlag = true;
-            Debug.Log("Arena");
+          
             other.gameObject.SetActive(false);
         }
     }

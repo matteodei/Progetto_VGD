@@ -12,7 +12,7 @@ public class EnemyGeneration : MonoBehaviour
     private Vector3 Spawn2 = new Vector3();
 
     private float waitTime;
-    private float initWaitTime = 1f;
+    private float initWaitTime = 20f;
 
     public static float tempoTrascorso = 0f;
     public float tempoMax = 10f;
@@ -48,7 +48,7 @@ public class EnemyGeneration : MonoBehaviour
                 Instantiate(myEnemies[randomIndexEnemy], randomIndexSpawner, Quaternion.identity);
                 nEnemies++;
                 waitTime = initWaitTime;
-                    Debug.Log(nEnemies);
+                    
             }
             else
             {
@@ -71,7 +71,7 @@ public class EnemyGeneration : MonoBehaviour
                 if (waitTime <= 0)
                 {
 
-                    Debug.Log("spawn");
+                    
                     Instantiate(myEnemies[randomIndexEnemy], Spawn1, Quaternion.identity);
                     Instantiate(myEnemies[randomIndexEnemy], Spawn1, Quaternion.identity);
                     Instantiate(myEnemies[randomIndexEnemy], Spawn2, Quaternion.identity);

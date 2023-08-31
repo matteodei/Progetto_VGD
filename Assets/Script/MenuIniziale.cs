@@ -159,16 +159,19 @@ public class MenuIniziale : MonoBehaviour
 
     public void firstLevel()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MappaUno");
     }
 
     public void secondLevel()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MappaDue");
     }
 
     public void thirdLevel()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MappaTre");
     }
 
