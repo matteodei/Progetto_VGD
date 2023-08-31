@@ -23,17 +23,20 @@ public class EnemyAttack : MonoBehaviour
         // Calcola la distanza tra nemico e giocatore
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        // Verifica se è passato il tempo di attesa e il giocatore è nella distanza di attacco
-        if (Time.time - lastAttackTime >= attackCooldown && distanceToPlayer <= attackRange && enemyState.GetBool("isAttack"))
+        if (!enemyState.GetBool("isDead"))
         {
-            // Infliggi danni al giocatore
-            PlayerHealt playerHealth = player.GetComponent<PlayerHealt>();
-            if (playerHealth != null)
+            // Verifica se è passato il tempo di attesa e il giocatore è nella distanza di attacco
+            if (Time.time - lastAttackTime >= attackCooldown && distanceToPlayer <= attackRange && enemyState.GetBool("isAttack"))
             {
-                playerHealth.TakeEnemiesDamage(damageAmount);
-            }
+                // Infliggi danni al giocatore
+                PlayerHealt playerHealth = player.GetComponent<PlayerHealt>();
+                if (playerHealth != null)
+                {
+                    playerHealth.TakeEnemiesDamage(damageAmount);
+                }
 
-            lastAttackTime = Time.time; // Aggiorna il timer dell'ultimo attacco
+                lastAttackTime = Time.time; // Aggiorna il timer dell'ultimo attacco
+            }
         }
     }
 }
