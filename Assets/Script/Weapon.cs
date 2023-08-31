@@ -125,10 +125,10 @@ public class Weapon : MonoBehaviour
     }
      private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("a1");
+        
         if (other.CompareTag("AmmoZone"))
         {
-            Debug.Log("aa");
+            
             ammoBoxSound.Play();
             _extraAmmo = maxExtraAmmo; 
             _ammoText.text = _ammo + " / " + _extraAmmo;
