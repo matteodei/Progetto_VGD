@@ -45,13 +45,8 @@ public class EnemyChase : MonoBehaviour
     {
         ResetAnimation(enemyState);
 
-        if (true)  // bisogna metterci il controllo della vita del player
-        {
-            playerPos = playerTarget.transform.position;
-        }
+        playerPos = playerTarget.transform.position;
 
-        //if(healt.healt >0)
-        //{
         float distance = Vector3.Distance(playerPos, transform.position);
 
 
@@ -63,11 +58,7 @@ public class EnemyChase : MonoBehaviour
         {
             followPlayer();
         }
-        //}
-        //else
-        //{
-        //  nemico morto
-        //}
+
     }
 
     private void idleStateMode()
@@ -97,8 +88,6 @@ public class EnemyChase : MonoBehaviour
             enemy.isStopped = true;
             enemyState.SetBool("isAlert", false);
             enemyState.SetBool("isAttack", true);
-            Debug.Log("nemico in attaco");
-            Debug.Log(distanceEnemyPlayer.ToString());
         }
         else if (distanceEnemyPlayer < rangeAlert)
         {
@@ -106,8 +95,6 @@ public class EnemyChase : MonoBehaviour
             enemy.destination = playerPos;
             enemy.SetDestination(playerTarget.transform.position);
             enemyState.SetBool("isAlert", true);
-            Debug.Log("Nemico ti sta inseguendo");
-            Debug.Log(distanceEnemyPlayer.ToString());
         }
     }
 

@@ -294,7 +294,7 @@ ModelImporter:
       name: Death
       takeName: Take 001
       internalID: 7400000
-      firstFrame: 0
+      firstFrame: 7
       lastFrame: 49
       wrapMode: 0
       orientationOffsetY: 0
