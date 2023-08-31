@@ -237,8 +237,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 451708045}
+  speed: 20
   mouseSens: 400
   cameraTransform: {fileID: 963194228}
+  jumpSpeed: 0
 --- !u!143 &451708045
 CharacterController:
   m_ObjectHideFlags: 0

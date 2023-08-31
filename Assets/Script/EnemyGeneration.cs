@@ -36,7 +36,7 @@ public class EnemyGeneration : MonoBehaviour
     {
 
 
-        if (PlayerHealt.ArenaModeFlag == false)
+        if (ArenaMode.ArenaModeFlag == false)
         {
             if (nEnemies >= maxEnemy)
             {
@@ -65,7 +65,7 @@ public class EnemyGeneration : MonoBehaviour
             tempoTrascorso += Time.deltaTime;
             if (tempoTrascorso >= tempoMax)
             {
-                PlayerHealt.ArenaModeFlag = false;
+                ArenaMode.ArenaModeFlag = false;
             }
 
 
