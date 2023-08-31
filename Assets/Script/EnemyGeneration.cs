@@ -14,7 +14,7 @@ public class EnemyGeneration : MonoBehaviour
     private float waitTime;
     private float initWaitTime = 1f;
 
-    private float tempoTrascorso = 0f;
+    public static float tempoTrascorso = 0f;
     public float tempoMax = 10f;
 
     public GameObject[] myEnemies;
@@ -22,7 +22,6 @@ public class EnemyGeneration : MonoBehaviour
     static private int nEnemies;
     public int maxEnemy;
 
-    public TMP_Text timer;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +37,6 @@ public class EnemyGeneration : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer.text = tempoTrascorso.ToString();
 
         if (ArenaMode.ArenaModeFlag == false)
         {

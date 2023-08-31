@@ -28,7 +28,8 @@ public class SettingsMenu : MonoBehaviour
     public GameObject fullScreenOff;
     public GameObject cheatOn;
     public GameObject cheatOff;
-    
+    public TMP_Text timer;
+    public GameObject timerHolder;
 
 
     public bool schermoIntero;
@@ -52,7 +53,6 @@ public class SettingsMenu : MonoBehaviour
     {
         barraDellaVita.SetActive(true);
         volume.SetActive(false);
-        
         bottoneSetting.SetActive(false);
         bottoneResume.SetActive(false);
         bottoneMenu.SetActive(false);
@@ -65,10 +65,10 @@ public class SettingsMenu : MonoBehaviour
         fullScreenOff.SetActive(false);
         cheatOn.SetActive(false);
         cheatOff.SetActive(false);
-
+        timerHolder.SetActive(false);
         testi.SetActive(false);
         CanvasGame.SetActive(true);
-
+        
 
         SetVolume(-20);
         
@@ -79,6 +79,13 @@ public class SettingsMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (ArenaMode.ArenaModeFlag == true) 
+        {
+            timerHolder.SetActive(true);
+        }
+
+        timer.text = EnemyGeneration.tempoTrascorso.ToString("F2");
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             
