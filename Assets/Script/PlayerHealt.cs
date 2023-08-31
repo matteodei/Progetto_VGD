@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealt : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class PlayerHealt : MonoBehaviour
     }
     private void Update()
     {
+        
 
         if (SettingsMenu.statoTrucchi)
         {
@@ -44,8 +46,13 @@ public class PlayerHealt : MonoBehaviour
         }
         else
         {
-            //GAMEOVER
-            Debug.Log("Giocatore morto");
+            SettingsMenu.scenaAttuale = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene("Fine_gioco_morte");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+
+
         }
         // Aggiungi qui la logica per gestire la morte del giocatore se la salute raggiunge zero
     }
