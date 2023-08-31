@@ -36,6 +36,7 @@ public class SettingsMenu : MonoBehaviour
     public bool menuScelta;
     public bool menuSetting;
     public static bool statoTrucchi;
+    public static int scenaAttuale;
 
     
 
@@ -71,9 +72,12 @@ public class SettingsMenu : MonoBehaviour
         
 
         SetVolume(-20);
-        
 
-  
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = true;
+
+
+
     }
 
     // Update is called once per frame
@@ -269,7 +273,8 @@ public class SettingsMenu : MonoBehaviour
     }
 
     public void menu()
-    { 
+    {
+        scenaAttuale = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene("Menu_iniziale");
     }
 

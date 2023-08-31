@@ -130,9 +130,11 @@ public class MenuIniziale : MonoBehaviour
 
     public void LoadGame()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetInt("CurrentLevel"));
+        SceneManager.LoadScene(SettingsMenu.scenaAttuale);
+        Time.timeScale = 1;
 
-        
+
+
     }
 
     public void sceltaLivello()
