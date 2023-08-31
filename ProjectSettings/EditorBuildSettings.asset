@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MappaDue.unity
     guid: b94ee59f12f411f488e6df197429e012
+  - enabled: 1
+    path: Assets/Scenes/MappaTre.unity
+    guid: 2f233f4d9eb5b7c4db85c705039a90e7
+  - enabled: 1
+    path: Assets/Scenes/Fine_gioco_morte.unity
+    guid: 03faa6c32611bd840b01ab60fc44e499
+  - enabled: 1
+    path: Assets/Scenes/Fine_gioco_vittoria.unity
+    guid: e64c50e1cfb251b43bc002b05730ec7d
   m_configObjects: {}
