@@ -162,9 +162,15 @@ public class Weapon : MonoBehaviour
             if (hitInfo.collider.CompareTag("Boss"))
             {
                 BossHealt boss = hitInfo.collider.GetComponent<BossHealt>();
+                SecondBossHealth secondBoss = hitInfo.collider.GetComponent<SecondBossHealth>();
                 if (boss != null)
                 {
                     boss.TakeDamage(hitForce);
+                }
+
+                if (secondBoss != null)
+                {
+                    secondBoss.TakeDamage(hitForce);
                 }
             }
         }

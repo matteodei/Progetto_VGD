@@ -1374,19 +1374,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &227165452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227165449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0827ffd8610eb6944a4b82fcabc4e340, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 300
 --- !u!114 &227165453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1416,6 +1403,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rangeAttack: 1.7
   playerTarget: {fileID: 644075193}
+--- !u!114 &227165455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227165449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d61aad81c38b8474e96b092f9d78540f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  bossMorti: 0
 --- !u!1001 &234557107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21013,7 +21014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 63e974d9ec82619419e69ae2287be94e, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Boss
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 63e974d9ec82619419e69ae2287be94e, type: 3}
       propertyPath: m_Controller

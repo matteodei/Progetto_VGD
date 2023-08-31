@@ -48,16 +48,14 @@ public class BossMovement : MonoBehaviour
             boss.velocity = Vector3.zero;
             boss.isStopped = true;
             bossState.SetBool("isAttack", true);
-            Debug.Log("nemico in attaco");
-            Debug.Log(distanceEnemyPlayer.ToString());
+            
         }
         else
         {
             boss.isStopped = false;
             boss.destination = playerPos;
             boss.SetDestination(playerTarget.transform.position);
-            Debug.Log("Nemico ti sta inseguendo");
-            Debug.Log(distanceEnemyPlayer.ToString());
+            
         }
 
     }

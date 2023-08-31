@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
+
         float hzMove = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         float vtMove = Input.GetAxis("Vertical") * speed * Time.deltaTime;
 
