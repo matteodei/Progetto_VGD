@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public Transform cameraTransform;
     private float rotation = 0f;
     public float jumpSpeed;
+    public AudioSource walkingSound;
     
 
     
@@ -24,13 +25,22 @@ public class PlayerController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            walkingSound.enabled = true;
 
+        }
+        else
+        {
+            walkingSound.enabled = false;
+        }
         float hzMove = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         float vtMove = Input.GetAxis("Vertical") * speed * Time.deltaTime;
 

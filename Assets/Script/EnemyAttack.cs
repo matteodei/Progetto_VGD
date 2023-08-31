@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    public int damageAmount = 10; // Quantità di danni inflitti al giocatore
+    public int damageAmount = 10; // Quantitï¿½ di danni inflitti al giocatore
     public float attackCooldown = 1.0f; // Tempo di attesa tra gli attacchi
     public float attackRange = 1.5f; // Distanza ravvicinata per l'attacco
 
@@ -25,12 +25,12 @@ public class EnemyAttack : MonoBehaviour
 
         if (!enemyState.GetBool("isDead"))
         {
-            // Verifica se è passato il tempo di attesa e il giocatore è nella distanza di attacco
+            // Verifica se ï¿½ passato il tempo di attesa e il giocatore ï¿½ nella distanza di attacco
             if (Time.time - lastAttackTime >= attackCooldown && distanceToPlayer <= attackRange && enemyState.GetBool("isAttack"))
             {
                 // Infliggi danni al giocatore
                 PlayerHealt playerHealth = player.GetComponent<PlayerHealt>();
-                if (playerHealth != null)
+                if (playerHealth != null && !SettingsMenu.statoTrucchi)
                 {
                     playerHealth.TakeEnemiesDamage(damageAmount);
                 }

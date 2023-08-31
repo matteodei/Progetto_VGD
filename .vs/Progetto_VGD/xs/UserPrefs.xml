@@ -1,11 +1,14 @@
 ﻿<Properties StartupConfiguration="{06BEC4ED-E004-DF95-8EA7-D7E8AA8067E5}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PlayerShooting/Scripts/SettingsMenu.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="48ad5fb9-dbfd-4d80-b26e-96f6c48b09bf" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/PlayerController.cs">
     <Files>
-      <File FileName="Assets/PlayerShooting/Scripts/WeaponManager.cs" />
-      <File FileName="Assets/PlayerShooting/Scripts/Weapon.cs" Line="36" Column="37" />
-      <File FileName="Assets/PlayerShooting/Scripts/SettingsMenu.cs" Line="73" Column="24" />
-      <File FileName="Assets/PlayerShooting/Scripts/PlayerHealt.cs" Line="11" Column="38" />
+      <File FileName="Assets/Script/PlayerController.cs" Line="35" Column="105" />
+      <File FileName="Assets/Script/Weapon.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,19 +16,12 @@
           <Node name="Progetto_VGD" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="HUD" expanded="True" />
-              <Node name="PlayerShooting" expanded="True">
-                <Node name="Scripts" expanded="True" />
-              </Node>
+              <Node name="Script" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="24838726-872d-4e6d-b2a0-48ebd2a05b11" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
