@@ -6976,7 +6976,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1412932656}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &243669095
 BoxCollider:
@@ -7788,7 +7788,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 706902163}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &331689695
 BoxCollider:
@@ -35140,7 +35140,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1405007926}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1075383554
 BoxCollider:
@@ -35824,7 +35824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1109800234}
-  speed: 20
+  speed: 5
   mouseSens: 200
   cameraTransform: {fileID: 1682275496}
   jumpSpeed: 5
@@ -35854,7 +35854,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109800232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14, y: 2.1, z: -1.57}
+  m_LocalPosition: {x: -1.95, y: 2.1, z: 3.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -44315,6 +44315,11 @@ MonoBehaviour:
   - {fileID: 1003941148}
   - {fileID: 1244739767}
   maxEnemy: 10
+--- !u!1 &1354091885 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 501295248943222296, guid: d6a5e2c4aefa6804b8f7d2af9a9676b5, type: 3}
+  m_PrefabInstance: {fileID: 1419204950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1357209724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45513,6 +45518,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 501295248943452728, guid: d6a5e2c4aefa6804b8f7d2af9a9676b5, type: 3}
   m_PrefabInstance: {fileID: 1419204950}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1427904645
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354091885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 76e0ad8bbe5fca64f90e1cb33a04e75e, type: 3}
 --- !u!1 &1428058181
 GameObject:
   m_ObjectHideFlags: 0
@@ -45545,7 +45564,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1802880633}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1428058183
 BoxCollider:
@@ -55925,7 +55944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb20b6757622d249becf6c5a126fff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenename: Scene_federico
+  scenename: MappaDue
 --- !u!1 &2004991619
 GameObject:
   m_ObjectHideFlags: 0
