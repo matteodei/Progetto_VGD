@@ -34,53 +34,59 @@ public class WeaponManager : MonoBehaviour
             cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, _isWeaponHeld && _heldWeapon.Scoping ? scopedFov : defaultFov, fovSmooth * Time.deltaTime);
         }
 
-        if (_isWeaponHeld)
+        if (Time.timeScale == 1)
         {
-            var mouseDelta = -new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-            swayHolder.localPosition = Vector3.Lerp(swayHolder.localPosition, Vector3.zero, swaySmooth * Time.deltaTime);
-            swayHolder.localPosition += (Vector3)mouseDelta * swaySize;
-
-            if(Input.GetKeyDown(KeyCode.Q)) {
-                _heldWeapon.Drop(playerCamera);
-                _heldWeapon = null; 
-                _isWeaponHeld = false; 
-            }
-        }
-        else if(Input.GetKeyDown(KeyCode.E)) {
-            var hitList = new RaycastHit[256]; //Aumentare se ci sono più di 256 oggetti davanti a noi
-            var hitNumber = Physics.CapsuleCastNonAlloc(playerCamera.position, 
-                playerCamera.position + playerCamera.forward * pickupRange, pickupRadius,
-                playerCamera.forward, hitList);
-
-            var realList = new List<RaycastHit>();
-            for (var i = 0; i < hitNumber; i++)
+            if (_isWeaponHeld)
             {
-                var hit = hitList[i];
-                if (hit.transform.gameObject.layer != weaponLayer) continue; //Raccogli solo weaponLayer
-                if (hit.point == Vector3.zero) //Se vediamo il pivot point dell'arma
+                var mouseDelta = -new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+                swayHolder.localPosition = Vector3.Lerp(swayHolder.localPosition, Vector3.zero, swaySmooth * Time.deltaTime);
+                swayHolder.localPosition += (Vector3)mouseDelta * swaySize;
+
+                if (Input.GetKeyDown(KeyCode.Q))
                 {
-                    realList.Add(hit);
-                }
-                else if (Physics.Raycast(playerCamera.position, hit.point - playerCamera.position, out var hitInfo, hit.distance + 0.1f) 
-                    && hitInfo.transform == hit.transform) { 
-                    realList.Add(hit);
+                    _heldWeapon.Drop(playerCamera);
+                    _heldWeapon = null;
+                    _isWeaponHeld = false;
                 }
             }
-
-            if (realList.Count == 0) return;
-
-            //First object in list is closest to us
-            realList.Sort((hit1, hit2) =>
+            else if (Input.GetKeyDown(KeyCode.E))
             {
-                var dist1 = GetDistanceTo(hit1);
-                var dist2 = GetDistanceTo(hit2);
-                return Mathf.Abs(dist1 - dist2) < 0.001f ? 0 : dist1 < dist2 ? -1 : 1;
-            });
+                var hitList = new RaycastHit[256]; //Aumentare se ci sono più di 256 oggetti davanti a noi
+                var hitNumber = Physics.CapsuleCastNonAlloc(playerCamera.position,
+                    playerCamera.position + playerCamera.forward * pickupRange, pickupRadius,
+                    playerCamera.forward, hitList);
 
-            _isWeaponHeld = true;   
-            _heldWeapon = realList[0].transform.GetComponent<Weapon>();
-            _heldWeapon.Pickup(weaponHolder, playerCamera, ammoText);
-        
+                var realList = new List<RaycastHit>();
+                for (var i = 0; i < hitNumber; i++)
+                {
+                    var hit = hitList[i];
+                    if (hit.transform.gameObject.layer != weaponLayer) continue; //Raccogli solo weaponLayer
+                    if (hit.point == Vector3.zero) //Se vediamo il pivot point dell'arma
+                    {
+                        realList.Add(hit);
+                    }
+                    else if (Physics.Raycast(playerCamera.position, hit.point - playerCamera.position, out var hitInfo, hit.distance + 0.1f)
+                        && hitInfo.transform == hit.transform)
+                    {
+                        realList.Add(hit);
+                    }
+                }
+
+                if (realList.Count == 0) return;
+
+                //First object in list is closest to us
+                realList.Sort((hit1, hit2) =>
+                {
+                    var dist1 = GetDistanceTo(hit1);
+                    var dist2 = GetDistanceTo(hit2);
+                    return Mathf.Abs(dist1 - dist2) < 0.001f ? 0 : dist1 < dist2 ? -1 : 1;
+                });
+
+                _isWeaponHeld = true;
+                _heldWeapon = realList[0].transform.GetComponent<Weapon>();
+                _heldWeapon.Pickup(weaponHolder, playerCamera, ammoText);
+
+            }
         }
     }
 

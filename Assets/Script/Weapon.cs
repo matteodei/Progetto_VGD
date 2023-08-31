@@ -104,21 +104,25 @@ public class Weapon : MonoBehaviour
 
         if ((tapable ? Input.GetMouseButtonDown(0) : Input.GetMouseButton(0)) && ! _shooting && ! _reloading) 
         {
-            if (SettingsMenu.statoTrucchi)
-            {
-                Shoot();
-                StartCoroutine(ShootingCooldown());
-                _ammoText.text = "MUNIZIONI INFINITE";
-            }
-            else if(_ammo > 0)
-            {    
-                _ammo--;
-                _ammoText.text = _ammo + " / " + _extraAmmo;
-                Shoot();
-                StartCoroutine(_ammo <= 0 ? ReloadCooldown() : ShootingCooldown());
-            } else if(_ammo <= 0 && _extraAmmo <= 0)
-            {
-                _ammoText.text = " MUNIZIONI ESAURITE ";
+            if (Time.timeScale == 1) {
+
+                if (SettingsMenu.statoTrucchi)
+                {
+                    Shoot();
+                    StartCoroutine(ShootingCooldown());
+                    _ammoText.text = "MUNIZIONI INFINITE";
+                }
+                else if (_ammo > 0)
+                {
+                    _ammo--;
+                    _ammoText.text = _ammo + " / " + _extraAmmo;
+                    Shoot();
+                    StartCoroutine(_ammo <= 0 ? ReloadCooldown() : ShootingCooldown());
+                } else if (_ammo <= 0 && _extraAmmo <= 0)
+                {
+                    _ammoText.text = " MUNIZIONI ESAURITE ";
+                }
+
             }
            
         }
